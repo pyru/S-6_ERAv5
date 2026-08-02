@@ -1,6 +1,6 @@
 {
  "branch_id": "main",
- "checkpoint_hash": "59ec2f56f15dab6ba9d3144446330061db4d39a740a1be274b260322bb42a3b0",
+ "checkpoint_hash": "91d65f0d90a5d4b6b035432282c3debf5142c65570913b2047c710b4ea461871",
  "checkpoint_id": "ckpt-main-0040",
  "config_fingerprint": {
   "code_version": "tdes-1.0.0",
@@ -40,7 +40,7 @@
  "global_step": 40,
  "ledger_heads": {
   "consumption": "e28f4a203183f4203a9815e882c3ca7b93b93ad768c1cf7c4f4f845f3358dd00",
-  "control": "156273211089c5b876d8d7906bd732e5b91dda0ab178ae344d36ac69d428ab9e",
+  "control": "19cab976c25ce5590f95070bd04f9736a56d767592e0a4cfeddaf7860efaa09d",
   "firewall": "c10dcff8b5099bbfb0e229850f4fefac56bcc7dbc7cbef28d86a598c88b5d713",
   "learning": "99400481c833c3450fb1ca9d27083719b1ffbf6fb0f48b57cec60f8613840b36",
   "opus": "212fde055bbb893526f0818895cb45938fc546bd74d87681b4ab0246083ce02f",

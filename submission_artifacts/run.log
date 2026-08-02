@@ -2,323 +2,323 @@
 ==============================================================================
 == TDES - TRAINING DATA EXECUTION SYSTEM (V5, SESSION 6)
 ==============================================================================
-2026-08-02T08:35:43.864 [INFO] demo_started run_id=run-0001 python=3.12.10 total_steps=48 checkpoint_every=8 crash_at=27 replay_interval=9..16 fork_from=16
+2026-08-02T08:44:11.341 [INFO] demo_started run_id=run-0001 python=3.12.10 total_steps=48 checkpoint_every=8 crash_at=27 replay_interval=9..16 fork_from=16
 
 ==============================================================================
 == PHASE 1 - CORPUS
 ==============================================================================
-2026-08-02T08:35:44.245 [EVENT] corpus_built train_docs=154 eval_docs=6 validation_docs=5 poisoned_candidates=7 path=corpus.json
+2026-08-02T08:44:11.665 [EVENT] corpus_built train_docs=154 eval_docs=6 validation_docs=5 poisoned_candidates=7 path=corpus.json
 
 ==============================================================================
 == PHASE 2 - FROZEN TOKENIZER
 ==============================================================================
-2026-08-02T08:35:44.582 [PASS] tokenizer_hash_verified tokenizer_hash=95d42d29ec24d6b2b3f6430e vocab_size=512 merges=245
-2026-08-02T08:35:44.582 [PASS] tokenizer_roundtrip_lossless probes=5
-2026-08-02T08:35:44.582 [PASS] indic_zero_width_preserved
+2026-08-02T08:44:11.889 [PASS] tokenizer_hash_verified tokenizer_hash=95d42d29ec24d6b2b3f6430e vocab_size=512 merges=245
+2026-08-02T08:44:11.889 [PASS] tokenizer_roundtrip_lossless probes=5
+2026-08-02T08:44:11.889 [PASS] indic_zero_width_preserved
 
 ==============================================================================
 == PHASE 3 - EVALUATION FIREWALL REGISTRY
 ==============================================================================
-2026-08-02T08:35:44.583 [EVENT] eval_shard_registered doc_id=doc-eval-000 benchmark_id=TDES-BENCH-v1/item0 never_train=True token_hash=eb79c455f5998989
-2026-08-02T08:35:44.583 [EVENT] eval_shard_registered doc_id=doc-eval-001 benchmark_id=TDES-BENCH-v1/item1 never_train=True token_hash=4993dc4a500ffb00
-2026-08-02T08:35:44.584 [EVENT] eval_shard_registered doc_id=doc-eval-002 benchmark_id=TDES-BENCH-v1/item2 never_train=True token_hash=0f3e1094b909d2bd
-2026-08-02T08:35:44.585 [EVENT] eval_shard_registered doc_id=doc-eval-003 benchmark_id=TDES-BENCH-v1/item3 never_train=True token_hash=0f02e64f79e4b9d7
-2026-08-02T08:35:44.587 [EVENT] eval_shard_registered doc_id=doc-eval-004 benchmark_id=TDES-BENCH-v1/item4 never_train=True token_hash=7061485c49898bcc
-2026-08-02T08:35:44.589 [EVENT] eval_shard_registered doc_id=doc-eval-005 benchmark_id=TDES-BENCH-v1/item5 never_train=True token_hash=7b27f951a6edc937
-2026-08-02T08:35:44.597 [EVENT] validation_registered docs=5 permission=eval_read_only
+2026-08-02T08:44:11.889 [EVENT] eval_shard_registered doc_id=doc-eval-000 benchmark_id=TDES-BENCH-v1/item0 never_train=True token_hash=eb79c455f5998989
+2026-08-02T08:44:11.889 [EVENT] eval_shard_registered doc_id=doc-eval-001 benchmark_id=TDES-BENCH-v1/item1 never_train=True token_hash=4993dc4a500ffb00
+2026-08-02T08:44:11.889 [EVENT] eval_shard_registered doc_id=doc-eval-002 benchmark_id=TDES-BENCH-v1/item2 never_train=True token_hash=0f3e1094b909d2bd
+2026-08-02T08:44:11.889 [EVENT] eval_shard_registered doc_id=doc-eval-003 benchmark_id=TDES-BENCH-v1/item3 never_train=True token_hash=0f02e64f79e4b9d7
+2026-08-02T08:44:11.889 [EVENT] eval_shard_registered doc_id=doc-eval-004 benchmark_id=TDES-BENCH-v1/item4 never_train=True token_hash=7061485c49898bcc
+2026-08-02T08:44:11.901 [EVENT] eval_shard_registered doc_id=doc-eval-005 benchmark_id=TDES-BENCH-v1/item5 never_train=True token_hash=7b27f951a6edc937
+2026-08-02T08:44:11.906 [EVENT] validation_registered docs=5 permission=eval_read_only
 
 ==============================================================================
 == PHASE 4 - ADMISSION GATE
 ==============================================================================
-2026-08-02T08:35:44.649 [EVENT] admission_rejected doc_id=doc-bad-dup-000 reasons=duplicate_document
-2026-08-02T08:35:44.649 [EVENT] admission_rejected doc_id=doc-bad-license-000 reasons=license_tier_not_admissible
-2026-08-02T08:35:44.649 [EVENT] admission_rejected doc_id=doc-bad-lineage-000 reasons=missing_cleaning_lineage
-2026-08-02T08:35:44.650 [EVENT] admission_rejected doc_id=doc-bad-pii-000 reasons=pii_detected
-2026-08-02T08:35:44.650 [EVENT] admission_rejected doc_id=doc-bad-langid-000 reasons=language_not_validated
-2026-08-02T08:35:44.650 [EVENT] admission_rejected doc_id=doc-bad-contaminated-000 reasons=eval_contamination:canary:CANARY-TDES-EVAL-7f3,doc-eval-000,doc-eval-001
-2026-08-02T08:35:44.650 [EVENT] admission_rejected doc_id=doc-bad-evalsmuggle-000 reasons=eval_contamination:canary:CANARY-TDES-EVAL-7f3,doc-eval-000,doc-eval-000,registered_evaluation_document
-2026-08-02T08:35:44.650 [PASS] eval_shard_blocked blocked_docs=["doc-bad-contaminated-000","doc-bad-evalsmuggle-000"] reasons=["eval_contamination","registered_evaluation_document"]
-2026-08-02T08:35:44.650 [PASS] only_training_split_admitted admitted=154 rejected=7
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-dup-000 reasons=duplicate_document
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-license-000 reasons=license_tier_not_admissible
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-lineage-000 reasons=missing_cleaning_lineage
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-pii-000 reasons=pii_detected
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-langid-000 reasons=language_not_validated
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-contaminated-000 reasons=eval_contamination:canary:CANARY-TDES-EVAL-7f3,doc-eval-000,doc-eval-001
+2026-08-02T08:44:11.958 [EVENT] admission_rejected doc_id=doc-bad-evalsmuggle-000 reasons=eval_contamination:canary:CANARY-TDES-EVAL-7f3,doc-eval-000,doc-eval-000,registered_evaluation_document
+2026-08-02T08:44:11.958 [PASS] eval_shard_blocked blocked_docs=["doc-bad-contaminated-000","doc-bad-evalsmuggle-000"] reasons=["eval_contamination","registered_evaluation_document"]
+2026-08-02T08:44:11.958 [PASS] only_training_split_admitted admitted=154 rejected=7
 
 ==============================================================================
 == PHASE 5 - IMMUTABLE TOKENIZED SHARDS
 ==============================================================================
-2026-08-02T08:35:44.659 [EVENT] shard_created shard_id=shard-agentic-00 lane=agentic docs=6 tokens=893 content_hash=18cf9a6f307f937e
-2026-08-02T08:35:44.664 [EVENT] shard_created shard_id=shard-agentic-01 lane=agentic docs=6 tokens=894 content_hash=44c8778fdeb57b08
-2026-08-02T08:35:44.676 [EVENT] shard_created shard_id=shard-agentic-02 lane=agentic docs=6 tokens=869 content_hash=b962cbfe4fa81db2
-2026-08-02T08:35:44.682 [EVENT] shard_created shard_id=shard-agentic-03 lane=agentic docs=4 tokens=589 content_hash=3fe17707b161b449
-2026-08-02T08:35:44.689 [EVENT] shard_created shard_id=shard-code-00 lane=code docs=6 tokens=678 content_hash=d500c6291aa265d4
-2026-08-02T08:35:44.692 [EVENT] shard_created shard_id=shard-code-01 lane=code docs=6 tokens=615 content_hash=63e863140708aee2
-2026-08-02T08:35:44.705 [EVENT] shard_created shard_id=shard-code-02 lane=code docs=6 tokens=647 content_hash=a683a936717afeb6
-2026-08-02T08:35:44.715 [EVENT] shard_created shard_id=shard-code-03 lane=code docs=6 tokens=635 content_hash=90062194957de566
-2026-08-02T08:35:44.720 [EVENT] shard_created shard_id=shard-code-04 lane=code docs=2 tokens=215 content_hash=9995902b05c5104d
-2026-08-02T08:35:44.731 [EVENT] shard_created shard_id=shard-general_web-00 lane=general_web docs=6 tokens=1419 content_hash=4e1437cd54e5f825
-2026-08-02T08:35:44.741 [EVENT] shard_created shard_id=shard-general_web-01 lane=general_web docs=6 tokens=1306 content_hash=5b35d846730cbe66
-2026-08-02T08:35:44.745 [EVENT] shard_created shard_id=shard-general_web-02 lane=general_web docs=6 tokens=1440 content_hash=ef321efaa2e45d73
-2026-08-02T08:35:44.761 [EVENT] shard_created shard_id=shard-general_web-03 lane=general_web docs=6 tokens=1101 content_hash=097cbe00e3e59cd8
-2026-08-02T08:35:44.769 [EVENT] shard_created shard_id=shard-general_web-04 lane=general_web docs=6 tokens=1387 content_hash=d133fabeab71cb5a
-2026-08-02T08:35:44.778 [EVENT] shard_created shard_id=shard-indic-00 lane=indic docs=6 tokens=647 content_hash=9ef58e6094ab1b13
-2026-08-02T08:35:44.785 [EVENT] shard_created shard_id=shard-indic-01 lane=indic docs=6 tokens=677 content_hash=c369a694a235dcf0
-2026-08-02T08:35:44.795 [EVENT] shard_created shard_id=shard-indic-02 lane=indic docs=6 tokens=594 content_hash=eb11a3d8eb625576
-2026-08-02T08:35:44.801 [EVENT] shard_created shard_id=shard-indic-03 lane=indic docs=6 tokens=656 content_hash=aa862cf398fbd6cf
-2026-08-02T08:35:44.810 [EVENT] shard_created shard_id=shard-indic-04 lane=indic docs=4 tokens=380 content_hash=2b59dfb781d09f72
-2026-08-02T08:35:44.816 [EVENT] shard_created shard_id=shard-math_science-00 lane=math_science docs=6 tokens=722 content_hash=3590d71afd98eade
-2026-08-02T08:35:44.823 [EVENT] shard_created shard_id=shard-math_science-01 lane=math_science docs=6 tokens=711 content_hash=babb74fe3f988e48
-2026-08-02T08:35:44.831 [EVENT] shard_created shard_id=shard-math_science-02 lane=math_science docs=6 tokens=733 content_hash=a3c710d32c482fe4
-2026-08-02T08:35:44.837 [EVENT] shard_created shard_id=shard-math_science-03 lane=math_science docs=6 tokens=764 content_hash=3816d215b0f5023f
-2026-08-02T08:35:44.845 [EVENT] shard_created shard_id=shard-reasoning-00 lane=reasoning docs=6 tokens=732 content_hash=c24217870e28dc70
-2026-08-02T08:35:44.849 [EVENT] shard_created shard_id=shard-reasoning-01 lane=reasoning docs=6 tokens=743 content_hash=30befb419cdbb443
-2026-08-02T08:35:44.859 [EVENT] shard_created shard_id=shard-reasoning-02 lane=reasoning docs=6 tokens=742 content_hash=b9962ddc2051a244
-2026-08-02T08:35:44.867 [EVENT] shard_created shard_id=shard-reasoning-03 lane=reasoning docs=6 tokens=743 content_hash=85a578b92e865961
-2026-08-02T08:35:44.877 [PASS] manifests_validated shards=27 failures=[]
-2026-08-02T08:35:44.877 [PASS] shard_tokenizer_hash_uniform tokenizer_hash=95d42d29ec24d6b2b3f6430e
-2026-08-02T08:35:44.878 [EVENT] manifest_index_written shards=27 total_tokens=21532 merkle_root=ba8bd10fdafd7da5b91a9bbb
-2026-08-02T08:35:45.031 [PASS] no_eval_tokens_in_shards scanned_shards=27 contaminated=[]
-2026-08-02T08:35:45.040 [PASS] canary_absent_from_shards canary=CANARY-TDES-EVAL
-2026-08-02T08:35:45.047 [EVENT] validation_packs_built packs=5 never_train=True gradient_bearing=False
+2026-08-02T08:44:11.965 [EVENT] shard_created shard_id=shard-agentic-00 lane=agentic docs=6 tokens=893 content_hash=18cf9a6f307f937e
+2026-08-02T08:44:11.978 [EVENT] shard_created shard_id=shard-agentic-01 lane=agentic docs=6 tokens=894 content_hash=44c8778fdeb57b08
+2026-08-02T08:44:11.985 [EVENT] shard_created shard_id=shard-agentic-02 lane=agentic docs=6 tokens=869 content_hash=b962cbfe4fa81db2
+2026-08-02T08:44:11.994 [EVENT] shard_created shard_id=shard-agentic-03 lane=agentic docs=4 tokens=589 content_hash=3fe17707b161b449
+2026-08-02T08:44:11.999 [EVENT] shard_created shard_id=shard-code-00 lane=code docs=6 tokens=678 content_hash=d500c6291aa265d4
+2026-08-02T08:44:12.009 [EVENT] shard_created shard_id=shard-code-01 lane=code docs=6 tokens=615 content_hash=63e863140708aee2
+2026-08-02T08:44:12.015 [EVENT] shard_created shard_id=shard-code-02 lane=code docs=6 tokens=647 content_hash=a683a936717afeb6
+2026-08-02T08:44:12.023 [EVENT] shard_created shard_id=shard-code-03 lane=code docs=6 tokens=635 content_hash=90062194957de566
+2026-08-02T08:44:12.029 [EVENT] shard_created shard_id=shard-code-04 lane=code docs=2 tokens=215 content_hash=9995902b05c5104d
+2026-08-02T08:44:12.039 [EVENT] shard_created shard_id=shard-general_web-00 lane=general_web docs=6 tokens=1419 content_hash=4e1437cd54e5f825
+2026-08-02T08:44:12.048 [EVENT] shard_created shard_id=shard-general_web-01 lane=general_web docs=6 tokens=1306 content_hash=5b35d846730cbe66
+2026-08-02T08:44:12.059 [EVENT] shard_created shard_id=shard-general_web-02 lane=general_web docs=6 tokens=1440 content_hash=ef321efaa2e45d73
+2026-08-02T08:44:12.065 [EVENT] shard_created shard_id=shard-general_web-03 lane=general_web docs=6 tokens=1101 content_hash=097cbe00e3e59cd8
+2026-08-02T08:44:12.073 [EVENT] shard_created shard_id=shard-general_web-04 lane=general_web docs=6 tokens=1387 content_hash=d133fabeab71cb5a
+2026-08-02T08:44:12.082 [EVENT] shard_created shard_id=shard-indic-00 lane=indic docs=6 tokens=647 content_hash=9ef58e6094ab1b13
+2026-08-02T08:44:12.089 [EVENT] shard_created shard_id=shard-indic-01 lane=indic docs=6 tokens=677 content_hash=c369a694a235dcf0
+2026-08-02T08:44:12.097 [EVENT] shard_created shard_id=shard-indic-02 lane=indic docs=6 tokens=594 content_hash=eb11a3d8eb625576
+2026-08-02T08:44:12.105 [EVENT] shard_created shard_id=shard-indic-03 lane=indic docs=6 tokens=656 content_hash=aa862cf398fbd6cf
+2026-08-02T08:44:12.109 [EVENT] shard_created shard_id=shard-indic-04 lane=indic docs=4 tokens=380 content_hash=2b59dfb781d09f72
+2026-08-02T08:44:12.116 [EVENT] shard_created shard_id=shard-math_science-00 lane=math_science docs=6 tokens=722 content_hash=3590d71afd98eade
+2026-08-02T08:44:12.125 [EVENT] shard_created shard_id=shard-math_science-01 lane=math_science docs=6 tokens=711 content_hash=babb74fe3f988e48
+2026-08-02T08:44:12.132 [EVENT] shard_created shard_id=shard-math_science-02 lane=math_science docs=6 tokens=733 content_hash=a3c710d32c482fe4
+2026-08-02T08:44:12.140 [EVENT] shard_created shard_id=shard-math_science-03 lane=math_science docs=6 tokens=764 content_hash=3816d215b0f5023f
+2026-08-02T08:44:12.145 [EVENT] shard_created shard_id=shard-reasoning-00 lane=reasoning docs=6 tokens=732 content_hash=c24217870e28dc70
+2026-08-02T08:44:12.150 [EVENT] shard_created shard_id=shard-reasoning-01 lane=reasoning docs=6 tokens=743 content_hash=30befb419cdbb443
+2026-08-02T08:44:12.161 [EVENT] shard_created shard_id=shard-reasoning-02 lane=reasoning docs=6 tokens=742 content_hash=b9962ddc2051a244
+2026-08-02T08:44:12.167 [EVENT] shard_created shard_id=shard-reasoning-03 lane=reasoning docs=6 tokens=743 content_hash=85a578b92e865961
+2026-08-02T08:44:12.173 [PASS] manifests_validated shards=27 failures=[]
+2026-08-02T08:44:12.173 [PASS] shard_tokenizer_hash_uniform tokenizer_hash=95d42d29ec24d6b2b3f6430e
+2026-08-02T08:44:12.173 [EVENT] manifest_index_written shards=27 total_tokens=21532 merkle_root=ba8bd10fdafd7da5b91a9bbb
+2026-08-02T08:44:12.306 [PASS] no_eval_tokens_in_shards scanned_shards=27 contaminated=[]
+2026-08-02T08:44:12.315 [PASS] canary_absent_from_shards canary=CANARY-TDES-EVAL
+2026-08-02T08:44:12.322 [EVENT] validation_packs_built packs=5 never_train=True gradient_bearing=False
 
 ==============================================================================
 == PHASE 6 - MIXTURE TIMELINE COMPILED
 ==============================================================================
-2026-08-02T08:35:45.057 [EVENT] mixture_compiled branch=main stages=3 schedule_hash=bed043ecd7ef5078c6fd6baf scarce_lanes=["general_web","code","math_science","indic","agentic","reasoning"] path=mixture_schedule_main.json
-2026-08-02T08:35:45.057 [EVENT] mixture_compiled branch=fork-a schedule_hash=ea603bf884e0f21c3ad9d9a8 path=mixture_schedule_fork-a.json
-2026-08-02T08:35:45.057 [INFO] curriculum_stage stage=foundation tokens=0..32768 effective_mixture={"agentic":0.04,"code":0.2,"general_web":0.42,"indic":0.12,"math_science":0.14,"reasoning":0.08} protected_floors={"agentic":0.03,"indic":0.1,"reasoning":0.05} anneal_reserve={}
-2026-08-02T08:35:45.057 [INFO] curriculum_stage stage=reasoning-heavy-midtrain tokens=32768..73728 effective_mixture={"agentic":0.06,"code":0.22,"general_web":0.28,"indic":0.12,"math_science":0.18,"reasoning":0.14} protected_floors={"agentic":0.05,"indic":0.12,"reasoning":0.12} anneal_reserve={"agentic":0.25,"reasoning":0.25}
-2026-08-02T08:35:45.057 [INFO] curriculum_stage stage=anneal tokens=73728..114688 effective_mixture={"agentic":0.1,"code":0.2,"general_web":0.18,"indic":0.16,"math_science":0.18,"reasoning":0.18} protected_floors={"agentic":0.08,"indic":0.15,"reasoning":0.16} anneal_reserve={}
-2026-08-02T08:35:45.057 [PASS] protected_floors_compiled
+2026-08-02T08:44:12.341 [EVENT] mixture_compiled branch=main stages=3 schedule_hash=bed043ecd7ef5078c6fd6baf scarce_lanes=["general_web","code","math_science","indic","agentic","reasoning"] path=mixture_schedule_main.json
+2026-08-02T08:44:12.341 [EVENT] mixture_compiled branch=fork-a schedule_hash=ea603bf884e0f21c3ad9d9a8 path=mixture_schedule_fork-a.json
+2026-08-02T08:44:12.341 [INFO] curriculum_stage stage=foundation tokens=0..32768 effective_mixture={"agentic":0.04,"code":0.2,"general_web":0.42,"indic":0.12,"math_science":0.14,"reasoning":0.08} protected_floors={"agentic":0.03,"indic":0.1,"reasoning":0.05} anneal_reserve={}
+2026-08-02T08:44:12.341 [INFO] curriculum_stage stage=reasoning-heavy-midtrain tokens=32768..73728 effective_mixture={"agentic":0.06,"code":0.22,"general_web":0.28,"indic":0.12,"math_science":0.18,"reasoning":0.14} protected_floors={"agentic":0.05,"indic":0.12,"reasoning":0.12} anneal_reserve={"agentic":0.25,"reasoning":0.25}
+2026-08-02T08:44:12.341 [INFO] curriculum_stage stage=anneal tokens=73728..114688 effective_mixture={"agentic":0.1,"code":0.2,"general_web":0.18,"indic":0.16,"math_science":0.18,"reasoning":0.18} protected_floors={"agentic":0.08,"indic":0.15,"reasoning":0.16} anneal_reserve={}
+2026-08-02T08:44:12.341 [PASS] protected_floors_compiled
 
 ==============================================================================
 == PHASE 7 - PACKING
 ==============================================================================
-2026-08-02T08:35:47.248 [PASS] packing_invariants_verified packs=98 lanes=6 violations={"agentic":0,"code":0,"general_web":0,"indic":0,"math_science":0,"reasoning":0}
-2026-08-02T08:35:47.248 [PASS] every_lane_has_a_pack_pool empty_lanes=[]
-2026-08-02T08:35:47.248 [EVENT] pack_pool_built lane=agentic policy=structure_preserving packs=22 utilization=0.5762 useful_ratio=0.3674
-2026-08-02T08:35:47.248 [EVENT] pack_pool_built lane=code policy=best_fit packs=13 utilization=0.8383 useful_ratio=0.8305
-2026-08-02T08:35:47.248 [EVENT] pack_pool_built lane=general_web policy=concat_chop packs=26 utilization=0.9995 useful_ratio=0.9956
-2026-08-02T08:35:47.248 [EVENT] pack_pool_built lane=indic policy=concat_chop packs=12 utilization=0.9616 useful_ratio=0.9577
-2026-08-02T08:35:47.248 [EVENT] pack_pool_built lane=math_science policy=greedy packs=13 utilization=0.8804 useful_ratio=0.8732
-2026-08-02T08:35:47.248 [EVENT] pack_pool_built lane=reasoning policy=structure_preserving packs=12 utilization=0.9635 useful_ratio=0.6536
-2026-08-02T08:35:57.044 [EVENT] packing_report_written rows=36 report_hash=577c6cc31507a03a
+2026-08-02T08:44:13.579 [PASS] packing_invariants_verified packs=98 lanes=6 violations={"agentic":0,"code":0,"general_web":0,"indic":0,"math_science":0,"reasoning":0}
+2026-08-02T08:44:13.580 [PASS] every_lane_has_a_pack_pool empty_lanes=[]
+2026-08-02T08:44:13.580 [EVENT] pack_pool_built lane=agentic policy=structure_preserving packs=22 utilization=0.5762 useful_ratio=0.3674
+2026-08-02T08:44:13.580 [EVENT] pack_pool_built lane=code policy=best_fit packs=13 utilization=0.8383 useful_ratio=0.8305
+2026-08-02T08:44:13.580 [EVENT] pack_pool_built lane=general_web policy=concat_chop packs=26 utilization=0.9995 useful_ratio=0.9956
+2026-08-02T08:44:13.580 [EVENT] pack_pool_built lane=indic policy=concat_chop packs=12 utilization=0.9616 useful_ratio=0.9577
+2026-08-02T08:44:13.580 [EVENT] pack_pool_built lane=math_science policy=greedy packs=13 utilization=0.8804 useful_ratio=0.8732
+2026-08-02T08:44:13.580 [EVENT] pack_pool_built lane=reasoning policy=structure_preserving packs=12 utilization=0.9635 useful_ratio=0.6536
+2026-08-02T08:44:22.656 [EVENT] packing_report_written rows=36 report_hash=577c6cc31507a03a
 
 ==============================================================================
 == PHASE 8 - TRAINING RUN (branch=main)
 ==============================================================================
-2026-08-02T08:35:57.438 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0000 step=0
-2026-08-02T08:35:57.439 [INFO] run_started run_id=run-0001 branch=main until=48 crash_at=27
-2026-08-02T08:35:57.452 [INFO] opus_proxy_bound step=1 scoring_checkpoint_id=ckpt-main-0000 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:35:57.955 [INFO] token_trace_written step=1 tokens=202 pack_id=pack-code-best_fit-0009
-2026-08-02T08:35:57.955 [EVENT] batch_packed step=1 batch_id=batch-main-00001-75b00f22671e stage=foundation lanes=1addfcd3 util=0.9575 loss_tokens=1875 loss_before=6.24171 loss_after=6.20643
-2026-08-02T08:35:57.955 [EVENT] opus_decisions_recorded step=1 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:35:58.362 [EVENT] batch_packed step=2 batch_id=batch-main-00002-b5096466c1d3 stage=foundation lanes=57feef1a util=0.9414 loss_tokens=1859 loss_before=6.20973 loss_after=6.14203
-2026-08-02T08:35:58.362 [EVENT] opus_decisions_recorded step=2 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
-2026-08-02T08:35:58.759 [EVENT] batch_packed step=3 batch_id=batch-main-00003-f322aa7250ba stage=foundation lanes=1addfcd3 util=0.9287 loss_tokens=1816 loss_before=6.14064 loss_after=6.04365
-2026-08-02T08:35:58.759 [EVENT] opus_decisions_recorded step=3 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:35:59.180 [EVENT] batch_packed step=4 batch_id=batch-main-00004-4d05c62f68b5 stage=foundation lanes=02675324 util=0.9155 loss_tokens=1780 loss_before=6.04576 loss_after=5.92592
-2026-08-02T08:35:59.180 [EVENT] opus_decisions_recorded step=4 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:35:59.539 [EVENT] batch_packed step=5 batch_id=batch-main-00005-1cf793aedf7f stage=foundation lanes=9a28bcba util=0.9438 loss_tokens=1922 loss_before=5.91712 loss_after=5.77276
-2026-08-02T08:35:59.539 [EVENT] opus_decisions_recorded step=5 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
-2026-08-02T08:35:59.923 [EVENT] batch_packed step=6 batch_id=batch-main-00006-f5ce8113ce50 stage=foundation lanes=6f967b03 util=0.9438 loss_tokens=1787 loss_before=5.79726 loss_after=5.64681
-2026-08-02T08:35:59.923 [EVENT] opus_decisions_recorded step=6 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:00.291 [EVENT] batch_packed step=7 batch_id=batch-main-00007-19033b869101 stage=foundation lanes=9a28bcba util=0.939 loss_tokens=1912 loss_before=5.6109 loss_after=5.44475
-2026-08-02T08:36:00.291 [EVENT] opus_decisions_recorded step=7 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:00.646 [EVENT] batch_packed step=8 batch_id=batch-main-00008-9e19258afd11 stage=foundation lanes=1addfcd3 util=0.96 loss_tokens=1872 loss_before=5.4539 loss_after=5.30405
-2026-08-02T08:36:00.646 [EVENT] opus_decisions_recorded step=8 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:00.684 [EVENT] validation_eval step=8 mean_loss=6.32268 gradient_bearing=False
-2026-08-02T08:36:00.694 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0008 step=8 consumption_offset=40 param_hash=39bd5259d257a3d3
-2026-08-02T08:36:00.718 [INFO] opus_proxy_bound step=9 scoring_checkpoint_id=ckpt-main-0008 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:01.193 [INFO] token_trace_written step=9 tokens=91 pack_id=pack-agentic-structure_preserving-0013
-2026-08-02T08:36:01.193 [EVENT] batch_packed step=9 batch_id=batch-main-00009-5db8e722d06b stage=foundation lanes=6f967b03 util=0.9053 loss_tokens=1717 loss_before=5.36072 loss_after=5.2693
-2026-08-02T08:36:01.193 [EVENT] opus_decisions_recorded step=9 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:01.611 [EVENT] batch_packed step=10 batch_id=batch-main-00010-f4eb8842ba35 stage=foundation lanes=9a28bcba util=0.9224 loss_tokens=1879 loss_before=5.25301 loss_after=5.23839
-2026-08-02T08:36:01.611 [EVENT] opus_decisions_recorded step=10 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:02.108 [EVENT] batch_packed step=11 batch_id=batch-main-00011-5f7dd1bd22a9 stage=foundation lanes=1addfcd3 util=0.8979 loss_tokens=1744 loss_before=5.2121 loss_after=5.26946
-2026-08-02T08:36:02.108 [EVENT] opus_decisions_recorded step=11 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:02.640 [EVENT] batch_packed step=12 batch_id=batch-main-00012-27494ac314d4 stage=foundation lanes=6f967b03 util=0.875 loss_tokens=1654 loss_before=5.29098 loss_after=5.35687
-2026-08-02T08:36:02.640 [EVENT] opus_decisions_recorded step=12 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:03.049 [EVENT] batch_packed step=13 batch_id=batch-main-00013-355fd6b102a2 stage=foundation lanes=5dfb77f5 util=0.9575 loss_tokens=1949 loss_before=5.27412 loss_after=5.26484
-2026-08-02T08:36:03.049 [EVENT] opus_decisions_recorded step=13 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:03.480 [EVENT] batch_packed step=14 batch_id=batch-main-00014-e36658a7431c stage=foundation lanes=6f967b03 util=0.9351 loss_tokens=1763 loss_before=5.38141 loss_after=5.29353
-2026-08-02T08:36:03.480 [EVENT] opus_decisions_recorded step=14 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:03.879 [EVENT] batch_packed step=15 batch_id=batch-main-00015-5a1e7d3a0a26 stage=foundation lanes=1addfcd3 util=0.8853 loss_tokens=1728 loss_before=5.24483 loss_after=5.11754
-2026-08-02T08:36:03.879 [EVENT] opus_decisions_recorded step=15 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:04.245 [EVENT] batch_packed step=16 batch_id=batch-main-00016-9e209dc12d63 stage=foundation lanes=9a28bcba util=0.9136 loss_tokens=1861 loss_before=5.09499 loss_after=4.98124
-2026-08-02T08:36:04.245 [EVENT] opus_decisions_recorded step=16 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
-2026-08-02T08:36:04.275 [EVENT] validation_eval step=16 mean_loss=7.03929 gradient_bearing=False
-2026-08-02T08:36:04.295 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0016 step=16 consumption_offset=80 param_hash=c6d8d979ba564e98
-2026-08-02T08:36:04.309 [INFO] opus_proxy_bound step=17 scoring_checkpoint_id=ckpt-main-0016 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:04.818 [INFO] token_trace_written step=17 tokens=102 pack_id=pack-agentic-structure_preserving-0003
-2026-08-02T08:36:04.818 [EVENT] batch_packed step=17 batch_id=batch-main-00017-5b71a0f4d097 stage=reasoning-heavy-midtrain lanes=6f967b03 util=0.9121 loss_tokens=1731 loss_before=5.07106 loss_after=4.99021
-2026-08-02T08:36:04.818 [EVENT] opus_decisions_recorded step=17 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:05.256 [EVENT] batch_packed step=18 batch_id=batch-main-00018-8f8d2eac8d81 stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.9834 loss_tokens=1918 loss_before=4.97059 loss_after=4.93532
-2026-08-02T08:36:05.256 [EVENT] opus_decisions_recorded step=18 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:05.699 [EVENT] batch_packed step=19 batch_id=batch-main-00019-c0a12f53b830 stage=reasoning-heavy-midtrain lanes=5ddc6595 util=0.8994 loss_tokens=1830 loss_before=4.93922 loss_after=4.91885
-2026-08-02T08:36:05.699 [EVENT] opus_decisions_recorded step=19 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:06.116 [EVENT] batch_packed step=20 batch_id=batch-main-00020-fa29b2d4b458 stage=reasoning-heavy-midtrain lanes=74fed567 util=0.9165 loss_tokens=1666 loss_before=4.96293 loss_after=4.94977
-2026-08-02T08:36:06.116 [EVENT] opus_decisions_recorded step=20 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:06.542 [EVENT] batch_packed step=21 batch_id=batch-main-00021-46fb5515eec3 stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.8916 loss_tokens=1740 loss_before=4.84794 loss_after=4.78761
-2026-08-02T08:36:06.542 [EVENT] opus_decisions_recorded step=21 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:06.902 [EVENT] batch_packed step=22 batch_id=batch-main-00022-b80fbabac5df stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.9243 loss_tokens=1797 loss_before=4.96686 loss_after=4.88295
-2026-08-02T08:36:06.902 [EVENT] opus_decisions_recorded step=22 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:07.252 [EVENT] batch_packed step=23 batch_id=batch-main-00023-0256514ceedc stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9023 loss_tokens=1709 loss_before=4.83416 loss_after=4.75601
-2026-08-02T08:36:07.252 [EVENT] opus_decisions_recorded step=23 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:07.609 [EVENT] batch_packed step=24 batch_id=batch-main-00024-e4bebb46159a stage=reasoning-heavy-midtrain lanes=3ec51f20 util=0.9336 loss_tokens=1767 loss_before=4.7985 loss_after=4.74959
-2026-08-02T08:36:07.609 [EVENT] opus_decisions_recorded step=24 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:07.638 [EVENT] validation_eval step=24 mean_loss=7.4938 gradient_bearing=False
-2026-08-02T08:36:07.656 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0024 step=24 consumption_offset=120 param_hash=107bbde451d89272
-2026-08-02T08:36:07.668 [INFO] opus_proxy_bound step=25 scoring_checkpoint_id=ckpt-main-0024 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:08.195 [INFO] token_trace_written step=25 tokens=202 pack_id=pack-code-best_fit-0009
-2026-08-02T08:36:08.195 [EVENT] batch_packed step=25 batch_id=batch-main-00025-73a43311fa7e stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.8994 loss_tokens=1747 loss_before=4.60352 loss_after=4.56157
-2026-08-02T08:36:08.195 [EVENT] opus_decisions_recorded step=25 candidates=16 accepted=3 rejected=6 deferred=7 protected_floor_overrides=0
-2026-08-02T08:36:08.647 [EVENT] batch_packed step=26 batch_id=batch-main-00026-d215d35d7a1e stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.8955 loss_tokens=1748 loss_before=4.68082 loss_after=4.64441
-2026-08-02T08:36:08.647 [EVENT] opus_decisions_recorded step=26 candidates=16 accepted=4 rejected=6 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:09.125 [EVENT] batch_packed step=27 batch_id=batch-main-00027-ce6423fe6cae stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9199 loss_tokens=1734 loss_before=4.63513 loss_after=4.5923
-2026-08-02T08:36:09.126 [EVENT] opus_decisions_recorded step=27 candidates=16 accepted=4 rejected=6 deferred=5 protected_floor_overrides=0
-2026-08-02T08:36:09.127 [EVENT] crash_simulated step=27 last_checkpoint=ckpt-main-0024 uncheckpointed_steps=3 exit_code=70
+2026-08-02T08:44:23.156 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0000 step=0
+2026-08-02T08:44:23.159 [INFO] run_started run_id=run-0001 branch=main until=48 crash_at=27
+2026-08-02T08:44:23.174 [INFO] opus_proxy_bound step=1 scoring_checkpoint_id=ckpt-main-0000 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:23.792 [INFO] token_trace_written step=1 tokens=202 pack_id=pack-code-best_fit-0009
+2026-08-02T08:44:23.792 [EVENT] batch_packed step=1 batch_id=batch-main-00001-75b00f22671e stage=foundation lanes=1addfcd3 util=0.9575 loss_tokens=1875 loss_before=6.24171 loss_after=6.20643
+2026-08-02T08:44:23.792 [EVENT] opus_decisions_recorded step=1 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:24.267 [EVENT] batch_packed step=2 batch_id=batch-main-00002-b5096466c1d3 stage=foundation lanes=57feef1a util=0.9414 loss_tokens=1859 loss_before=6.20973 loss_after=6.14203
+2026-08-02T08:44:24.267 [EVENT] opus_decisions_recorded step=2 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:24.811 [EVENT] batch_packed step=3 batch_id=batch-main-00003-f322aa7250ba stage=foundation lanes=1addfcd3 util=0.9287 loss_tokens=1816 loss_before=6.14064 loss_after=6.04365
+2026-08-02T08:44:24.811 [EVENT] opus_decisions_recorded step=3 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:25.324 [EVENT] batch_packed step=4 batch_id=batch-main-00004-4d05c62f68b5 stage=foundation lanes=02675324 util=0.9155 loss_tokens=1780 loss_before=6.04576 loss_after=5.92592
+2026-08-02T08:44:25.326 [EVENT] opus_decisions_recorded step=4 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:25.762 [EVENT] batch_packed step=5 batch_id=batch-main-00005-1cf793aedf7f stage=foundation lanes=9a28bcba util=0.9438 loss_tokens=1922 loss_before=5.91712 loss_after=5.77276
+2026-08-02T08:44:25.762 [EVENT] opus_decisions_recorded step=5 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:26.183 [EVENT] batch_packed step=6 batch_id=batch-main-00006-f5ce8113ce50 stage=foundation lanes=6f967b03 util=0.9438 loss_tokens=1787 loss_before=5.79726 loss_after=5.64681
+2026-08-02T08:44:26.183 [EVENT] opus_decisions_recorded step=6 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:26.541 [EVENT] batch_packed step=7 batch_id=batch-main-00007-19033b869101 stage=foundation lanes=9a28bcba util=0.939 loss_tokens=1912 loss_before=5.6109 loss_after=5.44475
+2026-08-02T08:44:26.541 [EVENT] opus_decisions_recorded step=7 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:26.913 [EVENT] batch_packed step=8 batch_id=batch-main-00008-9e19258afd11 stage=foundation lanes=1addfcd3 util=0.96 loss_tokens=1872 loss_before=5.4539 loss_after=5.30405
+2026-08-02T08:44:26.913 [EVENT] opus_decisions_recorded step=8 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:26.956 [EVENT] validation_eval step=8 mean_loss=6.32268 gradient_bearing=False
+2026-08-02T08:44:26.975 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0008 step=8 consumption_offset=40 param_hash=39bd5259d257a3d3
+2026-08-02T08:44:26.991 [INFO] opus_proxy_bound step=9 scoring_checkpoint_id=ckpt-main-0008 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:27.498 [INFO] token_trace_written step=9 tokens=91 pack_id=pack-agentic-structure_preserving-0013
+2026-08-02T08:44:27.498 [EVENT] batch_packed step=9 batch_id=batch-main-00009-5db8e722d06b stage=foundation lanes=6f967b03 util=0.9053 loss_tokens=1717 loss_before=5.36072 loss_after=5.2693
+2026-08-02T08:44:27.498 [EVENT] opus_decisions_recorded step=9 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:27.989 [EVENT] batch_packed step=10 batch_id=batch-main-00010-f4eb8842ba35 stage=foundation lanes=9a28bcba util=0.9224 loss_tokens=1879 loss_before=5.25301 loss_after=5.23839
+2026-08-02T08:44:27.989 [EVENT] opus_decisions_recorded step=10 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:28.521 [EVENT] batch_packed step=11 batch_id=batch-main-00011-5f7dd1bd22a9 stage=foundation lanes=1addfcd3 util=0.8979 loss_tokens=1744 loss_before=5.2121 loss_after=5.26946
+2026-08-02T08:44:28.521 [EVENT] opus_decisions_recorded step=11 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:29.004 [EVENT] batch_packed step=12 batch_id=batch-main-00012-27494ac314d4 stage=foundation lanes=6f967b03 util=0.875 loss_tokens=1654 loss_before=5.29098 loss_after=5.35687
+2026-08-02T08:44:29.004 [EVENT] opus_decisions_recorded step=12 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:29.399 [EVENT] batch_packed step=13 batch_id=batch-main-00013-355fd6b102a2 stage=foundation lanes=5dfb77f5 util=0.9575 loss_tokens=1949 loss_before=5.27412 loss_after=5.26484
+2026-08-02T08:44:29.399 [EVENT] opus_decisions_recorded step=13 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:29.792 [EVENT] batch_packed step=14 batch_id=batch-main-00014-e36658a7431c stage=foundation lanes=6f967b03 util=0.9351 loss_tokens=1763 loss_before=5.38141 loss_after=5.29353
+2026-08-02T08:44:29.792 [EVENT] opus_decisions_recorded step=14 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:30.267 [EVENT] batch_packed step=15 batch_id=batch-main-00015-5a1e7d3a0a26 stage=foundation lanes=1addfcd3 util=0.8853 loss_tokens=1728 loss_before=5.24483 loss_after=5.11754
+2026-08-02T08:44:30.267 [EVENT] opus_decisions_recorded step=15 candidates=16 accepted=8 rejected=8 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:30.703 [EVENT] batch_packed step=16 batch_id=batch-main-00016-9e209dc12d63 stage=foundation lanes=9a28bcba util=0.9136 loss_tokens=1861 loss_before=5.09499 loss_after=4.98124
+2026-08-02T08:44:30.703 [EVENT] opus_decisions_recorded step=16 candidates=15 accepted=8 rejected=7 deferred=0 protected_floor_overrides=0
+2026-08-02T08:44:30.749 [EVENT] validation_eval step=16 mean_loss=7.03929 gradient_bearing=False
+2026-08-02T08:44:30.774 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0016 step=16 consumption_offset=80 param_hash=c6d8d979ba564e98
+2026-08-02T08:44:30.791 [INFO] opus_proxy_bound step=17 scoring_checkpoint_id=ckpt-main-0016 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:31.417 [INFO] token_trace_written step=17 tokens=102 pack_id=pack-agentic-structure_preserving-0003
+2026-08-02T08:44:31.417 [EVENT] batch_packed step=17 batch_id=batch-main-00017-5b71a0f4d097 stage=reasoning-heavy-midtrain lanes=6f967b03 util=0.9121 loss_tokens=1731 loss_before=5.07106 loss_after=4.99021
+2026-08-02T08:44:31.418 [EVENT] opus_decisions_recorded step=17 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:31.940 [EVENT] batch_packed step=18 batch_id=batch-main-00018-8f8d2eac8d81 stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.9834 loss_tokens=1918 loss_before=4.97059 loss_after=4.93532
+2026-08-02T08:44:31.940 [EVENT] opus_decisions_recorded step=18 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:32.413 [EVENT] batch_packed step=19 batch_id=batch-main-00019-c0a12f53b830 stage=reasoning-heavy-midtrain lanes=5ddc6595 util=0.8994 loss_tokens=1830 loss_before=4.93922 loss_after=4.91885
+2026-08-02T08:44:32.414 [EVENT] opus_decisions_recorded step=19 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:32.873 [EVENT] batch_packed step=20 batch_id=batch-main-00020-fa29b2d4b458 stage=reasoning-heavy-midtrain lanes=74fed567 util=0.9165 loss_tokens=1666 loss_before=4.96293 loss_after=4.94977
+2026-08-02T08:44:32.873 [EVENT] opus_decisions_recorded step=20 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:33.267 [EVENT] batch_packed step=21 batch_id=batch-main-00021-46fb5515eec3 stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.8916 loss_tokens=1740 loss_before=4.84794 loss_after=4.78761
+2026-08-02T08:44:33.267 [EVENT] opus_decisions_recorded step=21 candidates=16 accepted=5 rejected=5 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:33.624 [EVENT] batch_packed step=22 batch_id=batch-main-00022-b80fbabac5df stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.9243 loss_tokens=1797 loss_before=4.96686 loss_after=4.88295
+2026-08-02T08:44:33.624 [EVENT] opus_decisions_recorded step=22 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:33.986 [EVENT] batch_packed step=23 batch_id=batch-main-00023-0256514ceedc stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9023 loss_tokens=1709 loss_before=4.83416 loss_after=4.75601
+2026-08-02T08:44:33.986 [EVENT] opus_decisions_recorded step=23 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:34.339 [EVENT] batch_packed step=24 batch_id=batch-main-00024-e4bebb46159a stage=reasoning-heavy-midtrain lanes=3ec51f20 util=0.9336 loss_tokens=1767 loss_before=4.7985 loss_after=4.74959
+2026-08-02T08:44:34.339 [EVENT] opus_decisions_recorded step=24 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:34.367 [EVENT] validation_eval step=24 mean_loss=7.4938 gradient_bearing=False
+2026-08-02T08:44:34.375 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0024 step=24 consumption_offset=120 param_hash=107bbde451d89272
+2026-08-02T08:44:34.393 [INFO] opus_proxy_bound step=25 scoring_checkpoint_id=ckpt-main-0024 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:34.941 [INFO] token_trace_written step=25 tokens=202 pack_id=pack-code-best_fit-0009
+2026-08-02T08:44:34.941 [EVENT] batch_packed step=25 batch_id=batch-main-00025-73a43311fa7e stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.8994 loss_tokens=1747 loss_before=4.60352 loss_after=4.56157
+2026-08-02T08:44:34.941 [EVENT] opus_decisions_recorded step=25 candidates=16 accepted=3 rejected=6 deferred=7 protected_floor_overrides=0
+2026-08-02T08:44:35.400 [EVENT] batch_packed step=26 batch_id=batch-main-00026-d215d35d7a1e stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.8955 loss_tokens=1748 loss_before=4.68082 loss_after=4.64441
+2026-08-02T08:44:35.400 [EVENT] opus_decisions_recorded step=26 candidates=16 accepted=4 rejected=6 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:35.863 [EVENT] batch_packed step=27 batch_id=batch-main-00027-ce6423fe6cae stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9199 loss_tokens=1734 loss_before=4.63513 loss_after=4.5923
+2026-08-02T08:44:35.863 [EVENT] opus_decisions_recorded step=27 candidates=16 accepted=4 rejected=6 deferred=5 protected_floor_overrides=0
+2026-08-02T08:44:35.863 [EVENT] crash_simulated step=27 last_checkpoint=ckpt-main-0024 uncheckpointed_steps=3 exit_code=70
 
 ==============================================================================
 == PHASE 9 - CRASH RECOVERY / RESUME
 ==============================================================================
-2026-08-02T08:36:09.578 [EVENT] run_resumed checkpoint_id=ckpt-main-0024 restored_step=24 next_step=25 param_hash=107bbde451d89272 consumption_offset=120
-2026-08-02T08:36:09.639 [PASS] ledger_chain_verified_at_checkpoint offsets={"consumption":120,"control":6,"firewall":24,"learning":192,"opus":378,"token_trace":395}
-2026-08-02T08:36:09.645 [EVENT] uncommitted_records_found records=15 steps=[25,26,27] expected_next_batch_id=batch-main-00025-73a43311fa7e
-2026-08-02T08:36:09.645 [EVENT] ledger_rollback_recorded superseded={"consumption":15,"control":2,"firewall":3,"learning":24,"opus":48,"token_trace":202} reason=crash_recovery
-2026-08-02T08:36:09.658 [INFO] opus_proxy_bound step=25 scoring_checkpoint_id=ckpt-main-0024 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:09.763 [PASS] resume_next_batch_matched expected_batch_id=batch-main-00025-73a43311fa7e resumed_batch_id=batch-main-00025-73a43311fa7e expected_token_hash=a139da33cdd26e35 resumed_token_hash=a139da33cdd26e35
-2026-08-02T08:36:10.211 [INFO] token_trace_written step=25 tokens=202 pack_id=pack-code-best_fit-0009
-2026-08-02T08:36:10.211 [EVENT] batch_packed step=25 batch_id=batch-main-00025-73a43311fa7e stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.8994 loss_tokens=1747 loss_before=4.60352 loss_after=4.56157
-2026-08-02T08:36:10.211 [EVENT] opus_decisions_recorded step=25 candidates=16 accepted=3 rejected=6 deferred=7 protected_floor_overrides=0
-2026-08-02T08:36:10.670 [EVENT] batch_packed step=26 batch_id=batch-main-00026-d215d35d7a1e stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.8955 loss_tokens=1748 loss_before=4.68082 loss_after=4.64441
-2026-08-02T08:36:10.671 [EVENT] opus_decisions_recorded step=26 candidates=16 accepted=4 rejected=6 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:11.116 [EVENT] batch_packed step=27 batch_id=batch-main-00027-ce6423fe6cae stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9199 loss_tokens=1734 loss_before=4.63513 loss_after=4.5923
-2026-08-02T08:36:11.116 [EVENT] opus_decisions_recorded step=27 candidates=16 accepted=4 rejected=6 deferred=5 protected_floor_overrides=0
-2026-08-02T08:36:11.548 [EVENT] batch_packed step=28 batch_id=batch-main-00028-027f98bf98d4 stage=reasoning-heavy-midtrain lanes=74fed567 util=0.9229 loss_tokens=1673 loss_before=4.61393 loss_after=4.56745
-2026-08-02T08:36:11.548 [EVENT] opus_decisions_recorded step=28 candidates=16 accepted=5 rejected=7 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:11.959 [EVENT] batch_packed step=29 batch_id=batch-main-00029-217d6acc2518 stage=reasoning-heavy-midtrain lanes=5ddc6595 util=0.9761 loss_tokens=1987 loss_before=4.55012 loss_after=4.5079
-2026-08-02T08:36:11.959 [EVENT] opus_decisions_recorded step=29 candidates=16 accepted=3 rejected=6 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:12.347 [EVENT] batch_packed step=30 batch_id=batch-main-00030-3961be0fbaed stage=reasoning-heavy-midtrain lanes=4ceba552 util=0.8823 loss_tokens=1637 loss_before=4.43247 loss_after=4.38108
-2026-08-02T08:36:12.347 [EVENT] opus_decisions_recorded step=30 candidates=16 accepted=4 rejected=6 deferred=5 protected_floor_overrides=0
-2026-08-02T08:36:12.713 [EVENT] batch_packed step=31 batch_id=batch-main-00031-82e498e42e22 stage=reasoning-heavy-midtrain lanes=3ec51f20 util=0.8696 loss_tokens=1640 loss_before=4.51781 loss_after=4.48359
-2026-08-02T08:36:12.713 [EVENT] opus_decisions_recorded step=31 candidates=16 accepted=5 rejected=7 deferred=2 protected_floor_overrides=0
-2026-08-02T08:36:13.089 [EVENT] batch_packed step=32 batch_id=batch-main-00032-c2d1aed4de49 stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9141 loss_tokens=1729 loss_before=4.44155 loss_after=4.42157
-2026-08-02T08:36:13.089 [EVENT] opus_decisions_recorded step=32 candidates=16 accepted=4 rejected=6 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:13.121 [EVENT] validation_eval step=32 mean_loss=5.70258 gradient_bearing=False
-2026-08-02T08:36:13.143 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0032 step=32 consumption_offset=175 param_hash=3cfe17caef0943a7
-2026-08-02T08:36:13.158 [INFO] opus_proxy_bound step=33 scoring_checkpoint_id=ckpt-main-0032 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:13.761 [INFO] token_trace_written step=33 tokens=234 pack_id=pack-code-best_fit-0001
-2026-08-02T08:36:13.761 [EVENT] batch_packed step=33 batch_id=batch-main-00033-abf4b517b5ee stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.9775 loss_tokens=1916 loss_before=4.39302 loss_after=4.33647
-2026-08-02T08:36:13.761 [EVENT] opus_decisions_recorded step=33 candidates=16 accepted=2 rejected=5 deferred=6 protected_floor_overrides=1
-2026-08-02T08:36:14.212 [EVENT] batch_packed step=34 batch_id=batch-main-00034-77b28969768e stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.8823 loss_tokens=1720 loss_before=4.4198 loss_after=4.38342
-2026-08-02T08:36:14.212 [EVENT] opus_decisions_recorded step=34 candidates=16 accepted=3 rejected=5 deferred=5 protected_floor_overrides=1
-2026-08-02T08:36:14.663 [EVENT] batch_packed step=35 batch_id=batch-main-00035-c334cfc6d04b stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.8613 loss_tokens=1618 loss_before=4.42767 loss_after=4.42844
-2026-08-02T08:36:14.663 [EVENT] opus_decisions_recorded step=35 candidates=16 accepted=3 rejected=4 deferred=7 protected_floor_overrides=1
-2026-08-02T08:36:15.106 [EVENT] batch_packed step=36 batch_id=batch-main-00036-e8f35a0e3741 stage=reasoning-heavy-midtrain lanes=e695045f util=0.9668 loss_tokens=1813 loss_before=4.35731 loss_after=4.37528
-2026-08-02T08:36:15.106 [EVENT] opus_decisions_recorded step=36 candidates=16 accepted=3 rejected=5 deferred=4 protected_floor_overrides=2
-2026-08-02T08:36:15.530 [EVENT] batch_packed step=37 batch_id=batch-main-00037-4ee84e76f160 stage=anneal lanes=4ca00c5b util=0.9307 loss_tokens=1751 loss_before=4.1979 loss_after=4.15562
-2026-08-02T08:36:15.530 [EVENT] opus_decisions_recorded step=37 candidates=16 accepted=2 rejected=5 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:15.899 [EVENT] batch_packed step=38 batch_id=batch-main-00038-145e08e7d58f stage=anneal lanes=9c083d75 util=0.8872 loss_tokens=1732 loss_before=4.53558 loss_after=4.52716
-2026-08-02T08:36:15.899 [EVENT] opus_decisions_recorded step=38 candidates=16 accepted=4 rejected=5 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:16.239 [EVENT] batch_packed step=39 batch_id=batch-main-00039-f17139e8ae00 stage=anneal lanes=d8a701bb util=0.8535 loss_tokens=1604 loss_before=4.39078 loss_after=4.27111
-2026-08-02T08:36:16.239 [EVENT] opus_decisions_recorded step=39 candidates=16 accepted=4 rejected=5 deferred=5 protected_floor_overrides=0
-2026-08-02T08:36:16.606 [EVENT] batch_packed step=40 batch_id=batch-main-00040-b71ed109476e stage=anneal lanes=940dbe3b util=0.8662 loss_tokens=1567 loss_before=4.37766 loss_after=4.40841
-2026-08-02T08:36:16.606 [EVENT] opus_decisions_recorded step=40 candidates=16 accepted=5 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:16.648 [EVENT] validation_eval step=40 mean_loss=6.54018 gradient_bearing=False
-2026-08-02T08:36:16.664 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0040 step=40 consumption_offset=215 param_hash=497f1fce681827dd
-2026-08-02T08:36:16.677 [INFO] opus_proxy_bound step=41 scoring_checkpoint_id=ckpt-main-0040 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:17.155 [INFO] token_trace_written step=41 tokens=96 pack_id=pack-agentic-structure_preserving-0018
-2026-08-02T08:36:17.156 [EVENT] batch_packed step=41 batch_id=batch-main-00041-e2f3c4943d4a stage=anneal lanes=d8a701bb util=0.9155 loss_tokens=1743 loss_before=4.32943 loss_after=4.28611
-2026-08-02T08:36:17.156 [EVENT] opus_decisions_recorded step=41 candidates=16 accepted=3 rejected=7 deferred=2 protected_floor_overrides=0
-2026-08-02T08:36:17.591 [EVENT] batch_packed step=42 batch_id=batch-main-00042-81a42579bf53 stage=anneal lanes=f5341093 util=0.8535 loss_tokens=1534 loss_before=4.45202 loss_after=4.41058
-2026-08-02T08:36:17.591 [EVENT] opus_decisions_recorded step=42 candidates=16 accepted=5 rejected=7 deferred=2 protected_floor_overrides=0
-2026-08-02T08:36:18.025 [EVENT] batch_packed step=43 batch_id=batch-main-00043-d9dcb54c890a stage=anneal lanes=e9b489cc util=0.9009 loss_tokens=1749 loss_before=4.26014 loss_after=4.23619
-2026-08-02T08:36:18.025 [EVENT] opus_decisions_recorded step=43 candidates=16 accepted=2 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:18.465 [EVENT] batch_packed step=44 batch_id=batch-main-00044-e9bd60ea207c stage=anneal lanes=940dbe3b util=0.8374 loss_tokens=1514 loss_before=4.26041 loss_after=4.24031
-2026-08-02T08:36:18.465 [EVENT] opus_decisions_recorded step=44 candidates=16 accepted=4 rejected=4 deferred=6 protected_floor_overrides=0
-2026-08-02T08:36:18.854 [EVENT] batch_packed step=45 batch_id=batch-main-00045-e2eb52941e8f stage=anneal lanes=86b27d10 util=0.9253 loss_tokens=1761 loss_before=4.4268 loss_after=4.40672
-2026-08-02T08:36:18.855 [EVENT] opus_decisions_recorded step=45 candidates=16 accepted=3 rejected=6 deferred=3 protected_floor_overrides=1
-2026-08-02T08:36:19.238 [EVENT] batch_packed step=46 batch_id=batch-main-00046-11c7f97e61bb stage=anneal lanes=d8a701bb util=0.9072 loss_tokens=1716 loss_before=4.18658 loss_after=4.16166
-2026-08-02T08:36:19.238 [EVENT] opus_decisions_recorded step=46 candidates=16 accepted=2 rejected=6 deferred=3 protected_floor_overrides=1
-2026-08-02T08:36:19.597 [EVENT] batch_packed step=47 batch_id=batch-main-00047-d99fbf06fdaa stage=anneal lanes=940dbe3b util=0.8652 loss_tokens=1542 loss_before=4.20317 loss_after=4.16925
-2026-08-02T08:36:19.597 [EVENT] opus_decisions_recorded step=47 candidates=16 accepted=3 rejected=4 deferred=6 protected_floor_overrides=1
-2026-08-02T08:36:19.960 [EVENT] batch_packed step=48 batch_id=batch-main-00048-d9025aac5f16 stage=anneal lanes=1092f391 util=0.8945 loss_tokens=1749 loss_before=4.29743 loss_after=4.27607
-2026-08-02T08:36:19.960 [EVENT] opus_decisions_recorded step=48 candidates=16 accepted=2 rejected=6 deferred=3 protected_floor_overrides=1
-2026-08-02T08:36:19.989 [EVENT] validation_eval step=48 mean_loss=4.79796 gradient_bearing=False
-2026-08-02T08:36:20.009 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0048 step=48 consumption_offset=255 param_hash=d6bbdfeb8eab432b
-2026-08-02T08:36:20.010 [PASS] no_skipped_or_repeated_batches effective_steps=48 expected=48 duplicates=[] missing=[]
+2026-08-02T08:44:36.374 [EVENT] run_resumed checkpoint_id=ckpt-main-0024 restored_step=24 next_step=25 param_hash=107bbde451d89272 consumption_offset=120
+2026-08-02T08:44:36.441 [PASS] ledger_chain_verified_at_checkpoint offsets={"consumption":120,"control":6,"firewall":24,"learning":192,"opus":378,"token_trace":395}
+2026-08-02T08:44:36.441 [EVENT] uncommitted_records_found records=15 steps=[25,26,27] expected_next_batch_id=batch-main-00025-73a43311fa7e
+2026-08-02T08:44:36.441 [EVENT] ledger_rollback_recorded superseded={"consumption":15,"control":2,"firewall":3,"learning":24,"opus":48,"token_trace":202} reason=crash_recovery
+2026-08-02T08:44:36.459 [INFO] opus_proxy_bound step=25 scoring_checkpoint_id=ckpt-main-0024 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:36.574 [PASS] resume_next_batch_matched expected_batch_id=batch-main-00025-73a43311fa7e resumed_batch_id=batch-main-00025-73a43311fa7e expected_token_hash=a139da33cdd26e35 resumed_token_hash=a139da33cdd26e35
+2026-08-02T08:44:37.044 [INFO] token_trace_written step=25 tokens=202 pack_id=pack-code-best_fit-0009
+2026-08-02T08:44:37.044 [EVENT] batch_packed step=25 batch_id=batch-main-00025-73a43311fa7e stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.8994 loss_tokens=1747 loss_before=4.60352 loss_after=4.56157
+2026-08-02T08:44:37.044 [EVENT] opus_decisions_recorded step=25 candidates=16 accepted=3 rejected=6 deferred=7 protected_floor_overrides=0
+2026-08-02T08:44:37.473 [EVENT] batch_packed step=26 batch_id=batch-main-00026-d215d35d7a1e stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.8955 loss_tokens=1748 loss_before=4.68082 loss_after=4.64441
+2026-08-02T08:44:37.473 [EVENT] opus_decisions_recorded step=26 candidates=16 accepted=4 rejected=6 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:37.894 [EVENT] batch_packed step=27 batch_id=batch-main-00027-ce6423fe6cae stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9199 loss_tokens=1734 loss_before=4.63513 loss_after=4.5923
+2026-08-02T08:44:37.894 [EVENT] opus_decisions_recorded step=27 candidates=16 accepted=4 rejected=6 deferred=5 protected_floor_overrides=0
+2026-08-02T08:44:38.298 [EVENT] batch_packed step=28 batch_id=batch-main-00028-027f98bf98d4 stage=reasoning-heavy-midtrain lanes=74fed567 util=0.9229 loss_tokens=1673 loss_before=4.61393 loss_after=4.56745
+2026-08-02T08:44:38.299 [EVENT] opus_decisions_recorded step=28 candidates=16 accepted=5 rejected=7 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:38.673 [EVENT] batch_packed step=29 batch_id=batch-main-00029-217d6acc2518 stage=reasoning-heavy-midtrain lanes=5ddc6595 util=0.9761 loss_tokens=1987 loss_before=4.55012 loss_after=4.5079
+2026-08-02T08:44:38.673 [EVENT] opus_decisions_recorded step=29 candidates=16 accepted=3 rejected=6 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:39.035 [EVENT] batch_packed step=30 batch_id=batch-main-00030-3961be0fbaed stage=reasoning-heavy-midtrain lanes=4ceba552 util=0.8823 loss_tokens=1637 loss_before=4.43247 loss_after=4.38108
+2026-08-02T08:44:39.036 [EVENT] opus_decisions_recorded step=30 candidates=16 accepted=4 rejected=6 deferred=5 protected_floor_overrides=0
+2026-08-02T08:44:39.451 [EVENT] batch_packed step=31 batch_id=batch-main-00031-82e498e42e22 stage=reasoning-heavy-midtrain lanes=3ec51f20 util=0.8696 loss_tokens=1640 loss_before=4.51781 loss_after=4.48359
+2026-08-02T08:44:39.451 [EVENT] opus_decisions_recorded step=31 candidates=16 accepted=5 rejected=7 deferred=2 protected_floor_overrides=0
+2026-08-02T08:44:39.840 [EVENT] batch_packed step=32 batch_id=batch-main-00032-c2d1aed4de49 stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9141 loss_tokens=1729 loss_before=4.44155 loss_after=4.42157
+2026-08-02T08:44:39.841 [EVENT] opus_decisions_recorded step=32 candidates=16 accepted=4 rejected=6 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:39.879 [EVENT] validation_eval step=32 mean_loss=5.70258 gradient_bearing=False
+2026-08-02T08:44:39.905 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0032 step=32 consumption_offset=175 param_hash=3cfe17caef0943a7
+2026-08-02T08:44:39.919 [INFO] opus_proxy_bound step=33 scoring_checkpoint_id=ckpt-main-0032 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:40.522 [INFO] token_trace_written step=33 tokens=234 pack_id=pack-code-best_fit-0001
+2026-08-02T08:44:40.522 [EVENT] batch_packed step=33 batch_id=batch-main-00033-abf4b517b5ee stage=reasoning-heavy-midtrain lanes=1addfcd3 util=0.9775 loss_tokens=1916 loss_before=4.39302 loss_after=4.33647
+2026-08-02T08:44:40.522 [EVENT] opus_decisions_recorded step=33 candidates=16 accepted=2 rejected=5 deferred=6 protected_floor_overrides=1
+2026-08-02T08:44:41.137 [EVENT] batch_packed step=34 batch_id=batch-main-00034-77b28969768e stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.8823 loss_tokens=1720 loss_before=4.4198 loss_after=4.38342
+2026-08-02T08:44:41.137 [EVENT] opus_decisions_recorded step=34 candidates=16 accepted=3 rejected=5 deferred=5 protected_floor_overrides=1
+2026-08-02T08:44:41.631 [EVENT] batch_packed step=35 batch_id=batch-main-00035-c334cfc6d04b stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.8613 loss_tokens=1618 loss_before=4.42767 loss_after=4.42844
+2026-08-02T08:44:41.631 [EVENT] opus_decisions_recorded step=35 candidates=16 accepted=3 rejected=4 deferred=7 protected_floor_overrides=1
+2026-08-02T08:44:42.072 [EVENT] batch_packed step=36 batch_id=batch-main-00036-e8f35a0e3741 stage=reasoning-heavy-midtrain lanes=e695045f util=0.9668 loss_tokens=1813 loss_before=4.35731 loss_after=4.37528
+2026-08-02T08:44:42.072 [EVENT] opus_decisions_recorded step=36 candidates=16 accepted=3 rejected=5 deferred=4 protected_floor_overrides=2
+2026-08-02T08:44:42.505 [EVENT] batch_packed step=37 batch_id=batch-main-00037-4ee84e76f160 stage=anneal lanes=4ca00c5b util=0.9307 loss_tokens=1751 loss_before=4.1979 loss_after=4.15562
+2026-08-02T08:44:42.505 [EVENT] opus_decisions_recorded step=37 candidates=16 accepted=2 rejected=5 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:43.191 [EVENT] batch_packed step=38 batch_id=batch-main-00038-145e08e7d58f stage=anneal lanes=9c083d75 util=0.8872 loss_tokens=1732 loss_before=4.53558 loss_after=4.52716
+2026-08-02T08:44:43.191 [EVENT] opus_decisions_recorded step=38 candidates=16 accepted=4 rejected=5 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:43.878 [EVENT] batch_packed step=39 batch_id=batch-main-00039-f17139e8ae00 stage=anneal lanes=d8a701bb util=0.8535 loss_tokens=1604 loss_before=4.39078 loss_after=4.27111
+2026-08-02T08:44:43.878 [EVENT] opus_decisions_recorded step=39 candidates=16 accepted=4 rejected=5 deferred=5 protected_floor_overrides=0
+2026-08-02T08:44:44.364 [EVENT] batch_packed step=40 batch_id=batch-main-00040-b71ed109476e stage=anneal lanes=940dbe3b util=0.8662 loss_tokens=1567 loss_before=4.37766 loss_after=4.40841
+2026-08-02T08:44:44.364 [EVENT] opus_decisions_recorded step=40 candidates=16 accepted=5 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:44.402 [EVENT] validation_eval step=40 mean_loss=6.54018 gradient_bearing=False
+2026-08-02T08:44:44.442 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0040 step=40 consumption_offset=215 param_hash=497f1fce681827dd
+2026-08-02T08:44:44.465 [INFO] opus_proxy_bound step=41 scoring_checkpoint_id=ckpt-main-0040 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:45.410 [INFO] token_trace_written step=41 tokens=96 pack_id=pack-agentic-structure_preserving-0018
+2026-08-02T08:44:45.410 [EVENT] batch_packed step=41 batch_id=batch-main-00041-e2f3c4943d4a stage=anneal lanes=d8a701bb util=0.9155 loss_tokens=1743 loss_before=4.32943 loss_after=4.28611
+2026-08-02T08:44:45.410 [EVENT] opus_decisions_recorded step=41 candidates=16 accepted=3 rejected=7 deferred=2 protected_floor_overrides=0
+2026-08-02T08:44:46.715 [EVENT] batch_packed step=42 batch_id=batch-main-00042-81a42579bf53 stage=anneal lanes=f5341093 util=0.8535 loss_tokens=1534 loss_before=4.45202 loss_after=4.41058
+2026-08-02T08:44:46.715 [EVENT] opus_decisions_recorded step=42 candidates=16 accepted=5 rejected=7 deferred=2 protected_floor_overrides=0
+2026-08-02T08:44:48.048 [EVENT] batch_packed step=43 batch_id=batch-main-00043-d9dcb54c890a stage=anneal lanes=e9b489cc util=0.9009 loss_tokens=1749 loss_before=4.26014 loss_after=4.23619
+2026-08-02T08:44:48.049 [EVENT] opus_decisions_recorded step=43 candidates=16 accepted=2 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:48.787 [EVENT] batch_packed step=44 batch_id=batch-main-00044-e9bd60ea207c stage=anneal lanes=940dbe3b util=0.8374 loss_tokens=1514 loss_before=4.26041 loss_after=4.24031
+2026-08-02T08:44:48.787 [EVENT] opus_decisions_recorded step=44 candidates=16 accepted=4 rejected=4 deferred=6 protected_floor_overrides=0
+2026-08-02T08:44:49.597 [EVENT] batch_packed step=45 batch_id=batch-main-00045-e2eb52941e8f stage=anneal lanes=86b27d10 util=0.9253 loss_tokens=1761 loss_before=4.4268 loss_after=4.40672
+2026-08-02T08:44:49.597 [EVENT] opus_decisions_recorded step=45 candidates=16 accepted=3 rejected=6 deferred=3 protected_floor_overrides=1
+2026-08-02T08:44:50.296 [EVENT] batch_packed step=46 batch_id=batch-main-00046-11c7f97e61bb stage=anneal lanes=d8a701bb util=0.9072 loss_tokens=1716 loss_before=4.18658 loss_after=4.16166
+2026-08-02T08:44:50.297 [EVENT] opus_decisions_recorded step=46 candidates=16 accepted=2 rejected=6 deferred=3 protected_floor_overrides=1
+2026-08-02T08:44:50.864 [EVENT] batch_packed step=47 batch_id=batch-main-00047-d99fbf06fdaa stage=anneal lanes=940dbe3b util=0.8652 loss_tokens=1542 loss_before=4.20317 loss_after=4.16925
+2026-08-02T08:44:50.865 [EVENT] opus_decisions_recorded step=47 candidates=16 accepted=3 rejected=4 deferred=6 protected_floor_overrides=1
+2026-08-02T08:44:51.357 [EVENT] batch_packed step=48 batch_id=batch-main-00048-d9025aac5f16 stage=anneal lanes=1092f391 util=0.8945 loss_tokens=1749 loss_before=4.29743 loss_after=4.27607
+2026-08-02T08:44:51.357 [EVENT] opus_decisions_recorded step=48 candidates=16 accepted=2 rejected=6 deferred=3 protected_floor_overrides=1
+2026-08-02T08:44:51.393 [EVENT] validation_eval step=48 mean_loss=4.79796 gradient_bearing=False
+2026-08-02T08:44:51.414 [PASS] checkpoint_saved checkpoint_id=ckpt-main-0048 step=48 consumption_offset=255 param_hash=d6bbdfeb8eab432b
+2026-08-02T08:44:51.428 [PASS] no_skipped_or_repeated_batches effective_steps=48 expected=48 duplicates=[] missing=[]
 
 ==============================================================================
 == PHASE 10 - REPLAY OF HISTORICAL DATA STREAM
 ==============================================================================
-2026-08-02T08:36:21.210 [EVENT] replay_step step=9 batch_id=batch-main-00009-5db8e722d06b match=True
-2026-08-02T08:36:21.323 [EVENT] replay_step step=10 batch_id=batch-main-00010-f4eb8842ba35 match=True
-2026-08-02T08:36:21.429 [EVENT] replay_step step=11 batch_id=batch-main-00011-5f7dd1bd22a9 match=True
-2026-08-02T08:36:21.542 [EVENT] replay_step step=12 batch_id=batch-main-00012-27494ac314d4 match=True
-2026-08-02T08:36:21.589 [EVENT] replay_step step=13 batch_id=batch-main-00013-355fd6b102a2 match=True
-2026-08-02T08:36:21.639 [EVENT] replay_step step=14 batch_id=batch-main-00014-e36658a7431c match=True
-2026-08-02T08:36:21.672 [EVENT] replay_step step=15 batch_id=batch-main-00015-5a1e7d3a0a26 match=True
-2026-08-02T08:36:21.688 [EVENT] replay_step step=16 batch_id=batch-main-00016-9e209dc12d63 match=True
-2026-08-02T08:36:21.689 [PASS] replay_hash_matched interval=9..16 steps=8 mismatches=[]
+2026-08-02T08:44:52.802 [EVENT] replay_step step=9 batch_id=batch-main-00009-5db8e722d06b match=True
+2026-08-02T08:44:53.017 [EVENT] replay_step step=10 batch_id=batch-main-00010-f4eb8842ba35 match=True
+2026-08-02T08:44:53.162 [EVENT] replay_step step=11 batch_id=batch-main-00011-5f7dd1bd22a9 match=True
+2026-08-02T08:44:53.286 [EVENT] replay_step step=12 batch_id=batch-main-00012-27494ac314d4 match=True
+2026-08-02T08:44:53.348 [EVENT] replay_step step=13 batch_id=batch-main-00013-355fd6b102a2 match=True
+2026-08-02T08:44:53.411 [EVENT] replay_step step=14 batch_id=batch-main-00014-e36658a7431c match=True
+2026-08-02T08:44:53.446 [EVENT] replay_step step=15 batch_id=batch-main-00015-5a1e7d3a0a26 match=True
+2026-08-02T08:44:53.461 [EVENT] replay_step step=16 batch_id=batch-main-00016-9e209dc12d63 match=True
+2026-08-02T08:44:53.462 [PASS] replay_hash_matched interval=9..16 steps=8 mismatches=[]
 
 ==============================================================================
 == PHASE 11 - FORK FROM AN EARLIER CHECKPOINT
 ==============================================================================
-2026-08-02T08:36:22.091 [EVENT] branch_forked parent_branch=main parent_checkpoint=ckpt-main-0016 fork_step=16 new_branch=fork-a seed=20260809 mixture_override={"general_web":0.2,"reasoning":0.22} inherited_param_hash=c6d8d979ba564e98
-2026-08-02T08:36:22.172 [INFO] opus_proxy_bound step=17 scoring_checkpoint_id=ckpt-main-0016 proxy_version=opus-proxy-1.0.0
-2026-08-02T08:36:22.694 [INFO] token_trace_written step=17 tokens=91 pack_id=pack-agentic-structure_preserving-0014
-2026-08-02T08:36:22.694 [EVENT] batch_packed step=17 batch_id=batch-fork-a-00017-70c51839d82b stage=reasoning-heavy-midtrain lanes=3ec51f20 util=0.8462 loss_tokens=1596 loss_before=5.10646 loss_after=5.02682
-2026-08-02T08:36:22.694 [EVENT] opus_decisions_recorded step=17 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:23.112 [EVENT] batch_packed step=18 batch_id=batch-fork-a-00018-744bc5833a74 stage=reasoning-heavy-midtrain lanes=c99307a4 util=0.9409 loss_tokens=1685 loss_before=5.01758 loss_after=4.98357
-2026-08-02T08:36:23.112 [EVENT] opus_decisions_recorded step=18 candidates=16 accepted=7 rejected=7 deferred=2 protected_floor_overrides=0
-2026-08-02T08:36:23.559 [EVENT] batch_packed step=19 batch_id=batch-fork-a-00019-6a07e60e395f stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9189 loss_tokens=1736 loss_before=4.99575 loss_after=4.97986
-2026-08-02T08:36:23.559 [EVENT] opus_decisions_recorded step=19 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
-2026-08-02T08:36:23.962 [EVENT] batch_packed step=20 batch_id=batch-fork-a-00020-7253b11109f7 stage=reasoning-heavy-midtrain lanes=52019a55 util=0.896 loss_tokens=1677 loss_before=5.00363 loss_after=4.98447
-2026-08-02T08:36:23.962 [EVENT] opus_decisions_recorded step=20 candidates=16 accepted=7 rejected=7 deferred=2 protected_floor_overrides=0
-2026-08-02T08:36:24.344 [EVENT] batch_packed step=21 batch_id=batch-fork-a-00021-9f3611b42b42 stage=reasoning-heavy-midtrain lanes=74fed567 util=0.9302 loss_tokens=1668 loss_before=4.95737 loss_after=4.90207
-2026-08-02T08:36:24.344 [EVENT] opus_decisions_recorded step=21 candidates=16 accepted=7 rejected=6 deferred=3 protected_floor_overrides=0
-2026-08-02T08:36:24.722 [EVENT] batch_packed step=22 batch_id=batch-fork-a-00022-798273b16841 stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.832 loss_tokens=1618 loss_before=4.9328 loss_after=4.84375
-2026-08-02T08:36:24.722 [EVENT] opus_decisions_recorded step=22 candidates=16 accepted=5 rejected=5 deferred=5 protected_floor_overrides=1
-2026-08-02T08:36:25.082 [EVENT] batch_packed step=23 batch_id=batch-fork-a-00023-cb4195b7246d stage=reasoning-heavy-midtrain lanes=c03725e3 util=0.9067 loss_tokens=1653 loss_before=4.86825 loss_after=4.78217
-2026-08-02T08:36:25.082 [EVENT] opus_decisions_recorded step=23 candidates=16 accepted=5 rejected=5 deferred=4 protected_floor_overrides=2
-2026-08-02T08:36:25.482 [EVENT] batch_packed step=24 batch_id=batch-fork-a-00024-b1ee13cb1bb1 stage=reasoning-heavy-midtrain lanes=4ceba552 util=0.9644 loss_tokens=1805 loss_before=4.69418 loss_after=4.62385
-2026-08-02T08:36:25.482 [EVENT] opus_decisions_recorded step=24 candidates=16 accepted=4 rejected=4 deferred=6 protected_floor_overrides=2
-2026-08-02T08:36:25.516 [EVENT] validation_eval step=24 mean_loss=7.18121 gradient_bearing=False
-2026-08-02T08:36:25.524 [PASS] checkpoint_saved checkpoint_id=ckpt-fork-a-0024 step=24 consumption_offset=40 param_hash=883125359ccab750
-2026-08-02T08:36:25.524 [PASS] fork_stream_diverged steps=8 branch=fork-a parent=main
-2026-08-02T08:36:25.524 [PASS] fork_model_state_inherited parent_checkpoint=ckpt-main-0016 param_hash=c6d8d979ba564e98
+2026-08-02T08:44:53.987 [EVENT] branch_forked parent_branch=main parent_checkpoint=ckpt-main-0016 fork_step=16 new_branch=fork-a seed=20260809 mixture_override={"general_web":0.2,"reasoning":0.22} inherited_param_hash=c6d8d979ba564e98
+2026-08-02T08:44:54.091 [INFO] opus_proxy_bound step=17 scoring_checkpoint_id=ckpt-main-0016 proxy_version=opus-proxy-1.0.0
+2026-08-02T08:44:54.649 [INFO] token_trace_written step=17 tokens=91 pack_id=pack-agentic-structure_preserving-0014
+2026-08-02T08:44:54.649 [EVENT] batch_packed step=17 batch_id=batch-fork-a-00017-70c51839d82b stage=reasoning-heavy-midtrain lanes=3ec51f20 util=0.8462 loss_tokens=1596 loss_before=5.10646 loss_after=5.02682
+2026-08-02T08:44:54.649 [EVENT] opus_decisions_recorded step=17 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:55.199 [EVENT] batch_packed step=18 batch_id=batch-fork-a-00018-744bc5833a74 stage=reasoning-heavy-midtrain lanes=c99307a4 util=0.9409 loss_tokens=1685 loss_before=5.01758 loss_after=4.98357
+2026-08-02T08:44:55.199 [EVENT] opus_decisions_recorded step=18 candidates=16 accepted=7 rejected=7 deferred=2 protected_floor_overrides=0
+2026-08-02T08:44:55.922 [EVENT] batch_packed step=19 batch_id=batch-fork-a-00019-6a07e60e395f stage=reasoning-heavy-midtrain lanes=d8a701bb util=0.9189 loss_tokens=1736 loss_before=4.99575 loss_after=4.97986
+2026-08-02T08:44:55.923 [EVENT] opus_decisions_recorded step=19 candidates=16 accepted=6 rejected=6 deferred=4 protected_floor_overrides=0
+2026-08-02T08:44:56.450 [EVENT] batch_packed step=20 batch_id=batch-fork-a-00020-7253b11109f7 stage=reasoning-heavy-midtrain lanes=52019a55 util=0.896 loss_tokens=1677 loss_before=5.00363 loss_after=4.98447
+2026-08-02T08:44:56.450 [EVENT] opus_decisions_recorded step=20 candidates=16 accepted=7 rejected=7 deferred=2 protected_floor_overrides=0
+2026-08-02T08:44:56.925 [EVENT] batch_packed step=21 batch_id=batch-fork-a-00021-9f3611b42b42 stage=reasoning-heavy-midtrain lanes=74fed567 util=0.9302 loss_tokens=1668 loss_before=4.95737 loss_after=4.90207
+2026-08-02T08:44:56.925 [EVENT] opus_decisions_recorded step=21 candidates=16 accepted=7 rejected=6 deferred=3 protected_floor_overrides=0
+2026-08-02T08:44:57.359 [EVENT] batch_packed step=22 batch_id=batch-fork-a-00022-798273b16841 stage=reasoning-heavy-midtrain lanes=e9b489cc util=0.832 loss_tokens=1618 loss_before=4.9328 loss_after=4.84375
+2026-08-02T08:44:57.359 [EVENT] opus_decisions_recorded step=22 candidates=16 accepted=5 rejected=5 deferred=5 protected_floor_overrides=1
+2026-08-02T08:44:57.795 [EVENT] batch_packed step=23 batch_id=batch-fork-a-00023-cb4195b7246d stage=reasoning-heavy-midtrain lanes=c03725e3 util=0.9067 loss_tokens=1653 loss_before=4.86825 loss_after=4.78217
+2026-08-02T08:44:57.796 [EVENT] opus_decisions_recorded step=23 candidates=16 accepted=5 rejected=5 deferred=4 protected_floor_overrides=2
+2026-08-02T08:44:58.258 [EVENT] batch_packed step=24 batch_id=batch-fork-a-00024-b1ee13cb1bb1 stage=reasoning-heavy-midtrain lanes=4ceba552 util=0.9644 loss_tokens=1805 loss_before=4.69418 loss_after=4.62385
+2026-08-02T08:44:58.258 [EVENT] opus_decisions_recorded step=24 candidates=16 accepted=4 rejected=4 deferred=6 protected_floor_overrides=2
+2026-08-02T08:44:58.288 [EVENT] validation_eval step=24 mean_loss=7.18121 gradient_bearing=False
+2026-08-02T08:44:58.313 [PASS] checkpoint_saved checkpoint_id=ckpt-fork-a-0024 step=24 consumption_offset=40 param_hash=883125359ccab750
+2026-08-02T08:44:58.313 [PASS] fork_stream_diverged steps=8 branch=fork-a parent=main
+2026-08-02T08:44:58.313 [PASS] fork_model_state_inherited parent_checkpoint=ckpt-main-0016 param_hash=c6d8d979ba564e98
 
 ==============================================================================
 == PHASE 12 - AUDIT
 ==============================================================================
-2026-08-02T08:36:25.898 [PASS] shard_manifest_audit shards=27 merkle_match=True tokenizer_match=True
-2026-08-02T08:36:26.099 [PASS] consumption_ledger_audit effective=240 superseded=15 contiguous=True duplicates=[]
-2026-08-02T08:36:26.126 [PASS] fork_ledger_chain_verified records=40
-2026-08-02T08:36:26.191 [PASS] mixture_compliance max_delta=0 floors_respected=True
-2026-08-02T08:36:26.264 [PASS] opus_audit_trail candidates=810 statuses={"accepted":265,"deferred":82,"deferred_promoted":89,"protected_floor_override":9,"quota_backfill":45,"rejected":320} protected_floor_overrides=9
-2026-08-02T08:36:26.333 [PASS] evaluation_firewall_audit scanned=51 hits=0 blocked_at_admission=2 validation_gradient_bearing=False
-2026-08-02T08:36:26.449 [PASS] learning_trace_audit events=408 token_trace=1129 loss_start=6.15946 loss_end=4.25342
-2026-08-02T08:36:26.516 [PASS] checkpoint_range_reconstructed range=24..32 shards=24 spans=136
-2026-08-02T08:36:26.524 [PASS] audit_completed audit_hash=62409ff98f5aeb4b
+2026-08-02T08:44:58.689 [PASS] shard_manifest_audit shards=27 merkle_match=True tokenizer_match=True
+2026-08-02T08:44:58.908 [PASS] consumption_ledger_audit effective=240 superseded=15 contiguous=True duplicates=[]
+2026-08-02T08:44:58.955 [PASS] fork_ledger_chain_verified records=40
+2026-08-02T08:44:59.011 [PASS] mixture_compliance max_delta=0 floors_respected=True
+2026-08-02T08:44:59.104 [PASS] opus_audit_trail candidates=810 statuses={"accepted":265,"deferred":82,"deferred_promoted":89,"protected_floor_override":9,"quota_backfill":45,"rejected":320} protected_floor_overrides=9
+2026-08-02T08:44:59.181 [PASS] evaluation_firewall_audit scanned=51 hits=0 blocked_at_admission=2 validation_gradient_bearing=False
+2026-08-02T08:44:59.300 [PASS] learning_trace_audit events=408 token_trace=1129 loss_start=6.15946 loss_end=4.25342
+2026-08-02T08:44:59.367 [PASS] checkpoint_range_reconstructed range=24..32 shards=24 spans=136
+2026-08-02T08:44:59.377 [PASS] audit_completed audit_hash=b88761a3d58833dc
 
 ==============================================================================
 == PHASE 13 - PERFORMANCE
 ==============================================================================
-2026-08-02T08:36:26.988 [PASS] performance_measured raw_tokens_per_sec=9704.42 useful_tokens_per_sec=8261.59 packing_utilization=0.910851 useful_ratio=0.851322 cache_hit_rate=0.921748
-2026-08-02T08:36:26.988 [PASS] throughput_reconstructible_from_ledger ledger_positions=120832 counter_positions=120832 crash_wasted_positions=6144
+2026-08-02T08:44:59.859 [PASS] performance_measured raw_tokens_per_sec=7804.14 useful_tokens_per_sec=6643.84 packing_utilization=0.910851 useful_ratio=0.851322 cache_hit_rate=0.921748
+2026-08-02T08:44:59.859 [PASS] throughput_reconstructible_from_ledger ledger_positions=120832 counter_positions=120832 crash_wasted_positions=6144
 
 ==============================================================================
 == PHASE 14 - EVIDENCE BUNDLE
 ==============================================================================
-2026-08-02T08:36:30.791 [PASS] evidence_end_to_end result=PASS checks=2/2
-2026-08-02T08:36:30.791 [PASS] evidence_tokenizer_integrity result=PASS checks=5/5
-2026-08-02T08:36:30.791 [PASS] evidence_shards_manifests result=PASS checks=4/4
-2026-08-02T08:36:30.791 [PASS] evidence_packing_correctness result=PASS checks=5/5
-2026-08-02T08:36:30.791 [PASS] evidence_mixture_compliance result=PASS checks=3/3
-2026-08-02T08:36:30.791 [PASS] evidence_opus_audit_trail result=PASS checks=7/7
-2026-08-02T08:36:30.791 [PASS] evidence_consumption_ledger result=PASS checks=4/4
-2026-08-02T08:36:30.791 [PASS] evidence_learning_trace result=PASS checks=5/5
-2026-08-02T08:36:30.791 [PASS] evidence_crash_recovery result=PASS checks=6/6
-2026-08-02T08:36:30.791 [PASS] evidence_replay result=PASS checks=6/6
-2026-08-02T08:36:30.791 [PASS] evidence_fork result=PASS checks=4/4
-2026-08-02T08:36:30.791 [PASS] evidence_eval_firewall result=PASS checks=5/5
-2026-08-02T08:36:30.791 [PASS] evidence_throughput result=PASS checks=4/4
-2026-08-02T08:36:30.791 [PASS] evidence_tests result=PASS checks=2/2
-2026-08-02T08:36:30.791 [PASS] evidence_bundle_generated passed=14 total=14 evidence_hash=e0d3dc7f7c9d5ff8
+2026-08-02T08:45:04.259 [PASS] evidence_end_to_end result=PASS checks=2/2
+2026-08-02T08:45:04.262 [PASS] evidence_tokenizer_integrity result=PASS checks=5/5
+2026-08-02T08:45:04.262 [PASS] evidence_shards_manifests result=PASS checks=4/4
+2026-08-02T08:45:04.262 [PASS] evidence_packing_correctness result=PASS checks=5/5
+2026-08-02T08:45:04.262 [PASS] evidence_mixture_compliance result=PASS checks=3/3
+2026-08-02T08:45:04.262 [PASS] evidence_opus_audit_trail result=PASS checks=7/7
+2026-08-02T08:45:04.262 [PASS] evidence_consumption_ledger result=PASS checks=4/4
+2026-08-02T08:45:04.262 [PASS] evidence_learning_trace result=PASS checks=5/5
+2026-08-02T08:45:04.262 [PASS] evidence_crash_recovery result=PASS checks=6/6
+2026-08-02T08:45:04.262 [PASS] evidence_replay result=PASS checks=6/6
+2026-08-02T08:45:04.262 [PASS] evidence_fork result=PASS checks=4/4
+2026-08-02T08:45:04.262 [PASS] evidence_eval_firewall result=PASS checks=5/5
+2026-08-02T08:45:04.262 [PASS] evidence_throughput result=PASS checks=4/4
+2026-08-02T08:45:04.262 [PASS] evidence_tests result=PASS checks=2/2
+2026-08-02T08:45:04.262 [PASS] evidence_bundle_generated passed=14 total=14 evidence_hash=6481ffb144bce834

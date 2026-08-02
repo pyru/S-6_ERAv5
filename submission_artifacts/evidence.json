@@ -11,9 +11,9 @@
    "shards": 54
   },
   "files": 128,
-  "total_bytes": 12867482
+  "total_bytes": 12867550
  },
- "evidence_hash": "e0d3dc7f7c9d5ff886c5e03ebe168905cbb7218252435a40d1910e3d1b874056",
+ "evidence_hash": "6481ffb144bce834c7b8f8a414ec7483a24b2f63c3aed98aeebebd7b8821f4f8",
  "generated_by": "tdes.evidence.build_evidence",
  "overall_result": "PASS",
  "requirements": [
@@ -399,7 +399,7 @@
       },
       "control": {
        "count": 17,
-       "head": "5f6b1b2884ca31a429c77ea52f6188fe3dbfc3e200e83c26bdcf6b0b000c61e4",
+       "head": "9001167c1883e4a2994a837d6d02e3293117b75e50981b65bc346ac05741985c",
        "ok": true,
        "reason": "ok"
       },
@@ -839,12 +839,12 @@
      "check": "useful_tokens_per_sec_reported",
      "expected": null,
      "observed": {
-      "accepted_tokens_per_sec_after_opus": 8839.29,
-      "committed_useful_tokens_per_sec": 7841.63,
-      "end_to_end_tokens_per_sec": 4719.42,
+      "accepted_tokens_per_sec_after_opus": 7108.42,
+      "committed_useful_tokens_per_sec": 6306.12,
+      "end_to_end_tokens_per_sec": 3762.18,
       "formula": "performed_positions / compute_seconds; every input is in raw_counters and ledger_recomputation",
-      "raw_tokens_per_sec": 9704.42,
-      "useful_loss_bearing_tokens_per_sec": 8261.59
+      "raw_tokens_per_sec": 7804.14,
+      "useful_loss_bearing_tokens_per_sec": 6643.84
      },
      "passed": true
     },

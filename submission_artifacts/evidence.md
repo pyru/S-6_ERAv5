@@ -6,21 +6,21 @@
 - shard merkle root: `ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f`
 - mixture schedule hash: `bed043ecd7ef5078c6fd6baf58e56517c2f8b8057b89b23c500dfca956a25c56`
 - steps: 48, crash at step 27, replay interval [9, 16]
-- evidence hash: `e0d3dc7f7c9d5ff886c5e03ebe168905cbb7218252435a40d1910e3d1b874056`
+- evidence hash: `6481ffb144bce834c7b8f8a414ec7483a24b2f63c3aed98aeebebd7b8821f4f8`
 
 ## Required summary
 
 | Requirement | Result | Evidence |
 | --- | --- | --- |
 | Tokenizer integrity | **PASS** | Manifest record - `manifests/tokenizer.json`; `manifests/manifest_index.json` |
-| Evaluation and validation firewall | **PASS** | Blocked-shard event - `manifests/eval_registry.json`; `ledgers/main/firewall.jsonl` |
-| Packing, masks and batch correctness | **PASS** | Packed-batch report - `manifests/packing_report.json`; `packs` |
-| Mixture schedule, floors and curriculum | **PASS** | Planned versus actual shares - `manifests/mixture_schedule_main.json`; `reports/mixture_compliance.json` |
-| OPUS acceptance, rejection, deferral, override | **PASS** | Candidate decision records - `ledgers/main/opus.jsonl`; `reports/audit.json` |
-| Crash recovery: no skipped or repeated batches | **PASS** | Expected and resumed batch ids - `reports/resume_report.json`; `ledgers/main/control.jsonl` |
-| Replay of the historical data stream | **PASS** | Original and replay hashes - `reports/replay_report.json` |
-| Learning ledger and token-level loss trace | **PASS** | Loss linked to source data - `ledgers/main/learning.jsonl`; `ledgers/main/token_trace.jsonl` |
-| Throughput and packing efficiency | **PASS** | Performance report - `performance.json` |
+| Evaluation firewall | **PASS** | Blocked-shard event - `manifests/eval_registry.json`; `ledgers/main/firewall.jsonl` |
+| Packing correctness | **PASS** | Packed-batch report - `manifests/packing_report.json`; `packs` |
+| Mixture compliance | **PASS** | Planned versus actual shares - `manifests/mixture_schedule_main.json`; `reports/mixture_compliance.json` |
+| OPUS audit trail | **PASS** | Candidate decision records - `ledgers/main/opus.jsonl`; `reports/audit.json` |
+| Crash recovery | **PASS** | Expected and resumed batch ids - `reports/resume_report.json`; `ledgers/main/control.jsonl` |
+| Replay | **PASS** | Original and replay hashes - `reports/replay_report.json` |
+| Learning trace | **PASS** | Loss linked to source data - `ledgers/main/learning.jsonl`; `ledgers/main/token_trace.jsonl` |
+| Throughput | **PASS** | Performance report - `performance.json` |
 
 ## All requirements
 
@@ -202,7 +202,7 @@
 
 | Check | Result | Observed | Expected |
 | --- | --- | --- | --- |
-| `useful_tokens_per_sec_reported` | PASS | {"accepted_tokens_per_sec_after_opus": 8839.29, "committed_useful_tokens_per_sec": 7841.63... | - |
+| `useful_tokens_per_sec_reported` | PASS | {"accepted_tokens_per_sec_after_opus": 7108.42, "committed_useful_tokens_per_sec": 6306.12... | - |
 | `counters_reconstructible_from_ledger` | PASS | [120832, 120832] | - |
 | `packing_utilization_reported` | PASS | 0.910851 | - |
 | `packing_utilization_matches_ledger` | PASS | - | - |
@@ -220,7 +220,7 @@
 
 ## Artifact inventory
 
-128 files, 12867482 bytes
+128 files, 12867550 bytes
 
 | Directory | Files |
 | --- | --- |

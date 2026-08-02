@@ -402,16 +402,16 @@ class TestEvidenceMatchesArtifacts(ArtifactCase):
         self.assertEqual(hash_obj(ev), h)
 
     def test_evidence_md_lists_every_required_row(self):
+        """The required summary table must use the assignment's own row labels."""
         with open(PATHS["evidence_md"], "r", encoding="utf-8") as fh:
             md = fh.read()
-        for row in ("Tokenizer integrity", "Evaluation and validation firewall",
-                    "Packing, masks and batch correctness",
-                    "Mixture schedule, floors and curriculum",
-                    "OPUS acceptance, rejection, deferral, override",
-                    "Crash recovery", "Replay of the historical data stream",
-                    "Learning ledger and token-level loss trace",
-                    "Throughput and packing efficiency"):
-            self.assertIn(row, md, row)
+        table = md.split("## Required summary", 1)[1].split("## All requirements", 1)[0]
+        for row in ("Tokenizer integrity", "Evaluation firewall",
+                    "Packing correctness", "Mixture compliance", "OPUS audit trail",
+                    "Crash recovery", "Replay", "Learning trace", "Throughput"):
+            self.assertIn(f"| {row} |", table, row)
+        self.assertIn("| Requirement | Result | Evidence |", table)
+        self.assertNotIn("**FAIL**", table)
 
     def test_run_log_contains_the_required_event_sequence(self):
         with open(PATHS["run_log"], "r", encoding="utf-8") as fh:

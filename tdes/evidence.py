@@ -391,16 +391,17 @@ def _by_dir(inv: Dict[str, int]) -> Dict[str, int]:
     return dict(sorted(out.items()))
 
 
+# (requirement key, label as named in the assignment, evidence description)
 ROW_ORDER = [
-    ("tokenizer_integrity", "Manifest record"),
-    ("eval_firewall", "Blocked-shard event"),
-    ("packing_correctness", "Packed-batch report"),
-    ("mixture_compliance", "Planned versus actual shares"),
-    ("opus_audit_trail", "Candidate decision records"),
-    ("crash_recovery", "Expected and resumed batch ids"),
-    ("replay", "Original and replay hashes"),
-    ("learning_trace", "Loss linked to source data"),
-    ("throughput", "Performance report"),
+    ("tokenizer_integrity", "Tokenizer integrity", "Manifest record"),
+    ("eval_firewall", "Evaluation firewall", "Blocked-shard event"),
+    ("packing_correctness", "Packing correctness", "Packed-batch report"),
+    ("mixture_compliance", "Mixture compliance", "Planned versus actual shares"),
+    ("opus_audit_trail", "OPUS audit trail", "Candidate decision records"),
+    ("crash_recovery", "Crash recovery", "Expected and resumed batch ids"),
+    ("replay", "Replay", "Original and replay hashes"),
+    ("learning_trace", "Learning trace", "Loss linked to source data"),
+    ("throughput", "Throughput", "Performance report"),
 ]
 
 
@@ -420,12 +421,13 @@ def _write_md(doc: dict) -> None:
              "## Required summary", "",
              "| Requirement | Result | Evidence |",
              "| --- | --- | --- |"]
-    for key, note in ROW_ORDER:
+    for key, label, note in ROW_ORDER:
         q = by_key.get(key)
         if not q:
+            lines.append(f"| {label} | **FAIL** | requirement not evaluated |")
             continue
         ev = "; ".join(f"`{e['artifact']}`" for e in q["evidence"][:2])
-        lines.append(f"| {q['requirement']} | **{q['result']}** | {note} - {ev} |")
+        lines.append(f"| {label} | **{q['result']}** | {note} - {ev} |")
 
     lines += ["", "## All requirements", "",
               "| # | Requirement | Result | Checks | Evidence |",

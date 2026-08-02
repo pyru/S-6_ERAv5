@@ -16,12 +16,12 @@
   "tokens_per_step": 2048
  },
  "loader": {
-  "compute_seconds": 12.451231,
-  "gpu_idle_fraction_estimate": 0.348096,
-  "loader_seconds": 8.912349,
-  "loader_wait_fraction": 0.417175,
-  "opus_scoring_seconds": 4.457295,
-  "wall_seconds": 25.603164
+  "compute_seconds": 15.483057,
+  "gpu_idle_fraction_estimate": 0.355698,
+  "loader_seconds": 11.424173,
+  "loader_wait_fraction": 0.424576,
+  "opus_scoring_seconds": 5.713225,
+  "wall_seconds": 32.117584
  },
  "mixture_token_totals": {
   "agentic": 6912,
@@ -51,22 +51,22 @@
   "useful_token_ratio": 0.851322,
   "wasted_positions": 10772
  },
- "performance_hash": "ef78d647be6c7b0b62c357f06b7992ff71c5c01cbd5c0d685ca1808e27b354cc",
+ "performance_hash": "371f842de87fb689e8210e28e07cfa8fbfbb254e0150588968efa1be139e0a0d",
  "phase_timings_seconds": {
-  "audit": 0.9816,
-  "fork": 3.8535,
-  "prepare": 13.2224,
-  "replay": 1.6632,
-  "resume": 10.9238,
-  "train_until_crash": 12.0513
+  "audit": 1.0483,
+  "fork": 4.8559,
+  "prepare": 11.3513,
+  "replay": 2.0341,
+  "resume": 15.5886,
+  "train_until_crash": 13.1809
  },
  "raw_counters": {
   "accepted_seqs": 472,
   "candidates": 938,
-  "compute_seconds": 12.451231,
-  "loader_seconds": 4.455054,
+  "compute_seconds": 15.483057,
+  "loader_seconds": 5.710948,
   "loss_tokens": 102867,
-  "opus_seconds": 4.457295,
+  "opus_seconds": 5.713225,
   "positions": 120832,
   "real_tokens": 110060,
   "segment_tags": [
@@ -76,7 +76,7 @@
   ],
   "segments": 3,
   "steps": 59,
-  "wall_seconds": 25.603164
+  "wall_seconds": 32.117584
  },
  "schema": "tdes-performance/1",
  "shard_cache": {
@@ -84,14 +84,14 @@
   "cache_hit_rate": 0.921748,
   "cache_hits": 907,
   "cache_misses": 77,
-  "shard_read_seconds": 0.04621550044976175
+  "shard_read_seconds": 0.057803998002782464
  },
  "throughput": {
-  "accepted_tokens_per_sec_after_opus": 8839.29,
-  "committed_useful_tokens_per_sec": 7841.63,
-  "end_to_end_tokens_per_sec": 4719.42,
+  "accepted_tokens_per_sec_after_opus": 7108.42,
+  "committed_useful_tokens_per_sec": 6306.12,
+  "end_to_end_tokens_per_sec": 3762.18,
   "formula": "performed_positions / compute_seconds; every input is in raw_counters and ledger_recomputation",
-  "raw_tokens_per_sec": 9704.42,
-  "useful_loss_bearing_tokens_per_sec": 8261.59
+  "raw_tokens_per_sec": 7804.14,
+  "useful_loss_bearing_tokens_per_sec": 6643.84
  }
 }
