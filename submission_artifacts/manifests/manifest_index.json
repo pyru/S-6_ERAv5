@@ -1,0 +1,204 @@
+{
+ "admission": {
+  "admitted": 154,
+  "candidates": 161,
+  "rejected": 7
+ },
+ "merkle_root": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+ "schema": "tdes-manifest-index/1",
+ "shard_count": 27,
+ "shards": [
+  {
+   "content_hash": "18cf9a6f307f937e67d209d4d5b27b7ee00a0057b5779fa6a636b36a6ec37683",
+   "lane": "agentic",
+   "manifest_hash": "50c6916f8a9e3015553ff4fc4f69e6df6c13b6fb7270807068a8e83351fce3e2",
+   "shard_id": "shard-agentic-00",
+   "tokens": 893
+  },
+  {
+   "content_hash": "44c8778fdeb57b08a86d4d3f037fd5a07de54805c1feb84ddf4dd1c085f330fd",
+   "lane": "agentic",
+   "manifest_hash": "b48b3a7cd69f7b3620679cb99a5c3c484ab3ec72754685fc0b8e82ad2e9f1a67",
+   "shard_id": "shard-agentic-01",
+   "tokens": 894
+  },
+  {
+   "content_hash": "b962cbfe4fa81db295c308036c3afb1d0c9214cbe99cee84e3d289266a9af590",
+   "lane": "agentic",
+   "manifest_hash": "9568d95c4c9fd4c68ff68589e8550cb9077411ad3e6fc4ae155aaeb3662c56bd",
+   "shard_id": "shard-agentic-02",
+   "tokens": 869
+  },
+  {
+   "content_hash": "3fe17707b161b449a0f7fe31fcdc43029eecc231f15e03a95ad98ae2971d93d0",
+   "lane": "agentic",
+   "manifest_hash": "bef0b595647675814dd91835ce58d8f09d9fdba5bad972e51d7839a672de5fb3",
+   "shard_id": "shard-agentic-03",
+   "tokens": 589
+  },
+  {
+   "content_hash": "d500c6291aa265d418efc583aeb2b76423792e41d5bf1ce43305c6400a86f16d",
+   "lane": "code",
+   "manifest_hash": "abde99769b82218209804276ce60e9c441b2142b7684860c8694fd5962ec6a90",
+   "shard_id": "shard-code-00",
+   "tokens": 678
+  },
+  {
+   "content_hash": "63e863140708aee26d06868a71518ef3fef85c69dcff5f4830bba44bb3c3a548",
+   "lane": "code",
+   "manifest_hash": "f6af5d91649975fb8fa2c19aaf4f08ef0c1e591b57e37fb95698357223bc669e",
+   "shard_id": "shard-code-01",
+   "tokens": 615
+  },
+  {
+   "content_hash": "a683a936717afeb603bc7eed7f25af1658e1df5a39d26825cda3f7a4c1eab22e",
+   "lane": "code",
+   "manifest_hash": "cc0ec807f9d3a15024966c96f14a5aeb31e801a5bcf89711c75a31c165fc24dd",
+   "shard_id": "shard-code-02",
+   "tokens": 647
+  },
+  {
+   "content_hash": "90062194957de566e9cf5fbab5290d0dc79268743e10ee4ba991295636a4aa06",
+   "lane": "code",
+   "manifest_hash": "130ba930eeac24b1551a7f40514cb1c131abe64e7047f37cb31de183d2c9bcdb",
+   "shard_id": "shard-code-03",
+   "tokens": 635
+  },
+  {
+   "content_hash": "9995902b05c5104d0bbdacf827872667814b8e4f06bb5bc4a42cb60a6fd34d18",
+   "lane": "code",
+   "manifest_hash": "077516d0930b1d99d67f868193e83e50a168e45639ca4478e13c362adc70b6b4",
+   "shard_id": "shard-code-04",
+   "tokens": 215
+  },
+  {
+   "content_hash": "4e1437cd54e5f8253c41728f90ea924055bfe9295e06b098ece520bb3c02f792",
+   "lane": "general_web",
+   "manifest_hash": "45c382d2380b1e39b690d0eb0abb1e7a5f16f398a2b8557c49f9725e42f81355",
+   "shard_id": "shard-general_web-00",
+   "tokens": 1419
+  },
+  {
+   "content_hash": "5b35d846730cbe66665287ebd58ad1551db65c9be450f5c4f79ebe43a3cdd83b",
+   "lane": "general_web",
+   "manifest_hash": "433dcd0d9a164dbb3870defbb1404651f6eb6c0f52aedac65f0b8488ad0bdf8d",
+   "shard_id": "shard-general_web-01",
+   "tokens": 1306
+  },
+  {
+   "content_hash": "ef321efaa2e45d7338acd74f3393cc031464b683dc6e817907917da2cdcb296d",
+   "lane": "general_web",
+   "manifest_hash": "6f5c9f62c6eaf554dcd5611c93a31dd8a1a0fcb9aa77eac9aa2cafd037ec1b3d",
+   "shard_id": "shard-general_web-02",
+   "tokens": 1440
+  },
+  {
+   "content_hash": "097cbe00e3e59cd8bb6cf5677b8dd1b61cdec00b84346ddd01f6b98f6e1fa784",
+   "lane": "general_web",
+   "manifest_hash": "070b5be56bd80080db044d5f85771036ca98c8d3ad4b2e0ed3f63333dfb8bf1f",
+   "shard_id": "shard-general_web-03",
+   "tokens": 1101
+  },
+  {
+   "content_hash": "d133fabeab71cb5a1046f94755173e92585d5d22b5bbaba11b56291c5883e741",
+   "lane": "general_web",
+   "manifest_hash": "6292b5a78a6562a6d5ce6b4cdc865fd7162539e66521bb58e33542e8c75e580c",
+   "shard_id": "shard-general_web-04",
+   "tokens": 1387
+  },
+  {
+   "content_hash": "9ef58e6094ab1b1397ba0422c9161d1a6743bc1ae1025de3070223694ee95003",
+   "lane": "indic",
+   "manifest_hash": "d1b9f0e603e1e4b777458d6878daea865951174d6069a47c27e59fb455e8863a",
+   "shard_id": "shard-indic-00",
+   "tokens": 647
+  },
+  {
+   "content_hash": "c369a694a235dcf0abbdd4abb33bd44a7f33b96f843335524435e41e74ddb594",
+   "lane": "indic",
+   "manifest_hash": "53bb30f901dc443b0f20b784efe250a3c82bcaaf0f8207a94c9b47d7a993dee8",
+   "shard_id": "shard-indic-01",
+   "tokens": 677
+  },
+  {
+   "content_hash": "eb11a3d8eb6255768e2a03ab2bc6353bf6e65d67eb6071d550da18eabb03d60b",
+   "lane": "indic",
+   "manifest_hash": "151895810332f034872e07515f654df188873a9cc3aaa98f42d776c259243118",
+   "shard_id": "shard-indic-02",
+   "tokens": 594
+  },
+  {
+   "content_hash": "aa862cf398fbd6cf995476f1de89949a77a1dc813e36cbf654085781f634f47a",
+   "lane": "indic",
+   "manifest_hash": "1bc7d8eba246783d02ee17471e7463656082f74b80b0776c7fa21593d7817cf9",
+   "shard_id": "shard-indic-03",
+   "tokens": 656
+  },
+  {
+   "content_hash": "2b59dfb781d09f728bd323a748f72b13d78ab557ea4eaa06606c2318c7747657",
+   "lane": "indic",
+   "manifest_hash": "0bb03750666f1a08ecb3b0b4f7a22045c789f6c943d5d9353c1f62f4b6f00977",
+   "shard_id": "shard-indic-04",
+   "tokens": 380
+  },
+  {
+   "content_hash": "3590d71afd98eadee920899283fce91589763479295659116d2daa445c1d27fe",
+   "lane": "math_science",
+   "manifest_hash": "f611743ef5c515dea8336f85912d09bf1049a38ccab7a5f58d43a2dc7b8a0cdb",
+   "shard_id": "shard-math_science-00",
+   "tokens": 722
+  },
+  {
+   "content_hash": "babb74fe3f988e4848e213dabf7b06a0ff974fc924828ef181ff0edbcaf6f878",
+   "lane": "math_science",
+   "manifest_hash": "ae500704cad21b9c44082b67f84a63b3f8602821f6c09f840cc54ae5b32a207f",
+   "shard_id": "shard-math_science-01",
+   "tokens": 711
+  },
+  {
+   "content_hash": "a3c710d32c482fe4442ea7ea560b297ff06ea75ff2c2a1d103369884de8e0c9e",
+   "lane": "math_science",
+   "manifest_hash": "2861fc9a32bdc1e7146b060f6f6da84b30082bc22cc45e7654075ea4fd2884c8",
+   "shard_id": "shard-math_science-02",
+   "tokens": 733
+  },
+  {
+   "content_hash": "3816d215b0f5023f312dcd1b7ff2ad2d3f436f27b7f9626c88ecace52ae56e5c",
+   "lane": "math_science",
+   "manifest_hash": "0b4f2181a2ad11e089e1a7d3bfb79cbfcbcbeae9b1f158f9317ae73d60c0491b",
+   "shard_id": "shard-math_science-03",
+   "tokens": 764
+  },
+  {
+   "content_hash": "c24217870e28dc70fcd29c3650c7e442df4813be2ac342642e8d8733bbc4f9a8",
+   "lane": "reasoning",
+   "manifest_hash": "2e09758851d4bde09645a1dabf1fba445bbf0ceae07bf2d86fb0f9324fc2455b",
+   "shard_id": "shard-reasoning-00",
+   "tokens": 732
+  },
+  {
+   "content_hash": "30befb419cdbb443942869b2f959c80e375e2a6a905948a94ba3e558ee9e4620",
+   "lane": "reasoning",
+   "manifest_hash": "da04968c3dc9fee29dea38e92e090ce13f2606a8ba13baf1a5966c206e0e832c",
+   "shard_id": "shard-reasoning-01",
+   "tokens": 743
+  },
+  {
+   "content_hash": "b9962ddc2051a244703016bae135143542830a846945a55798764567dda613a7",
+   "lane": "reasoning",
+   "manifest_hash": "9ecb581c5409972e948d1ccacfb8ba358f2e5027a76e4028e24c760126e19543",
+   "shard_id": "shard-reasoning-02",
+   "tokens": 742
+  },
+  {
+   "content_hash": "85a578b92e86596135e539587e47f7d8a542734125cabee0381528fbe47af6a2",
+   "lane": "reasoning",
+   "manifest_hash": "be16d5b626e04747f9cf8ab44f5b5f5558b02ea28077cbb6dea633b707af8b6c",
+   "shard_id": "shard-reasoning-03",
+   "tokens": 743
+  }
+ ],
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05",
+ "total_loss_bearing_tokens": 19404,
+ "total_tokens": 21532
+}

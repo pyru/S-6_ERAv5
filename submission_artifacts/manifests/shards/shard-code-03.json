@@ -1,0 +1,192 @@
+{
+ "bin_path": "shards/shard-code-03.bin",
+ "capability_lane": "code",
+ "cleaning_pipeline_hash": "01315a3f0e631ad31a7a28c39d162541",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "90062194957de566e9cf5fbab5290d0dc79268743e10ee4ba991295636a4aa06",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-code-018",
+  "doc-code-019",
+  "doc-code-020",
+  "doc-code-021",
+  "doc-code-022",
+  "doc-code-023"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "code",
+    "long_context"
+   ],
+   "doc_id": "doc-code-018",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-2",
+   "structured": false,
+   "text_hash": "9420572fc1f3f960fdbc05669e0301f3a22daaa912f414b39966bba86cbaf145",
+   "token_count": 96,
+   "token_end": 96,
+   "token_hash": "74987b402f9de074e27541d3bf4aa947804a1c33a70ff026b1510b0e1c72cfed",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-019",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-3",
+   "structured": false,
+   "text_hash": "0b795f7b69a00614fde26a53893de1b2ad047b3ec64efd976bb3d843fa87928a",
+   "token_count": 113,
+   "token_end": 209,
+   "token_hash": "193b3649925a90901e32f57f0edcfb2ac739404b2b1ff19a90d9662d0e258404",
+   "token_start": 96
+  },
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-020",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-0",
+   "structured": false,
+   "text_hash": "dc1c67d0e9e6bbd1bc644242b2330d507b9a4c643d720a2b2062c23af26bc36e",
+   "token_count": 98,
+   "token_end": 307,
+   "token_hash": "dff6ea6af87101f9e90948ab52377f0c4391a3baabf53849eaa73755a4b8bf74",
+   "token_start": 209
+  },
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-021",
+   "lang": "en",
+   "license_tier": "cc_by",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-1",
+   "structured": false,
+   "text_hash": "ee739615c6e6536aac6475f3701a79616e0b5e6e14cf62446d985d45695fbcd0",
+   "token_count": 123,
+   "token_end": 430,
+   "token_hash": "797adad38ed9ae07179668e1df3ec5ecec362541e48dc278e0eab58fe4426059",
+   "token_start": 307
+  },
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-022",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-2",
+   "structured": false,
+   "text_hash": "8a679e8ff7c3d9dcec06c222e3ff97507788366255b981803a684eb86c9e5571",
+   "token_count": 109,
+   "token_end": 539,
+   "token_hash": "bafbfec6870ea915d461a390b7963f99a01e51652199d410e620aa5041a1d874",
+   "token_start": 430
+  },
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-023",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-3",
+   "structured": false,
+   "text_hash": "b7e0adbdd25409cbffbd6b17a34fe0b6ae072cb4666138bf919d729a01f46955",
+   "token_count": 96,
+   "token_end": 635,
+   "token_hash": "74b0efc1a66441bd48d32d4e9ac4ca7dd683728ab8e6a37dc682111f59d5dd61",
+   "token_start": 539
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "code",
+ "languages": [
+  "en"
+ ],
+ "license_tiers": [
+  "cc_by",
+  "permissive"
+ ],
+ "loss_bearing_token_count": 635,
+ "manifest_hash": "130ba930eeac24b1551a7f40514cb1c131abe64e7047f37cb31de183d2c9bcdb",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Latn"
+ ],
+ "sealed": true,
+ "shard_id": "shard-code-03",
+ "side_path": "shards/shard-code-03.side.json",
+ "source_ids": [
+  "src-code-0",
+  "src-code-1",
+  "src-code-2",
+  "src-code-3"
+ ],
+ "token_count": 635,
+ "token_stream_hash": "90062194957de566e9cf5fbab5290d0dc79268743e10ee4ba991295636a4aa06",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}

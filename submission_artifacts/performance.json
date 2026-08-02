@@ -1,0 +1,97 @@
+{
+ "ledger_recomputation": {
+  "committed_loss_bearing_tokens": 97638,
+  "committed_positions": 114688,
+  "committed_real_tokens": 104500,
+  "committed_steps": 56,
+  "crash_wasted_positions": 6144,
+  "crash_wasted_steps": 3,
+  "loss_tokens_match_counters": true,
+  "note": "performed = every batch built and trained on including the steps lost to the crash; committed = effective stream after rollback; counters come from the trainer, both totals are re-derived from the ledger",
+  "performed_loss_bearing_tokens": 102867,
+  "performed_positions": 120832,
+  "performed_real_tokens": 110060,
+  "performed_steps": 59,
+  "positions_match_counters": true,
+  "tokens_per_step": 2048
+ },
+ "loader": {
+  "compute_seconds": 12.451231,
+  "gpu_idle_fraction_estimate": 0.348096,
+  "loader_seconds": 8.912349,
+  "loader_wait_fraction": 0.417175,
+  "opus_scoring_seconds": 4.457295,
+  "wall_seconds": 25.603164
+ },
+ "mixture_token_totals": {
+  "agentic": 6912,
+  "code": 24064,
+  "general_web": 34048,
+  "indic": 14848,
+  "math_science": 18944,
+  "reasoning": 15872
+ },
+ "opus": {
+  "acceptance_rate": 0.503198,
+  "candidates_scored": 938,
+  "rejections_by_lane": {
+   "agentic": 42,
+   "code": 133,
+   "general_web": 197,
+   "indic": 99,
+   "math_science": 107,
+   "reasoning": 76
+  },
+  "sequences_accepted": 472
+ },
+ "packing": {
+  "context_only_positions": 7193,
+  "packing_utilization": 0.910851,
+  "padding_ratio": 0.089149,
+  "useful_token_ratio": 0.851322,
+  "wasted_positions": 10772
+ },
+ "performance_hash": "ef78d647be6c7b0b62c357f06b7992ff71c5c01cbd5c0d685ca1808e27b354cc",
+ "phase_timings_seconds": {
+  "audit": 0.9816,
+  "fork": 3.8535,
+  "prepare": 13.2224,
+  "replay": 1.6632,
+  "resume": 10.9238,
+  "train_until_crash": 12.0513
+ },
+ "raw_counters": {
+  "accepted_seqs": 472,
+  "candidates": 938,
+  "compute_seconds": 12.451231,
+  "loader_seconds": 4.455054,
+  "loss_tokens": 102867,
+  "opus_seconds": 4.457295,
+  "positions": 120832,
+  "real_tokens": 110060,
+  "segment_tags": [
+   "pre_crash",
+   "resume",
+   "fork"
+  ],
+  "segments": 3,
+  "steps": 59,
+  "wall_seconds": 25.603164
+ },
+ "schema": "tdes-performance/1",
+ "shard_cache": {
+  "bytes_read": 247020,
+  "cache_hit_rate": 0.921748,
+  "cache_hits": 907,
+  "cache_misses": 77,
+  "shard_read_seconds": 0.04621550044976175
+ },
+ "throughput": {
+  "accepted_tokens_per_sec_after_opus": 8839.29,
+  "committed_useful_tokens_per_sec": 7841.63,
+  "end_to_end_tokens_per_sec": 4719.42,
+  "formula": "performed_positions / compute_seconds; every input is in raw_counters and ledger_recomputation",
+  "raw_tokens_per_sec": 9704.42,
+  "useful_loss_bearing_tokens_per_sec": 8261.59
+ }
+}

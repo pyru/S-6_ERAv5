@@ -1,0 +1,123 @@
+{
+ "branch": "main",
+ "compliant": true,
+ "floors_respected": true,
+ "max_abs_share_delta": 0.0,
+ "ok": true,
+ "protected_floors": [
+  {
+   "actual_share": 0.117188,
+   "floor": 0.1,
+   "lane": "indic",
+   "respected": true,
+   "stage": "foundation"
+  },
+  {
+   "actual_share": 0.039062,
+   "floor": 0.03,
+   "lane": "agentic",
+   "respected": true,
+   "stage": "foundation"
+  },
+  {
+   "actual_share": 0.078125,
+   "floor": 0.05,
+   "lane": "reasoning",
+   "respected": true,
+   "stage": "foundation"
+  },
+  {
+   "actual_share": 0.125,
+   "floor": 0.12,
+   "lane": "indic",
+   "respected": true,
+   "stage": "reasoning-heavy-midtrain"
+  },
+  {
+   "actual_share": 0.05625,
+   "floor": 0.05,
+   "lane": "agentic",
+   "respected": true,
+   "stage": "reasoning-heavy-midtrain"
+  },
+  {
+   "actual_share": 0.1375,
+   "floor": 0.12,
+   "lane": "reasoning",
+   "respected": true,
+   "stage": "reasoning-heavy-midtrain"
+  },
+  {
+   "actual_share": 0.15625,
+   "floor": 0.15,
+   "lane": "indic",
+   "respected": true,
+   "stage": "anneal"
+  },
+  {
+   "actual_share": 0.09375,
+   "floor": 0.08,
+   "lane": "agentic",
+   "respected": true,
+   "stage": "anneal"
+  },
+  {
+   "actual_share": 0.166667,
+   "floor": 0.16,
+   "lane": "reasoning",
+   "respected": true,
+   "stage": "anneal"
+  }
+ ],
+ "rows": [
+  {
+   "abs_delta": 0.0,
+   "actual_share": 0.3125,
+   "actual_tokens": 30720,
+   "lane": "general_web",
+   "planned_share": 0.3125,
+   "planned_tokens": 30720
+  },
+  {
+   "abs_delta": 0.0,
+   "actual_share": 0.208333,
+   "actual_tokens": 20480,
+   "lane": "code",
+   "planned_share": 0.208333,
+   "planned_tokens": 20480
+  },
+  {
+   "abs_delta": 0.0,
+   "actual_share": 0.164062,
+   "actual_tokens": 16128,
+   "lane": "math_science",
+   "planned_share": 0.164062,
+   "planned_tokens": 16128
+  },
+  {
+   "abs_delta": 0.0,
+   "actual_share": 0.130208,
+   "actual_tokens": 12800,
+   "lane": "indic",
+   "planned_share": 0.130208,
+   "planned_tokens": 12800
+  },
+  {
+   "abs_delta": 0.0,
+   "actual_share": 0.059896,
+   "actual_tokens": 5888,
+   "lane": "agentic",
+   "planned_share": 0.059896,
+   "planned_tokens": 5888
+  },
+  {
+   "abs_delta": 0.0,
+   "actual_share": 0.125,
+   "actual_tokens": 12288,
+   "lane": "reasoning",
+   "planned_share": 0.125,
+   "planned_tokens": 12288
+  }
+ ],
+ "tolerance": 0.05
+}

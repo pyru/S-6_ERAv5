@@ -1,0 +1,192 @@
+{
+ "bin_path": "shards/shard-general_web-03.bin",
+ "capability_lane": "general_web",
+ "cleaning_pipeline_hash": "f55affd1a947944a7643cc000bf270c1",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "097cbe00e3e59cd8bb6cf5677b8dd1b61cdec00b84346ddd01f6b98f6e1fa784",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-general_web-018",
+  "doc-general_web-019",
+  "doc-general_web-020",
+  "doc-general_web-021",
+  "doc-general_web-022",
+  "doc-general_web-023"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "general_web",
+    "long_context"
+   ],
+   "doc_id": "doc-general_web-018",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-general_web-2",
+   "structured": false,
+   "text_hash": "7e8f5bf9b90860b4b6ea1eda1d9e6431c01b34a0690809e587896d770b8e39f6",
+   "token_count": 246,
+   "token_end": 246,
+   "token_hash": "224f676b467393fd6068f1ba6a4963bc849d70f92c0a4fc3d1af10c271a9c0f8",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "general_web"
+   ],
+   "doc_id": "doc-general_web-019",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-general_web-3",
+   "structured": false,
+   "text_hash": "7e764b5b5115a6cd4c17ddcc9b515822e562ab8f621b4cae05a9900acfbe9d84",
+   "token_count": 151,
+   "token_end": 397,
+   "token_hash": "08f23e425831837ffde28e21f279a8f85d84d1667386c0329c931c552ccc4e77",
+   "token_start": 246
+  },
+  {
+   "capability_tags": [
+    "general_web"
+   ],
+   "doc_id": "doc-general_web-020",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-general_web-0",
+   "structured": false,
+   "text_hash": "a50ab9847e9c3436a2f38232f87d9e9ae1ab29a1b701016270ad7ded403dd3a2",
+   "token_count": 178,
+   "token_end": 575,
+   "token_hash": "e370162947396282dc18857addd517a847a70d9c81cbad48a9d812c69557ae31",
+   "token_start": 397
+  },
+  {
+   "capability_tags": [
+    "general_web"
+   ],
+   "doc_id": "doc-general_web-021",
+   "lang": "en",
+   "license_tier": "cc_by",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-general_web-1",
+   "structured": false,
+   "text_hash": "2331047cea989c3de51b295173ae5c42ee41cc9a70cd3dadee9c32e04670cb3e",
+   "token_count": 156,
+   "token_end": 731,
+   "token_hash": "f5c495790d859e8a3c06588d966a6888c3d2e5a7ac8f91e94a69130d602e6294",
+   "token_start": 575
+  },
+  {
+   "capability_tags": [
+    "general_web"
+   ],
+   "doc_id": "doc-general_web-022",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-general_web-2",
+   "structured": false,
+   "text_hash": "35ac486df65dfe7bea72769c7c0e0d093af542322c0085027c11432b220476a8",
+   "token_count": 177,
+   "token_end": 908,
+   "token_hash": "41d1a23a57d158231819c50178541795adee0a85cf459e7b970c06eb8a9e56f4",
+   "token_start": 731
+  },
+  {
+   "capability_tags": [
+    "general_web"
+   ],
+   "doc_id": "doc-general_web-023",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-general_web-3",
+   "structured": false,
+   "text_hash": "ba2c8e590e24296c0dd0b6499d2a8d63798ba1a9eed2b9ee2b0e900f292f0020",
+   "token_count": 193,
+   "token_end": 1101,
+   "token_hash": "76d805abcb3c88c523cc5f4571fb1a00201a2e07b722f58e3fbbc2e318c41b2a",
+   "token_start": 908
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "general_web",
+ "languages": [
+  "en"
+ ],
+ "license_tiers": [
+  "cc_by",
+  "permissive"
+ ],
+ "loss_bearing_token_count": 1101,
+ "manifest_hash": "070b5be56bd80080db044d5f85771036ca98c8d3ad4b2e0ed3f63333dfb8bf1f",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Latn"
+ ],
+ "sealed": true,
+ "shard_id": "shard-general_web-03",
+ "side_path": "shards/shard-general_web-03.side.json",
+ "source_ids": [
+  "src-general_web-0",
+  "src-general_web-1",
+  "src-general_web-2",
+  "src-general_web-3"
+ ],
+ "token_count": 1101,
+ "token_stream_hash": "097cbe00e3e59cd8bb6cf5677b8dd1b61cdec00b84346ddd01f6b98f6e1fa784",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}

@@ -1,0 +1,37 @@
+{
+ "branch": "main",
+ "contiguous": true,
+ "duplicate_steps": [],
+ "effective_steps": 48,
+ "expected_batch": {
+  "batch_hash": "73a43311fa7e65c768a0043d3d989f38263de3f4b19e6131d467544e8bf2f9c5",
+  "batch_id": "batch-main-00025-73a43311fa7e",
+  "global_step": 25,
+  "token_hash": "a139da33cdd26e35022cdde174a855547f6cb55c6480f2cfe06e2ecb7b1dbb9b"
+ },
+ "final_step": 48,
+ "ledger_chain_ok": true,
+ "matched": true,
+ "next_step": 25,
+ "orphan_steps": [
+  25,
+  26,
+  27
+ ],
+ "restored_checkpoint": "ckpt-main-0024",
+ "restored_step": 24,
+ "resumed_batch": {
+  "batch_hash": "73a43311fa7e65c768a0043d3d989f38263de3f4b19e6131d467544e8bf2f9c5",
+  "batch_id": "batch-main-00025-73a43311fa7e",
+  "global_step": 25,
+  "token_hash": "a139da33cdd26e35022cdde174a855547f6cb55c6480f2cfe06e2ecb7b1dbb9b"
+ },
+ "superseded_records": {
+  "consumption": 15,
+  "control": 2,
+  "firewall": 3,
+  "learning": 24,
+  "opus": 48,
+  "token_trace": 202
+ }
+}

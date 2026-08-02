@@ -1,0 +1,1593 @@
+{
+ "cumulative_alloc": {
+  "agentic": 24,
+  "code": 82,
+  "general_web": 78,
+  "indic": 50,
+  "math_science": 64,
+  "reasoning": 86
+ },
+ "override": {
+  "general_web": 0.2,
+  "reasoning": 0.22
+ },
+ "per_step": [
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 1,
+   "token_start": 0,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 2,
+   "token_start": 2048,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 3,
+   "token_start": 4096,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 4,
+   "token_start": 6144,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 5,
+   "token_start": 8192,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 3
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 6,
+   "token_start": 10240,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 7,
+   "token_start": 12288,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 8,
+   "token_start": 14336,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 9,
+   "token_start": 16384,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 1,
+    "indic": 2,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 10,
+   "token_start": 18432,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 11,
+   "token_start": 20480,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 0,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 12,
+   "token_start": 22528,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 13,
+   "token_start": 24576,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 1,
+    "indic": 2,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 14,
+   "token_start": 26624,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 15,
+   "token_start": 28672,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "foundation",
+   "step": 16,
+   "token_start": 30720,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 17,
+   "token_start": 32768,
+   "weights": {
+    "agentic": 0.043478,
+    "code": 0.217391,
+    "general_web": 0.217391,
+    "indic": 0.130435,
+    "math_science": 0.152174,
+    "reasoning": 0.23913
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 3
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 18,
+   "token_start": 34816,
+   "weights": {
+    "agentic": 0.047609,
+    "code": 0.218043,
+    "general_web": 0.213043,
+    "indic": 0.127826,
+    "math_science": 0.15913,
+    "reasoning": 0.234348
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 19,
+   "token_start": 36864,
+   "weights": {
+    "agentic": 0.051739,
+    "code": 0.218696,
+    "general_web": 0.208696,
+    "indic": 0.125217,
+    "math_science": 0.166087,
+    "reasoning": 0.229565
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 20,
+   "token_start": 38912,
+   "weights": {
+    "agentic": 0.05587,
+    "code": 0.219348,
+    "general_web": 0.204348,
+    "indic": 0.122609,
+    "math_science": 0.173043,
+    "reasoning": 0.224783
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 21,
+   "token_start": 40960,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 22,
+   "token_start": 43008,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 23,
+   "token_start": 45056,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 24,
+   "token_start": 47104,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 0,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 25,
+   "token_start": 49152,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 1,
+    "indic": 2,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 26,
+   "token_start": 51200,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 2,
+    "indic": 0,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 27,
+   "token_start": 53248,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 1,
+    "indic": 2,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 28,
+   "token_start": 55296,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 0,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 29,
+   "token_start": 57344,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 30,
+   "token_start": 59392,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 31,
+   "token_start": 61440,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 32,
+   "token_start": 63488,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 33,
+   "token_start": 65536,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 34,
+   "token_start": 67584,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 35,
+   "token_start": 69632,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.25,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.25
+   },
+   "stage": "reasoning-heavy-midtrain",
+   "step": 36,
+   "token_start": 71680,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 37,
+   "token_start": 73728,
+   "weights": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 38,
+   "token_start": 75776,
+   "weights": {
+    "agentic": 0.07717,
+    "code": 0.20434,
+    "general_web": 0.19434,
+    "indic": 0.135472,
+    "math_science": 0.174906,
+    "reasoning": 0.213774
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 39,
+   "token_start": 77824,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 1,
+    "indic": 2,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 40,
+   "token_start": 79872,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 41,
+   "token_start": 81920,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 42,
+   "token_start": 83968,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 43,
+   "token_start": 86016,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 44,
+   "token_start": 88064,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 0,
+    "code": 2,
+    "general_web": 2,
+    "indic": 2,
+    "math_science": 1,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 45,
+   "token_start": 90112,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 46,
+   "token_start": 92160,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 1,
+    "general_web": 2,
+    "indic": 1,
+    "math_science": 2,
+    "reasoning": 1
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 47,
+   "token_start": 94208,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  },
+  {
+   "alloc_sequences": {
+    "agentic": 1,
+    "code": 2,
+    "general_web": 1,
+    "indic": 1,
+    "math_science": 1,
+    "reasoning": 2
+   },
+   "reserve_fraction": {
+    "agentic": 0.0,
+    "code": 0.0,
+    "general_web": 0.0,
+    "indic": 0.0,
+    "math_science": 0.0,
+    "reasoning": 0.0
+   },
+   "stage": "anneal",
+   "step": 48,
+   "token_start": 96256,
+   "weights": {
+    "agentic": 0.09434,
+    "code": 0.188679,
+    "general_web": 0.188679,
+    "indic": 0.150943,
+    "math_science": 0.169811,
+    "reasoning": 0.207547
+   }
+  }
+ ],
+ "scarcity": {
+  "rows": [
+   {
+    "available_tokens": 6653,
+    "demanded_tokens": 19968,
+    "lane": "general_web",
+    "repetition_factor": 3.0014,
+    "resolution": "repeat_existing_data",
+    "scarce": true
+   },
+   {
+    "available_tokens": 2790,
+    "demanded_tokens": 20992,
+    "lane": "code",
+    "repetition_factor": 7.524,
+    "resolution": "repeat_existing_data",
+    "scarce": true
+   },
+   {
+    "available_tokens": 2930,
+    "demanded_tokens": 16384,
+    "lane": "math_science",
+    "repetition_factor": 5.5918,
+    "resolution": "repeat_existing_data",
+    "scarce": true
+   },
+   {
+    "available_tokens": 2954,
+    "demanded_tokens": 12800,
+    "lane": "indic",
+    "repetition_factor": 4.3331,
+    "resolution": "repeat_existing_data",
+    "scarce": true
+   },
+   {
+    "available_tokens": 3245,
+    "demanded_tokens": 6144,
+    "lane": "agentic",
+    "repetition_factor": 1.8934,
+    "resolution": "repeat_existing_data",
+    "scarce": true
+   },
+   {
+    "available_tokens": 2960,
+    "demanded_tokens": 22016,
+    "lane": "reasoning",
+    "repetition_factor": 7.4378,
+    "resolution": "repeat_existing_data",
+    "scarce": true
+   }
+  ],
+  "scarce_lanes": [
+   "general_web",
+   "code",
+   "math_science",
+   "indic",
+   "agentic",
+   "reasoning"
+  ]
+ },
+ "schedule_hash": "f2cd69f55ae20447524730887a405e88c3a226c1d1903a4375d7520b196edc87",
+ "schema": "tdes-mixture-schedule/1",
+ "seq_len": 256,
+ "seqs_per_step": 8,
+ "stages": [
+  {
+   "anneal_reserve": {},
+   "effective_mixture": {
+    "agentic": 0.043478260869565216,
+    "code": 0.21739130434782608,
+    "general_web": 0.21739130434782608,
+    "indic": 0.13043478260869565,
+    "math_science": 0.15217391304347827,
+    "reasoning": 0.23913043478260868
+   },
+   "index": 0,
+   "mixture": {
+    "agentic": 0.04,
+    "code": 0.2,
+    "general_web": 0.42,
+    "indic": 0.12,
+    "math_science": 0.14,
+    "reasoning": 0.08
+   },
+   "protected_floors": {
+    "agentic": 0.03,
+    "indic": 0.1,
+    "reasoning": 0.05
+   },
+   "requested_mixture": {
+    "agentic": 0.043478260869565216,
+    "code": 0.21739130434782608,
+    "general_web": 0.21739130434782608,
+    "indic": 0.13043478260869565,
+    "math_science": 0.15217391304347827,
+    "reasoning": 0.23913043478260868
+   },
+   "sequence_length": 256,
+   "stage": "foundation",
+   "token_end": 32768,
+   "token_start": 0,
+   "warmup_tokens": 0
+  },
+  {
+   "anneal_reserve": {
+    "agentic": 0.25,
+    "reasoning": 0.25
+   },
+   "effective_mixture": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   },
+   "index": 1,
+   "mixture": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.28,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.14
+   },
+   "protected_floors": {
+    "agentic": 0.05,
+    "indic": 0.12,
+    "reasoning": 0.12
+   },
+   "requested_mixture": {
+    "agentic": 0.06,
+    "code": 0.22,
+    "general_web": 0.2,
+    "indic": 0.12,
+    "math_science": 0.18,
+    "reasoning": 0.22
+   },
+   "sequence_length": 256,
+   "stage": "reasoning-heavy-midtrain",
+   "token_end": 73728,
+   "token_start": 32768,
+   "warmup_tokens": 8192
+  },
+  {
+   "anneal_reserve": {},
+   "effective_mixture": {
+    "agentic": 0.09433962264150944,
+    "code": 0.18867924528301888,
+    "general_web": 0.18867924528301888,
+    "indic": 0.1509433962264151,
+    "math_science": 0.16981132075471697,
+    "reasoning": 0.20754716981132074
+   },
+   "index": 2,
+   "mixture": {
+    "agentic": 0.1,
+    "code": 0.2,
+    "general_web": 0.18,
+    "indic": 0.16,
+    "math_science": 0.18,
+    "reasoning": 0.18
+   },
+   "protected_floors": {
+    "agentic": 0.08,
+    "indic": 0.15,
+    "reasoning": 0.16
+   },
+   "release_reserves": true,
+   "requested_mixture": {
+    "agentic": 0.09433962264150944,
+    "code": 0.18867924528301888,
+    "general_web": 0.18867924528301888,
+    "indic": 0.1509433962264151,
+    "math_science": 0.16981132075471697,
+    "reasoning": 0.20754716981132074
+   },
+   "sequence_length": 256,
+   "stage": "anneal",
+   "token_end": 114688,
+   "token_start": 73728,
+   "warmup_tokens": 4096
+  }
+ ],
+ "tokens_per_step": 2048
+}

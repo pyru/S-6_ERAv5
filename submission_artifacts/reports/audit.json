@@ -1,0 +1,1222 @@
+{
+ "audit_hash": "62409ff98f5aeb4b34918ac8d5e0de43569fa2834eeeda19ec17b49478a79eb1",
+ "checkpoint_range_query": {
+  "branch": "main",
+  "checkpoint_range": [
+   24,
+   32
+  ],
+  "documents": 84,
+  "lanes": {
+   "agentic": 4,
+   "code": 10,
+   "general_web": 12,
+   "indic": 8,
+   "math_science": 10,
+   "reasoning": 7
+  },
+  "ok": true,
+  "question": "which shards influenced the model between step 24 and 32",
+  "shards": {
+   "shard-agentic-00": 314,
+   "shard-agentic-01": 155,
+   "shard-agentic-02": 143,
+   "shard-code-00": 942,
+   "shard-code-01": 425,
+   "shard-code-02": 882,
+   "shard-code-03": 690,
+   "shard-code-04": 222,
+   "shard-general_web-00": 1302,
+   "shard-general_web-01": 655,
+   "shard-general_web-02": 416,
+   "shard-general_web-03": 1101,
+   "shard-general_web-04": 1134,
+   "shard-indic-01": 44,
+   "shard-indic-02": 850,
+   "shard-indic-03": 670,
+   "shard-indic-04": 484,
+   "shard-math_science-00": 494,
+   "shard-math_science-01": 736,
+   "shard-math_science-02": 255,
+   "shard-math_science-03": 781,
+   "shard-reasoning-01": 370,
+   "shard-reasoning-02": 976,
+   "shard-reasoning-03": 868
+  },
+  "token_spans": 136
+ },
+ "firewall": {
+  "admission_blocked_eval": [
+   "doc-bad-contaminated-000",
+   "doc-bad-evalsmuggle-000"
+  ],
+  "admission_blocked_total": 7,
+  "admission_rejection_reasons": {
+   "duplicate_document": 1,
+   "eval_contamination": 2,
+   "language_not_validated": 1,
+   "license_tier_not_admissible": 1,
+   "missing_cleaning_lineage": 1,
+   "pii_detected": 1,
+   "registered_evaluation_document": 1
+  },
+  "batches_scanned": 51,
+  "blocked_batches": 0,
+  "branch": "main",
+  "eval_docs_in_training_stream": [],
+  "ok": true,
+  "registered_test_docs": 6,
+  "registered_validation_docs": 5,
+  "total_overlap_hits": 0,
+  "validation_docs_in_training_stream": [],
+  "validation_eval_events": 6,
+  "validation_gradient_bearing": false
+ },
+ "learning": {
+  "branch": "main",
+  "classification_counts": {
+   "harmful": 65,
+   "useful": 343
+  },
+  "lane_rows": [
+   {
+    "exposures": 24,
+    "lane": "agentic",
+    "loss_bearing_tokens": 2324,
+    "mean_loss_before": 4.971981,
+    "mean_loss_delta": 0.05034305
+   },
+   {
+    "exposures": 86,
+    "lane": "code",
+    "loss_bearing_tokens": 19059,
+    "mean_loss_before": 4.811337,
+    "mean_loss_delta": 0.05411139
+   },
+   {
+    "exposures": 127,
+    "lane": "general_web",
+    "loss_bearing_tokens": 32373,
+    "mean_loss_before": 4.641916,
+    "mean_loss_delta": 0.06507263
+   },
+   {
+    "exposures": 53,
+    "lane": "indic",
+    "loss_bearing_tokens": 12925,
+    "mean_loss_before": 5.789063,
+    "mean_loss_delta": 0.02022095
+   },
+   {
+    "exposures": 67,
+    "lane": "math_science",
+    "loss_bearing_tokens": 14188,
+    "mean_loss_before": 4.975167,
+    "mean_loss_delta": 0.03969095
+   },
+   {
+    "exposures": 51,
+    "lane": "reasoning",
+    "loss_bearing_tokens": 8560,
+    "mean_loss_before": 4.467942,
+    "mean_loss_delta": 0.05019086
+   }
+  ],
+  "learning_events": 408,
+  "learning_events_cover_consumption": true,
+  "loss_end": 4.253423,
+  "loss_reduced": true,
+  "loss_start": 6.15946,
+  "ok": true,
+  "repeated_pass_effect": [
+   {
+    "exposures": 47,
+    "mean_loss_delta": 0.0836324,
+    "repeated_pass_number": 0
+   },
+   {
+    "exposures": 51,
+    "mean_loss_delta": 0.08275009,
+    "repeated_pass_number": 1
+   },
+   {
+    "exposures": 40,
+    "mean_loss_delta": 0.03884587,
+    "repeated_pass_number": 2
+   },
+   {
+    "exposures": 36,
+    "mean_loss_delta": 0.06717945,
+    "repeated_pass_number": 3
+   },
+   {
+    "exposures": 47,
+    "mean_loss_delta": 0.03889559,
+    "repeated_pass_number": 4
+   },
+   {
+    "exposures": 47,
+    "mean_loss_delta": 0.04339553,
+    "repeated_pass_number": 5
+   },
+   {
+    "exposures": 49,
+    "mean_loss_delta": 0.04322222,
+    "repeated_pass_number": 6
+   },
+   {
+    "exposures": 38,
+    "mean_loss_delta": 0.02558061,
+    "repeated_pass_number": 7
+   },
+   {
+    "exposures": 28,
+    "mean_loss_delta": 0.02213891,
+    "repeated_pass_number": 8
+   },
+   {
+    "exposures": 11,
+    "mean_loss_delta": 0.0327637,
+    "repeated_pass_number": 9
+   },
+   {
+    "exposures": 6,
+    "mean_loss_delta": 0.03507172,
+    "repeated_pass_number": 10
+   },
+   {
+    "exposures": 6,
+    "mean_loss_delta": 0.02058912,
+    "repeated_pass_number": 11
+   },
+   {
+    "exposures": 2,
+    "mean_loss_delta": 0.01080659,
+    "repeated_pass_number": 12
+   }
+  ],
+  "shard_report_cards": [
+   {
+    "exposures": 8,
+    "lanes": [
+     "agentic"
+    ],
+    "loss_bearing_tokens": 771,
+    "mean_grad_norm": 0.310541,
+    "mean_loss_delta": 0.08218311,
+    "mean_perplexity_before": 149.2169,
+    "mean_token_loss_after": 4.923218,
+    "mean_token_loss_before": 5.005401,
+    "repeated_passes": [
+     0,
+     1,
+     2
+    ],
+    "shard_id": "shard-agentic-00",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 9,
+    "lanes": [
+     "agentic"
+    ],
+    "loss_bearing_tokens": 892,
+    "mean_grad_norm": 0.233225,
+    "mean_loss_delta": 0.02385213,
+    "mean_perplexity_before": 145.1696,
+    "mean_token_loss_after": 4.954051,
+    "mean_token_loss_before": 4.977903,
+    "repeated_passes": [
+     0,
+     1
+    ],
+    "shard_id": "shard-agentic-01",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 3,
+    "lanes": [
+     "agentic"
+    ],
+    "loss_bearing_tokens": 276,
+    "mean_grad_norm": 0.208214,
+    "mean_loss_delta": 0.05334044,
+    "mean_perplexity_before": 179.4537,
+    "mean_token_loss_after": 5.136577,
+    "mean_token_loss_before": 5.189918,
+    "repeated_passes": [
+     0,
+     1
+    ],
+    "shard_id": "shard-agentic-02",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 4,
+    "lanes": [
+     "agentic"
+    ],
+    "loss_bearing_tokens": 385,
+    "mean_grad_norm": 0.432123,
+    "mean_loss_delta": 0.04401946,
+    "mean_perplexity_before": 113.1103,
+    "mean_token_loss_after": 4.684344,
+    "mean_token_loss_before": 4.728364,
+    "repeated_passes": [
+     0,
+     1
+    ],
+    "shard_id": "shard-agentic-03",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 41,
+    "lanes": [
+     "code"
+    ],
+    "loss_bearing_tokens": 9443,
+    "mean_grad_norm": 0.312607,
+    "mean_loss_delta": 0.05062971,
+    "mean_perplexity_before": 118.7496,
+    "mean_token_loss_after": 4.726387,
+    "mean_token_loss_before": 4.777017,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "shard_id": "shard-code-00",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 21,
+    "lanes": [
+     "code"
+    ],
+    "loss_bearing_tokens": 4344,
+    "mean_grad_norm": 0.280429,
+    "mean_loss_delta": 0.05837285,
+    "mean_perplexity_before": 124.1778,
+    "mean_token_loss_after": 4.763342,
+    "mean_token_loss_before": 4.821715,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12
+    ],
+    "shard_id": "shard-code-01",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 30,
+    "lanes": [
+     "code"
+    ],
+    "loss_bearing_tokens": 6508,
+    "mean_grad_norm": 0.256715,
+    "mean_loss_delta": 0.0514859,
+    "mean_perplexity_before": 123.0056,
+    "mean_token_loss_after": 4.760744,
+    "mean_token_loss_before": 4.81223,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "shard_id": "shard-code-02",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 33,
+    "lanes": [
+     "code"
+    ],
+    "loss_bearing_tokens": 7515,
+    "mean_grad_norm": 0.296512,
+    "mean_loss_delta": 0.0583237,
+    "mean_perplexity_before": 131.0503,
+    "mean_token_loss_after": 4.817258,
+    "mean_token_loss_before": 4.875581,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "shard_id": "shard-code-03",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 7,
+    "lanes": [
+     "code"
+    ],
+    "loss_bearing_tokens": 1547,
+    "mean_grad_norm": 0.253415,
+    "mean_loss_delta": 0.05349226,
+    "mean_perplexity_before": 78.956,
+    "mean_token_loss_after": 4.315399,
+    "mean_token_loss_before": 4.368891,
+    "repeated_passes": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ],
+    "shard_id": "shard-code-04",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 37,
+    "lanes": [
+     "general_web"
+    ],
+    "loss_bearing_tokens": 9435,
+    "mean_grad_norm": 0.25879,
+    "mean_loss_delta": 0.06459439,
+    "mean_perplexity_before": 101.6182,
+    "mean_token_loss_after": 4.556628,
+    "mean_token_loss_before": 4.621223,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-general_web-00",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 28,
+    "lanes": [
+     "general_web"
+    ],
+    "loss_bearing_tokens": 7140,
+    "mean_grad_norm": 0.304165,
+    "mean_loss_delta": 0.06783951,
+    "mean_perplexity_before": 114.1359,
+    "mean_token_loss_after": 4.66955,
+    "mean_token_loss_before": 4.73739,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-general_web-01",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 35,
+    "lanes": [
+     "general_web"
+    ],
+    "loss_bearing_tokens": 8925,
+    "mean_grad_norm": 0.275857,
+    "mean_loss_delta": 0.06733691,
+    "mean_perplexity_before": 104.2185,
+    "mean_token_loss_after": 4.579153,
+    "mean_token_loss_before": 4.64649,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-general_web-02",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 30,
+    "lanes": [
+     "general_web"
+    ],
+    "loss_bearing_tokens": 7650,
+    "mean_grad_norm": 0.282197,
+    "mean_loss_delta": 0.05499331,
+    "mean_perplexity_before": 89.2348,
+    "mean_token_loss_after": 4.436278,
+    "mean_token_loss_before": 4.491271,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-general_web-03",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 31,
+    "lanes": [
+     "general_web"
+    ],
+    "loss_bearing_tokens": 7893,
+    "mean_grad_norm": 0.32042,
+    "mean_loss_delta": 0.06248023,
+    "mean_perplexity_before": 102.1461,
+    "mean_token_loss_after": 4.563923,
+    "mean_token_loss_before": 4.626404,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-general_web-04",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 6,
+    "lanes": [
+     "indic"
+    ],
+    "loss_bearing_tokens": 1530,
+    "mean_grad_norm": 0.215497,
+    "mean_loss_delta": 0.0195919,
+    "mean_perplexity_before": 372.3223,
+    "mean_token_loss_after": 5.900168,
+    "mean_token_loss_before": 5.91976,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "shard_id": "shard-indic-00",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 16,
+    "lanes": [
+     "indic"
+    ],
+    "loss_bearing_tokens": 4080,
+    "mean_grad_norm": 0.253909,
+    "mean_loss_delta": 0.02697527,
+    "mean_perplexity_before": 342.9228,
+    "mean_token_loss_after": 5.81053,
+    "mean_token_loss_before": 5.837505,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-indic-01",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 20,
+    "lanes": [
+     "indic"
+    ],
+    "loss_bearing_tokens": 5100,
+    "mean_grad_norm": 0.248447,
+    "mean_loss_delta": 0.01809689,
+    "mean_perplexity_before": 338.9541,
+    "mean_token_loss_after": 5.807768,
+    "mean_token_loss_before": 5.825865,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-indic-02",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 23,
+    "lanes": [
+     "indic"
+    ],
+    "loss_bearing_tokens": 5865,
+    "mean_grad_norm": 0.284785,
+    "mean_loss_delta": 0.02190449,
+    "mean_perplexity_before": 315.9656,
+    "mean_token_loss_after": 5.733729,
+    "mean_token_loss_before": 5.755633,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "shard_id": "shard-indic-03",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 9,
+    "lanes": [
+     "indic"
+    ],
+    "loss_bearing_tokens": 1705,
+    "mean_grad_norm": 0.242106,
+    "mean_loss_delta": 0.00841788,
+    "mean_perplexity_before": 310.0213,
+    "mean_token_loss_after": 5.728223,
+    "mean_token_loss_before": 5.736641,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "shard_id": "shard-indic-04",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 13,
+    "lanes": [
+     "math_science"
+    ],
+    "loss_bearing_tokens": 3177,
+    "mean_grad_norm": 0.262828,
+    "mean_loss_delta": 0.04179513,
+    "mean_perplexity_before": 120.5713,
+    "mean_token_loss_after": 4.750446,
+    "mean_token_loss_before": 4.792241,
+    "repeated_passes": [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "shard_id": "shard-math_science-00",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 14,
+    "lanes": [
+     "math_science"
+    ],
+    "loss_bearing_tokens": 3430,
+    "mean_grad_norm": 0.253417,
+    "mean_loss_delta": 0.04363911,
+    "mean_perplexity_before": 149.0822,
+    "mean_token_loss_after": 4.960858,
+    "mean_token_loss_before": 5.004498,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-math_science-01",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 10,
+    "lanes": [
+     "math_science"
+    ],
+    "loss_bearing_tokens": 2466,
+    "mean_grad_norm": 0.328362,
+    "mean_loss_delta": 0.04295259,
+    "mean_perplexity_before": 173.8638,
+    "mean_token_loss_after": 5.11532,
+    "mean_token_loss_before": 5.158272,
+    "repeated_passes": [
+     0,
+     2,
+     4,
+     6,
+     7,
+     8
+    ],
+    "shard_id": "shard-math_science-02",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 30,
+    "lanes": [
+     "math_science"
+    ],
+    "loss_bearing_tokens": 5115,
+    "mean_grad_norm": 0.289838,
+    "mean_loss_delta": 0.03584945,
+    "mean_perplexity_before": 145.4324,
+    "mean_token_loss_after": 4.943862,
+    "mean_token_loss_before": 4.979711,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "shard_id": "shard-math_science-03",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 20,
+    "lanes": [
+     "reasoning"
+    ],
+    "loss_bearing_tokens": 3360,
+    "mean_grad_norm": 0.294727,
+    "mean_loss_delta": 0.03934306,
+    "mean_perplexity_before": 89.9814,
+    "mean_token_loss_after": 4.46026,
+    "mean_token_loss_before": 4.499603,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6,
+     7
+    ],
+    "shard_id": "shard-reasoning-00",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 30,
+    "lanes": [
+     "reasoning"
+    ],
+    "loss_bearing_tokens": 5064,
+    "mean_grad_norm": 0.294572,
+    "mean_loss_delta": 0.05260643,
+    "mean_perplexity_before": 92.1342,
+    "mean_token_loss_after": 4.47064,
+    "mean_token_loss_before": 4.523247,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "shard_id": "shard-reasoning-01",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 15,
+    "lanes": [
+     "reasoning"
+    ],
+    "loss_bearing_tokens": 2500,
+    "mean_grad_norm": 0.2821,
+    "mean_loss_delta": 0.04645208,
+    "mean_perplexity_before": 77.8296,
+    "mean_token_loss_after": 4.30807,
+    "mean_token_loss_before": 4.354522,
+    "repeated_passes": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7
+    ],
+    "shard_id": "shard-reasoning-02",
+    "usefulness": "useful"
+   },
+   {
+    "exposures": 26,
+    "lanes": [
+     "reasoning"
+    ],
+    "loss_bearing_tokens": 4354,
+    "mean_grad_norm": 0.264198,
+    "mean_loss_delta": 0.06308603,
+    "mean_perplexity_before": 87.8301,
+    "mean_token_loss_after": 4.412318,
+    "mean_token_loss_before": 4.475404,
+    "repeated_passes": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "shard_id": "shard-reasoning-03",
+    "usefulness": "useful"
+   }
+  ],
+  "token_trace_linked_to_consumption": true,
+  "token_trace_packs": [
+   "pack-agentic-structure_preserving-0003",
+   "pack-agentic-structure_preserving-0013",
+   "pack-agentic-structure_preserving-0018",
+   "pack-code-best_fit-0001",
+   "pack-code-best_fit-0009"
+  ],
+  "token_trace_records": 1129
+ },
+ "ledgers_fork": {
+  "branch": "fork-a",
+  "chain_verification": {
+   "consumption": {
+    "count": 40,
+    "head": "a2e7540e04de0536fc13085d75cce97fd4fb58693a4850e27910ce1476686bee",
+    "ok": true,
+    "reason": "ok"
+   },
+   "control": {
+    "count": 4,
+    "head": "f973b633eb69504713230d34addc0ed3f1b3739295f96f5177a1dd535ef293e9",
+    "ok": true,
+    "reason": "ok"
+   },
+   "firewall": {
+    "count": 8,
+    "head": "dccf9323463272c11e95f288a802a17c799e36dce7b1252da481383fc414ce4a",
+    "ok": true,
+    "reason": "ok"
+   },
+   "learning": {
+    "count": 64,
+    "head": "aea0d252b979e62e3becabcdd72d3dad6051e07a5dac37ae46f35b145b9044ed",
+    "ok": true,
+    "reason": "ok"
+   },
+   "opus": {
+    "count": 128,
+    "head": "a451992ab6ac003468be3735d087fff4868a5ce87e8fab41072746d2626c77f9",
+    "ok": true,
+    "reason": "ok"
+   },
+   "token_trace": {
+    "count": 91,
+    "head": "092315296d11460763b1433918351434330588518c869ec1ed747c258d38d1ef",
+    "ok": true,
+    "reason": "ok"
+   }
+  },
+  "chains_ok": true,
+  "contiguous": true,
+  "duplicate_steps": [],
+  "effective_consumption_records": 40,
+  "expected_steps": 8,
+  "microbatch_counts_ok": true,
+  "microbatches_per_step_expected": 4,
+  "ok": true,
+  "physical_consumption_records": 40,
+  "rollback_events": 0,
+  "steps_covered": [
+   17,
+   24
+  ],
+  "superseded_records": 0
+ },
+ "ledgers_main": {
+  "branch": "main",
+  "chain_verification": {
+   "consumption": {
+    "count": 255,
+    "head": "bf5056e39dea785ee8b34743852b165bb180d842a88fcabd4e54ffa5979b4046",
+    "ok": true,
+    "reason": "ok"
+   },
+   "control": {
+    "count": 17,
+    "head": "5f6b1b2884ca31a429c77ea52f6188fe3dbfc3e200e83c26bdcf6b0b000c61e4",
+    "ok": true,
+    "reason": "ok"
+   },
+   "firewall": {
+    "count": 51,
+    "head": "a1651f3ebe623e9b855b8483ac9910cefe022a1dd57c1782ddf0f2a0b9d83a90",
+    "ok": true,
+    "reason": "ok"
+   },
+   "learning": {
+    "count": 408,
+    "head": "03b823ce8d82496dfb26076cc505230ecfb80abff81c480ebd73f354fa2c1df3",
+    "ok": true,
+    "reason": "ok"
+   },
+   "opus": {
+    "count": 810,
+    "head": "e7469a044c16dfb67115d90594da8ca6c33e5005663e6439744a0f44bef22759",
+    "ok": true,
+    "reason": "ok"
+   },
+   "token_trace": {
+    "count": 1129,
+    "head": "7e13e563aad127bbab0d4cb302325ab135e768f14a114fd427d2fe11b604ad61",
+    "ok": true,
+    "reason": "ok"
+   }
+  },
+  "chains_ok": true,
+  "contiguous": true,
+  "duplicate_steps": [],
+  "effective_consumption_records": 240,
+  "expected_steps": 48,
+  "microbatch_counts_ok": true,
+  "microbatches_per_step_expected": 4,
+  "ok": true,
+  "physical_consumption_records": 255,
+  "rollback_events": 1,
+  "steps_covered": [
+   1,
+   48
+  ],
+  "superseded_records": 15
+ },
+ "mixture": {
+  "branch": "main",
+  "compliant": true,
+  "floors_respected": true,
+  "max_abs_share_delta": 0.0,
+  "ok": true,
+  "protected_floors": [
+   {
+    "actual_share": 0.117188,
+    "floor": 0.1,
+    "lane": "indic",
+    "respected": true,
+    "stage": "foundation"
+   },
+   {
+    "actual_share": 0.039062,
+    "floor": 0.03,
+    "lane": "agentic",
+    "respected": true,
+    "stage": "foundation"
+   },
+   {
+    "actual_share": 0.078125,
+    "floor": 0.05,
+    "lane": "reasoning",
+    "respected": true,
+    "stage": "foundation"
+   },
+   {
+    "actual_share": 0.125,
+    "floor": 0.12,
+    "lane": "indic",
+    "respected": true,
+    "stage": "reasoning-heavy-midtrain"
+   },
+   {
+    "actual_share": 0.05625,
+    "floor": 0.05,
+    "lane": "agentic",
+    "respected": true,
+    "stage": "reasoning-heavy-midtrain"
+   },
+   {
+    "actual_share": 0.1375,
+    "floor": 0.12,
+    "lane": "reasoning",
+    "respected": true,
+    "stage": "reasoning-heavy-midtrain"
+   },
+   {
+    "actual_share": 0.15625,
+    "floor": 0.15,
+    "lane": "indic",
+    "respected": true,
+    "stage": "anneal"
+   },
+   {
+    "actual_share": 0.09375,
+    "floor": 0.08,
+    "lane": "agentic",
+    "respected": true,
+    "stage": "anneal"
+   },
+   {
+    "actual_share": 0.166667,
+    "floor": 0.16,
+    "lane": "reasoning",
+    "respected": true,
+    "stage": "anneal"
+   }
+  ],
+  "rows": [
+   {
+    "abs_delta": 0.0,
+    "actual_share": 0.3125,
+    "actual_tokens": 30720,
+    "lane": "general_web",
+    "planned_share": 0.3125,
+    "planned_tokens": 30720
+   },
+   {
+    "abs_delta": 0.0,
+    "actual_share": 0.208333,
+    "actual_tokens": 20480,
+    "lane": "code",
+    "planned_share": 0.208333,
+    "planned_tokens": 20480
+   },
+   {
+    "abs_delta": 0.0,
+    "actual_share": 0.164062,
+    "actual_tokens": 16128,
+    "lane": "math_science",
+    "planned_share": 0.164062,
+    "planned_tokens": 16128
+   },
+   {
+    "abs_delta": 0.0,
+    "actual_share": 0.130208,
+    "actual_tokens": 12800,
+    "lane": "indic",
+    "planned_share": 0.130208,
+    "planned_tokens": 12800
+   },
+   {
+    "abs_delta": 0.0,
+    "actual_share": 0.059896,
+    "actual_tokens": 5888,
+    "lane": "agentic",
+    "planned_share": 0.059896,
+    "planned_tokens": 5888
+   },
+   {
+    "abs_delta": 0.0,
+    "actual_share": 0.125,
+    "actual_tokens": 12288,
+    "lane": "reasoning",
+    "planned_share": 0.125,
+    "planned_tokens": 12288
+   }
+  ],
+  "tolerance": 0.05
+ },
+ "ok": true,
+ "opus": {
+  "branch": "main",
+  "candidate_records": 810,
+  "consumed_candidates": 384,
+  "consumed_without_decision": [],
+  "has_all_four_outcomes": true,
+  "ok": true,
+  "override_examples": [
+   {
+    "candidate_id": "cand-00033-reasoning-00",
+    "capability_lane": "reasoning",
+    "curriculum_stage": "reasoning-heavy-midtrain",
+    "effective_tokens": 166,
+    "global_step": 33,
+    "initial_status": "deferred",
+    "lane_deficit": 0.12109375,
+    "novelty": 0.14285714,
+    "opus_score": 0.52919211,
+    "pack_hash": "fc1c266a140cb5fba5734bc0e5ee05ecdd6c6231def30a3047b0889ea88b3826",
+    "pack_id": "pack-reasoning-structure_preserving-0007",
+    "protected_floor_override": true,
+    "proxy_loss": 4.10641468,
+    "proxy_version": "opus-proxy-1.0.0",
+    "rejection_reason": "duplication",
+    "repeated_pass_number": 6,
+    "scoring_checkpoint_id": "ckpt-main-0032",
+    "selected": true,
+    "shard_ids": [
+     "shard-reasoning-00"
+    ],
+    "status": "protected_floor_override",
+    "surprise": 0.74558917,
+    "type": "opus_decision"
+   },
+   {
+    "candidate_id": "cand-00034-reasoning-00",
+    "capability_lane": "reasoning",
+    "curriculum_stage": "reasoning-heavy-midtrain",
+    "effective_tokens": 170,
+    "global_step": 34,
+    "initial_status": "deferred",
+    "lane_deficit": 0.11616162,
+    "novelty": 0.14285714,
+    "opus_score": 0.52699947,
+    "pack_hash": "bd4c6ec94872269a6be61abeb47a91ea4e57953725e6b159098e020c87671fa4",
+    "pack_id": "pack-reasoning-structure_preserving-0004",
+    "protected_floor_override": true,
+    "proxy_loss": 4.08905617,
+    "proxy_version": "opus-proxy-1.0.0",
+    "rejection_reason": "duplication",
+    "repeated_pass_number": 6,
+    "scoring_checkpoint_id": "ckpt-main-0032",
+    "selected": true,
+    "shard_ids": [
+     "shard-reasoning-00",
+     "shard-reasoning-01"
+    ],
+    "status": "protected_floor_override",
+    "surprise": 0.74411284,
+    "type": "opus_decision"
+   },
+   {
+    "candidate_id": "cand-00035-reasoning-00",
+    "capability_lane": "reasoning",
+    "curriculum_stage": "reasoning-heavy-midtrain",
+    "effective_tokens": 168,
+    "global_step": 35,
+    "initial_status": "deferred",
+    "lane_deficit": 0.11151961,
+    "novelty": 0.14285714,
+    "opus_score": 0.52943152,
+    "pack_hash": "ec497795d0c987e98d82b5f756370ddf01cdc75e201442d524839eac98d71336",
+    "pack_id": "pack-reasoning-structure_preserving-0001",
+    "protected_floor_override": true,
+    "proxy_loss": 4.15456448,
+    "proxy_version": "opus-proxy-1.0.0",
+    "rejection_reason": "duplication",
+    "repeated_pass_number": 6,
+    "scoring_checkpoint_id": "ckpt-main-0032",
+    "selected": true,
+    "shard_ids": [
+     "shard-reasoning-00",
+     "shard-reasoning-01"
+    ],
+    "status": "protected_floor_override",
+    "surprise": 0.74963986,
+    "type": "opus_decision"
+   }
+  ],
+  "protected_floor_overrides": 9,
+  "proxy_versions": [
+   "opus-proxy-1.0.0"
+  ],
+  "rejected_retained": 320,
+  "rejection_reason_counts": {
+   "duplication": 204,
+   "quota_fill_from_deferred": 89,
+   "quota_pressure": 252
+  },
+  "scoring_checkpoints": [
+   "ckpt-main-0000",
+   "ckpt-main-0008",
+   "ckpt-main-0016",
+   "ckpt-main-0024",
+   "ckpt-main-0032",
+   "ckpt-main-0040"
+  ],
+  "selection_matches_consumption": true,
+  "status_counts": {
+   "accepted": 265,
+   "deferred": 82,
+   "deferred_promoted": 89,
+   "protected_floor_override": 9,
+   "quota_backfill": 45,
+   "rejected": 320
+  }
+ },
+ "schema": "tdes-audit/1",
+ "shards": {
+  "failed": [],
+  "frozen_tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05",
+  "immutability": "content_hash + read-only files; any edit changes the hash",
+  "merkle_root_in_index": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+  "merkle_root_match": true,
+  "merkle_root_recomputed": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+  "ok": true,
+  "shard_count": 27,
+  "tokenizer_hash_match": true,
+  "tokenizer_hashes_in_shards": [
+   "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+  ],
+  "total_tokens": 21532,
+  "verified": 27
+ }
+}

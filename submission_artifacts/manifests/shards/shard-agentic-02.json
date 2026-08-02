@@ -1,0 +1,287 @@
+{
+ "bin_path": "shards/shard-agentic-02.bin",
+ "capability_lane": "agentic",
+ "cleaning_pipeline_hash": "458e3cb4750eca65cc61e6b1a3fe4bb1",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "b962cbfe4fa81db295c308036c3afb1d0c9214cbe99cee84e3d289266a9af590",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-agentic-012",
+  "doc-agentic-013",
+  "doc-agentic-014",
+  "doc-agentic-015",
+  "doc-agentic-016",
+  "doc-agentic-017"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-012",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-0",
+   "structured": true,
+   "text_hash": "08f35f69ef11e4725c463cecceb4cf5f63dd198399c80fa27c00b1ee627e56b7",
+   "token_count": 143,
+   "token_end": 143,
+   "token_hash": "652923f8147a5c8a2e89a81afe946bf70a6aedbb6cb2fbe237a3b6e609dd0814",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-013",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-1",
+   "structured": true,
+   "text_hash": "101cc15df4548be5c06b77777810a625d63cc58ba8cda607af30c7e0a0c1fc72",
+   "token_count": 143,
+   "token_end": 286,
+   "token_hash": "54b41e28095f648337da04beeacebc283a587dc432febc0734b9bf41a68c7214",
+   "token_start": 143
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-014",
+   "lang": "en",
+   "license_tier": "cc_by",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-2",
+   "structured": true,
+   "text_hash": "ec48f9f04be00925084e1b7787a0db7053db50896d410a6b0de4ef9be90a2044",
+   "token_count": 143,
+   "token_end": 429,
+   "token_hash": "5bcea481f76e85f196160687e14dea3de66d11fedcb8dea494a298f939b0caef",
+   "token_start": 286
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-015",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-3",
+   "structured": true,
+   "text_hash": "14c32710d3f280a9ad7a1fad673a73ef5d9604aa4139ed4261675361c37565fe",
+   "token_count": 148,
+   "token_end": 577,
+   "token_hash": "f97f08b8cbbd2e042db4c80f00eaf802485795808e24a5e7ed7edb2fe8020e54",
+   "token_start": 429
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-016",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-0",
+   "structured": true,
+   "text_hash": "4f76e32340a30ccfa2920a623f95383830627588d44795265471d86dde27f05d",
+   "token_count": 143,
+   "token_end": 720,
+   "token_hash": "71c1e9e52a7bac92fcccfc5aed0f2e20ac2cfe9817c9b6547873a072d88a3d91",
+   "token_start": 577
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-017",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-1",
+   "structured": true,
+   "text_hash": "a3a144cb413f47fa7bbc945bffe9a1ed7589f33e185cbb29659df1e680c6e81a",
+   "token_count": 149,
+   "token_end": 869,
+   "token_hash": "65f6591d1acfab188a7a0fc7977db664c0a2f3bc75448eb3c091b3e7e63babde",
+   "token_start": 720
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "agentic",
+ "languages": [
+  "en"
+ ],
+ "license_tiers": [
+  "cc_by",
+  "permissive"
+ ],
+ "loss_bearing_token_count": 555,
+ "manifest_hash": "9568d95c4c9fd4c68ff68589e8550cb9077411ad3e6fc4ae155aaeb3662c56bd",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Latn"
+ ],
+ "sealed": true,
+ "shard_id": "shard-agentic-02",
+ "side_path": "shards/shard-agentic-02.side.json",
+ "source_ids": [
+  "src-agentic-0",
+  "src-agentic-1",
+  "src-agentic-2",
+  "src-agentic-3"
+ ],
+ "token_count": 869,
+ "token_stream_hash": "b962cbfe4fa81db295c308036c3afb1d0c9214cbe99cee84e3d289266a9af590",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}

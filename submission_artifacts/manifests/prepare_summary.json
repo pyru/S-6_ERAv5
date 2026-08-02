@@ -1,0 +1,62 @@
+{
+ "admitted_docs": 154,
+ "available_tokens_by_lane": {
+  "agentic": 3245,
+  "code": 2790,
+  "general_web": 6653,
+  "indic": 2954,
+  "math_science": 2930,
+  "reasoning": 2960
+ },
+ "config_fingerprint": {
+  "code_version": "tdes-1.0.0",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "grad_accum": 2,
+  "lane_packing_policy": {
+   "agentic": "structure_preserving",
+   "code": "best_fit",
+   "general_web": "concat_chop",
+   "indic": "concat_chop",
+   "math_science": "greedy",
+   "reasoning": "structure_preserving"
+  },
+  "lanes": [
+   "general_web",
+   "code",
+   "math_science",
+   "indic",
+   "agentic",
+   "reasoning"
+  ],
+  "master_seed": 20260802,
+  "micro_batch": 2,
+  "opus": {
+   "accept": 0.55,
+   "defer": 0.5,
+   "overgeneration": 1.75
+  },
+  "opus_proxy_version": "opus-proxy-1.0.0",
+  "packer_version": "tdes-packer-1.0.0",
+  "seq_len": 256,
+  "seqs_per_step": 8,
+  "vocab_size": 512,
+  "world_size": 2
+ },
+ "merkle_root": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+ "mixture_schedule_hash": "bed043ecd7ef5078c6fd6baf58e56517c2f8b8057b89b23c500dfca956a25c56",
+ "pack_pools": {
+  "agentic": 22,
+  "code": 13,
+  "general_web": 26,
+  "indic": 12,
+  "math_science": 13,
+  "reasoning": 12
+ },
+ "packing_report_hash": "577c6cc31507a03a09d4dd1c997a7c8527436df1c5f5e70731e3084e927044ad",
+ "rejected_docs": 7,
+ "shard_count": 27,
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05",
+ "tokenizer_path": "manifests/tokenizer.json",
+ "total_tokens": 21532,
+ "validation_packs": 5
+}

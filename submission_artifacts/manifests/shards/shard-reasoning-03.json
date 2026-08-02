@@ -1,0 +1,240 @@
+{
+ "bin_path": "shards/shard-reasoning-03.bin",
+ "capability_lane": "reasoning",
+ "cleaning_pipeline_hash": "a7dc3a719c9c1d7e8fd233959c105933",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "85a578b92e86596135e539587e47f7d8a542734125cabee0381528fbe47af6a2",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-reasoning-018",
+  "doc-reasoning-019",
+  "doc-reasoning-020",
+  "doc-reasoning-021",
+  "doc-reasoning-022",
+  "doc-reasoning-023"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "reasoning",
+    "long_context"
+   ],
+   "doc_id": "doc-reasoning-018",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "think"
+    },
+    {
+     "loss": true,
+     "role": "answer"
+    }
+   ],
+   "source_id": "src-reasoning-2",
+   "structured": true,
+   "text_hash": "1805e5e0826e71d661064fb1fd24a0c07d204f111006b9a1829e1fb24a7a7efc",
+   "token_count": 130,
+   "token_end": 130,
+   "token_hash": "0ad20244995f123cb07fc2807ecc18cf80c951d831fbfba0805b099291787fc5",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "reasoning"
+   ],
+   "doc_id": "doc-reasoning-019",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "think"
+    },
+    {
+     "loss": true,
+     "role": "answer"
+    }
+   ],
+   "source_id": "src-reasoning-3",
+   "structured": true,
+   "text_hash": "24e48e14f92427beb3d43819372917137131bc60ba0724c4e64850159f975854",
+   "token_count": 125,
+   "token_end": 255,
+   "token_hash": "afe5b009867cd4716eea0767b356470ee08a3d7657f8fe0bf9f3ecf128a975e8",
+   "token_start": 130
+  },
+  {
+   "capability_tags": [
+    "reasoning"
+   ],
+   "doc_id": "doc-reasoning-020",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "think"
+    },
+    {
+     "loss": true,
+     "role": "answer"
+    }
+   ],
+   "source_id": "src-reasoning-0",
+   "structured": true,
+   "text_hash": "a7d601a5f8e50c063e818d88a4b068184387e1f5c0755cf7e5a0b8a595cf8718",
+   "token_count": 121,
+   "token_end": 376,
+   "token_hash": "014ce5de884a6561588e93533738e62f7a8f75931b6a85de29ba3e8aaf4bada8",
+   "token_start": 255
+  },
+  {
+   "capability_tags": [
+    "reasoning"
+   ],
+   "doc_id": "doc-reasoning-021",
+   "lang": "en",
+   "license_tier": "cc_by",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "think"
+    },
+    {
+     "loss": true,
+     "role": "answer"
+    }
+   ],
+   "source_id": "src-reasoning-1",
+   "structured": true,
+   "text_hash": "a4576cba40933025bb3df528f4e26948f72987391957cec25582b1a276cfc759",
+   "token_count": 121,
+   "token_end": 497,
+   "token_hash": "ec88c78befe2228efa493dc6aea0ca19e8af0ea99e0230b0bc549a7d977548b8",
+   "token_start": 376
+  },
+  {
+   "capability_tags": [
+    "reasoning"
+   ],
+   "doc_id": "doc-reasoning-022",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "think"
+    },
+    {
+     "loss": true,
+     "role": "answer"
+    }
+   ],
+   "source_id": "src-reasoning-2",
+   "structured": true,
+   "text_hash": "e719347dbda69e672d53e146c880488a4325243ecadb2129a7df1b1f1ebd2a2d",
+   "token_count": 123,
+   "token_end": 620,
+   "token_hash": "a69708cd1e73eac63b04a5c90993afd039805330d6a1f2bb505ce5f4a6a11a63",
+   "token_start": 497
+  },
+  {
+   "capability_tags": [
+    "reasoning"
+   ],
+   "doc_id": "doc-reasoning-023",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "think"
+    },
+    {
+     "loss": true,
+     "role": "answer"
+    }
+   ],
+   "source_id": "src-reasoning-3",
+   "structured": true,
+   "text_hash": "fcc2d9f3030986238f1e1a0f301d7a3c7bff008d47836540c58bb9dbcb882124",
+   "token_count": 123,
+   "token_end": 743,
+   "token_hash": "693d5018f2963b3809d9d1cc9751ecca8494d5fd5c6ab37a8dcf0be8322ac608",
+   "token_start": 620
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "reasoning",
+ "languages": [
+  "en"
+ ],
+ "license_tiers": [
+  "cc_by",
+  "permissive"
+ ],
+ "loss_bearing_token_count": 502,
+ "manifest_hash": "be16d5b626e04747f9cf8ab44f5b5f5558b02ea28077cbb6dea633b707af8b6c",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Latn"
+ ],
+ "sealed": true,
+ "shard_id": "shard-reasoning-03",
+ "side_path": "shards/shard-reasoning-03.side.json",
+ "source_ids": [
+  "src-reasoning-0",
+  "src-reasoning-1",
+  "src-reasoning-2",
+  "src-reasoning-3"
+ ],
+ "token_count": 743,
+ "token_stream_hash": "85a578b92e86596135e539587e47f7d8a542734125cabee0381528fbe47af6a2",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}

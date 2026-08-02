@@ -1,0 +1,777 @@
+{
+ "branch": "main",
+ "classification_counts": {
+  "harmful": 65,
+  "useful": 343
+ },
+ "lane_rows": [
+  {
+   "exposures": 24,
+   "lane": "agentic",
+   "loss_bearing_tokens": 2324,
+   "mean_loss_before": 4.971981,
+   "mean_loss_delta": 0.05034305
+  },
+  {
+   "exposures": 86,
+   "lane": "code",
+   "loss_bearing_tokens": 19059,
+   "mean_loss_before": 4.811337,
+   "mean_loss_delta": 0.05411139
+  },
+  {
+   "exposures": 127,
+   "lane": "general_web",
+   "loss_bearing_tokens": 32373,
+   "mean_loss_before": 4.641916,
+   "mean_loss_delta": 0.06507263
+  },
+  {
+   "exposures": 53,
+   "lane": "indic",
+   "loss_bearing_tokens": 12925,
+   "mean_loss_before": 5.789063,
+   "mean_loss_delta": 0.02022095
+  },
+  {
+   "exposures": 67,
+   "lane": "math_science",
+   "loss_bearing_tokens": 14188,
+   "mean_loss_before": 4.975167,
+   "mean_loss_delta": 0.03969095
+  },
+  {
+   "exposures": 51,
+   "lane": "reasoning",
+   "loss_bearing_tokens": 8560,
+   "mean_loss_before": 4.467942,
+   "mean_loss_delta": 0.05019086
+  }
+ ],
+ "learning_events": 408,
+ "learning_events_cover_consumption": true,
+ "loss_end": 4.253423,
+ "loss_reduced": true,
+ "loss_start": 6.15946,
+ "ok": true,
+ "repeated_pass_effect": [
+  {
+   "exposures": 47,
+   "mean_loss_delta": 0.0836324,
+   "repeated_pass_number": 0
+  },
+  {
+   "exposures": 51,
+   "mean_loss_delta": 0.08275009,
+   "repeated_pass_number": 1
+  },
+  {
+   "exposures": 40,
+   "mean_loss_delta": 0.03884587,
+   "repeated_pass_number": 2
+  },
+  {
+   "exposures": 36,
+   "mean_loss_delta": 0.06717945,
+   "repeated_pass_number": 3
+  },
+  {
+   "exposures": 47,
+   "mean_loss_delta": 0.03889559,
+   "repeated_pass_number": 4
+  },
+  {
+   "exposures": 47,
+   "mean_loss_delta": 0.04339553,
+   "repeated_pass_number": 5
+  },
+  {
+   "exposures": 49,
+   "mean_loss_delta": 0.04322222,
+   "repeated_pass_number": 6
+  },
+  {
+   "exposures": 38,
+   "mean_loss_delta": 0.02558061,
+   "repeated_pass_number": 7
+  },
+  {
+   "exposures": 28,
+   "mean_loss_delta": 0.02213891,
+   "repeated_pass_number": 8
+  },
+  {
+   "exposures": 11,
+   "mean_loss_delta": 0.0327637,
+   "repeated_pass_number": 9
+  },
+  {
+   "exposures": 6,
+   "mean_loss_delta": 0.03507172,
+   "repeated_pass_number": 10
+  },
+  {
+   "exposures": 6,
+   "mean_loss_delta": 0.02058912,
+   "repeated_pass_number": 11
+  },
+  {
+   "exposures": 2,
+   "mean_loss_delta": 0.01080659,
+   "repeated_pass_number": 12
+  }
+ ],
+ "shard_report_cards": [
+  {
+   "exposures": 8,
+   "lanes": [
+    "agentic"
+   ],
+   "loss_bearing_tokens": 771,
+   "mean_grad_norm": 0.310541,
+   "mean_loss_delta": 0.08218311,
+   "mean_perplexity_before": 149.2169,
+   "mean_token_loss_after": 4.923218,
+   "mean_token_loss_before": 5.005401,
+   "repeated_passes": [
+    0,
+    1,
+    2
+   ],
+   "shard_id": "shard-agentic-00",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 9,
+   "lanes": [
+    "agentic"
+   ],
+   "loss_bearing_tokens": 892,
+   "mean_grad_norm": 0.233225,
+   "mean_loss_delta": 0.02385213,
+   "mean_perplexity_before": 145.1696,
+   "mean_token_loss_after": 4.954051,
+   "mean_token_loss_before": 4.977903,
+   "repeated_passes": [
+    0,
+    1
+   ],
+   "shard_id": "shard-agentic-01",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 3,
+   "lanes": [
+    "agentic"
+   ],
+   "loss_bearing_tokens": 276,
+   "mean_grad_norm": 0.208214,
+   "mean_loss_delta": 0.05334044,
+   "mean_perplexity_before": 179.4537,
+   "mean_token_loss_after": 5.136577,
+   "mean_token_loss_before": 5.189918,
+   "repeated_passes": [
+    0,
+    1
+   ],
+   "shard_id": "shard-agentic-02",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 4,
+   "lanes": [
+    "agentic"
+   ],
+   "loss_bearing_tokens": 385,
+   "mean_grad_norm": 0.432123,
+   "mean_loss_delta": 0.04401946,
+   "mean_perplexity_before": 113.1103,
+   "mean_token_loss_after": 4.684344,
+   "mean_token_loss_before": 4.728364,
+   "repeated_passes": [
+    0,
+    1
+   ],
+   "shard_id": "shard-agentic-03",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 41,
+   "lanes": [
+    "code"
+   ],
+   "loss_bearing_tokens": 9443,
+   "mean_grad_norm": 0.312607,
+   "mean_loss_delta": 0.05062971,
+   "mean_perplexity_before": 118.7496,
+   "mean_token_loss_after": 4.726387,
+   "mean_token_loss_before": 4.777017,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "shard_id": "shard-code-00",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 21,
+   "lanes": [
+    "code"
+   ],
+   "loss_bearing_tokens": 4344,
+   "mean_grad_norm": 0.280429,
+   "mean_loss_delta": 0.05837285,
+   "mean_perplexity_before": 124.1778,
+   "mean_token_loss_after": 4.763342,
+   "mean_token_loss_before": 4.821715,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12
+   ],
+   "shard_id": "shard-code-01",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 30,
+   "lanes": [
+    "code"
+   ],
+   "loss_bearing_tokens": 6508,
+   "mean_grad_norm": 0.256715,
+   "mean_loss_delta": 0.0514859,
+   "mean_perplexity_before": 123.0056,
+   "mean_token_loss_after": 4.760744,
+   "mean_token_loss_before": 4.81223,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "shard_id": "shard-code-02",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 33,
+   "lanes": [
+    "code"
+   ],
+   "loss_bearing_tokens": 7515,
+   "mean_grad_norm": 0.296512,
+   "mean_loss_delta": 0.0583237,
+   "mean_perplexity_before": 131.0503,
+   "mean_token_loss_after": 4.817258,
+   "mean_token_loss_before": 4.875581,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "shard_id": "shard-code-03",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 7,
+   "lanes": [
+    "code"
+   ],
+   "loss_bearing_tokens": 1547,
+   "mean_grad_norm": 0.253415,
+   "mean_loss_delta": 0.05349226,
+   "mean_perplexity_before": 78.956,
+   "mean_token_loss_after": 4.315399,
+   "mean_token_loss_before": 4.368891,
+   "repeated_passes": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    11
+   ],
+   "shard_id": "shard-code-04",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 37,
+   "lanes": [
+    "general_web"
+   ],
+   "loss_bearing_tokens": 9435,
+   "mean_grad_norm": 0.25879,
+   "mean_loss_delta": 0.06459439,
+   "mean_perplexity_before": 101.6182,
+   "mean_token_loss_after": 4.556628,
+   "mean_token_loss_before": 4.621223,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-general_web-00",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 28,
+   "lanes": [
+    "general_web"
+   ],
+   "loss_bearing_tokens": 7140,
+   "mean_grad_norm": 0.304165,
+   "mean_loss_delta": 0.06783951,
+   "mean_perplexity_before": 114.1359,
+   "mean_token_loss_after": 4.66955,
+   "mean_token_loss_before": 4.73739,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-general_web-01",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 35,
+   "lanes": [
+    "general_web"
+   ],
+   "loss_bearing_tokens": 8925,
+   "mean_grad_norm": 0.275857,
+   "mean_loss_delta": 0.06733691,
+   "mean_perplexity_before": 104.2185,
+   "mean_token_loss_after": 4.579153,
+   "mean_token_loss_before": 4.64649,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-general_web-02",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 30,
+   "lanes": [
+    "general_web"
+   ],
+   "loss_bearing_tokens": 7650,
+   "mean_grad_norm": 0.282197,
+   "mean_loss_delta": 0.05499331,
+   "mean_perplexity_before": 89.2348,
+   "mean_token_loss_after": 4.436278,
+   "mean_token_loss_before": 4.491271,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-general_web-03",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 31,
+   "lanes": [
+    "general_web"
+   ],
+   "loss_bearing_tokens": 7893,
+   "mean_grad_norm": 0.32042,
+   "mean_loss_delta": 0.06248023,
+   "mean_perplexity_before": 102.1461,
+   "mean_token_loss_after": 4.563923,
+   "mean_token_loss_before": 4.626404,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-general_web-04",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 6,
+   "lanes": [
+    "indic"
+   ],
+   "loss_bearing_tokens": 1530,
+   "mean_grad_norm": 0.215497,
+   "mean_loss_delta": 0.0195919,
+   "mean_perplexity_before": 372.3223,
+   "mean_token_loss_after": 5.900168,
+   "mean_token_loss_before": 5.91976,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "shard_id": "shard-indic-00",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 16,
+   "lanes": [
+    "indic"
+   ],
+   "loss_bearing_tokens": 4080,
+   "mean_grad_norm": 0.253909,
+   "mean_loss_delta": 0.02697527,
+   "mean_perplexity_before": 342.9228,
+   "mean_token_loss_after": 5.81053,
+   "mean_token_loss_before": 5.837505,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-indic-01",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 20,
+   "lanes": [
+    "indic"
+   ],
+   "loss_bearing_tokens": 5100,
+   "mean_grad_norm": 0.248447,
+   "mean_loss_delta": 0.01809689,
+   "mean_perplexity_before": 338.9541,
+   "mean_token_loss_after": 5.807768,
+   "mean_token_loss_before": 5.825865,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-indic-02",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 23,
+   "lanes": [
+    "indic"
+   ],
+   "loss_bearing_tokens": 5865,
+   "mean_grad_norm": 0.284785,
+   "mean_loss_delta": 0.02190449,
+   "mean_perplexity_before": 315.9656,
+   "mean_token_loss_after": 5.733729,
+   "mean_token_loss_before": 5.755633,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "shard_id": "shard-indic-03",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 9,
+   "lanes": [
+    "indic"
+   ],
+   "loss_bearing_tokens": 1705,
+   "mean_grad_norm": 0.242106,
+   "mean_loss_delta": 0.00841788,
+   "mean_perplexity_before": 310.0213,
+   "mean_token_loss_after": 5.728223,
+   "mean_token_loss_before": 5.736641,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "shard_id": "shard-indic-04",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 13,
+   "lanes": [
+    "math_science"
+   ],
+   "loss_bearing_tokens": 3177,
+   "mean_grad_norm": 0.262828,
+   "mean_loss_delta": 0.04179513,
+   "mean_perplexity_before": 120.5713,
+   "mean_token_loss_after": 4.750446,
+   "mean_token_loss_before": 4.792241,
+   "repeated_passes": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "shard_id": "shard-math_science-00",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 14,
+   "lanes": [
+    "math_science"
+   ],
+   "loss_bearing_tokens": 3430,
+   "mean_grad_norm": 0.253417,
+   "mean_loss_delta": 0.04363911,
+   "mean_perplexity_before": 149.0822,
+   "mean_token_loss_after": 4.960858,
+   "mean_token_loss_before": 5.004498,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-math_science-01",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 10,
+   "lanes": [
+    "math_science"
+   ],
+   "loss_bearing_tokens": 2466,
+   "mean_grad_norm": 0.328362,
+   "mean_loss_delta": 0.04295259,
+   "mean_perplexity_before": 173.8638,
+   "mean_token_loss_after": 5.11532,
+   "mean_token_loss_before": 5.158272,
+   "repeated_passes": [
+    0,
+    2,
+    4,
+    6,
+    7,
+    8
+   ],
+   "shard_id": "shard-math_science-02",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 30,
+   "lanes": [
+    "math_science"
+   ],
+   "loss_bearing_tokens": 5115,
+   "mean_grad_norm": 0.289838,
+   "mean_loss_delta": 0.03584945,
+   "mean_perplexity_before": 145.4324,
+   "mean_token_loss_after": 4.943862,
+   "mean_token_loss_before": 4.979711,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "shard_id": "shard-math_science-03",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 20,
+   "lanes": [
+    "reasoning"
+   ],
+   "loss_bearing_tokens": 3360,
+   "mean_grad_norm": 0.294727,
+   "mean_loss_delta": 0.03934306,
+   "mean_perplexity_before": 89.9814,
+   "mean_token_loss_after": 4.46026,
+   "mean_token_loss_before": 4.499603,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+   ],
+   "shard_id": "shard-reasoning-00",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 30,
+   "lanes": [
+    "reasoning"
+   ],
+   "loss_bearing_tokens": 5064,
+   "mean_grad_norm": 0.294572,
+   "mean_loss_delta": 0.05260643,
+   "mean_perplexity_before": 92.1342,
+   "mean_token_loss_after": 4.47064,
+   "mean_token_loss_before": 4.523247,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "shard_id": "shard-reasoning-01",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 15,
+   "lanes": [
+    "reasoning"
+   ],
+   "loss_bearing_tokens": 2500,
+   "mean_grad_norm": 0.2821,
+   "mean_loss_delta": 0.04645208,
+   "mean_perplexity_before": 77.8296,
+   "mean_token_loss_after": 4.30807,
+   "mean_token_loss_before": 4.354522,
+   "repeated_passes": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    7
+   ],
+   "shard_id": "shard-reasoning-02",
+   "usefulness": "useful"
+  },
+  {
+   "exposures": 26,
+   "lanes": [
+    "reasoning"
+   ],
+   "loss_bearing_tokens": 4354,
+   "mean_grad_norm": 0.264198,
+   "mean_loss_delta": 0.06308603,
+   "mean_perplexity_before": 87.8301,
+   "mean_token_loss_after": 4.412318,
+   "mean_token_loss_before": 4.475404,
+   "repeated_passes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "shard_id": "shard-reasoning-03",
+   "usefulness": "useful"
+  }
+ ],
+ "token_trace_linked_to_consumption": true,
+ "token_trace_packs": [
+  "pack-agentic-structure_preserving-0003",
+  "pack-agentic-structure_preserving-0013",
+  "pack-agentic-structure_preserving-0018",
+  "pack-code-best_fit-0001",
+  "pack-code-best_fit-0009"
+ ],
+ "token_trace_records": 1129
+}

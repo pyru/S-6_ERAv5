@@ -1,0 +1,194 @@
+{
+ "bin_path": "shards/shard-indic-01.bin",
+ "capability_lane": "indic",
+ "cleaning_pipeline_hash": "d09cca60d672404b8cac10cb0f886d03",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "c369a694a235dcf0abbdd4abb33bd44a7f33b96f843335524435e41e74ddb594",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-indic-006",
+  "doc-indic-007",
+  "doc-indic-008",
+  "doc-indic-009",
+  "doc-indic-010",
+  "doc-indic-011"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "indic"
+   ],
+   "doc_id": "doc-indic-006",
+   "lang": "hi",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Deva",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-indic-2",
+   "structured": false,
+   "text_hash": "f07a016258db05bf50282cb562c2c7b8cf3482a9c814056294b9fbd2e07d2d3b",
+   "token_count": 107,
+   "token_end": 107,
+   "token_hash": "668ac8138f87d413fe776afa4826045a6365c7b3ea8627591eda3d04de5edfbb",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "indic"
+   ],
+   "doc_id": "doc-indic-007",
+   "lang": "hi",
+   "license_tier": "cc_by",
+   "provenance_tier": "A",
+   "script": "Deva",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-indic-3",
+   "structured": false,
+   "text_hash": "807afc3c903eb7feb66d17462ed68302d06a72b41b453efbcef3512a0f1ba804",
+   "token_count": 85,
+   "token_end": 192,
+   "token_hash": "a7a6337fb7d52f3ddabcd936de191d5fed5b22327df060cb762f5da54d586943",
+   "token_start": 107
+  },
+  {
+   "capability_tags": [
+    "indic"
+   ],
+   "doc_id": "doc-indic-008",
+   "lang": "ta",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Taml",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-indic-0",
+   "structured": false,
+   "text_hash": "72e9a8fce6296febc04324812c2976f3558d3f59fd51a64fc64cb8074f7db09b",
+   "token_count": 130,
+   "token_end": 322,
+   "token_hash": "dcddf10e87847fe7f782cb99fc9b49e6d27eaada95079b4b0203c74039672bb9",
+   "token_start": 192
+  },
+  {
+   "capability_tags": [
+    "indic",
+    "long_context"
+   ],
+   "doc_id": "doc-indic-009",
+   "lang": "hi",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Deva",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-indic-1",
+   "structured": false,
+   "text_hash": "8699732f7d4ea9cc30b2e111b27fb59c6233dc8a5695082599275984a01208b6",
+   "token_count": 131,
+   "token_end": 453,
+   "token_hash": "202068b1a1e6ef8a82d0f8a04e870dc3d8c1270810f4d2d1659b0310307b8e30",
+   "token_start": 322
+  },
+  {
+   "capability_tags": [
+    "indic"
+   ],
+   "doc_id": "doc-indic-010",
+   "lang": "hi",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Deva",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-indic-2",
+   "structured": false,
+   "text_hash": "be39b739adc11df6f569d971b583d2a518bffd4e7f2944a03c4122068a22c506",
+   "token_count": 108,
+   "token_end": 561,
+   "token_hash": "c74554700cc53c67828a68ad17c00ee1094fcba8b8dc71859183d3b3444a63b7",
+   "token_start": 453
+  },
+  {
+   "capability_tags": [
+    "indic"
+   ],
+   "doc_id": "doc-indic-011",
+   "lang": "ta",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Taml",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-indic-3",
+   "structured": false,
+   "text_hash": "242f036c8ec7c3405592a83f876a8575ecd7fe8c69e39b2ca799b74112654f0f",
+   "token_count": 116,
+   "token_end": 677,
+   "token_hash": "1a60ae44e1f0d6a94993ae30fabfe4e1e91721a0136441a37caf600d83b131b1",
+   "token_start": 561
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "indic",
+ "languages": [
+  "hi",
+  "ta"
+ ],
+ "license_tiers": [
+  "cc_by",
+  "permissive"
+ ],
+ "loss_bearing_token_count": 677,
+ "manifest_hash": "53bb30f901dc443b0f20b784efe250a3c82bcaaf0f8207a94c9b47d7a993dee8",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Deva",
+  "Taml"
+ ],
+ "sealed": true,
+ "shard_id": "shard-indic-01",
+ "side_path": "shards/shard-indic-01.side.json",
+ "source_ids": [
+  "src-indic-0",
+  "src-indic-1",
+  "src-indic-2",
+  "src-indic-3"
+ ],
+ "token_count": 677,
+ "token_stream_hash": "c369a694a235dcf0abbdd4abb33bd44a7f33b96f843335524435e41e74ddb594",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}

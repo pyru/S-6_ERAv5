@@ -1,0 +1,1324 @@
+{
+ "admitted": 154,
+ "blocked_eval_docs": [
+  "doc-bad-contaminated-000",
+  "doc-bad-evalsmuggle-000"
+ ],
+ "candidates": 161,
+ "records": [
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-000",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "aa9bc5e18c0bbfc70bca5badf15c17a4d418490c2c9b52548970757160dd1697"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-001",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "b1a4c5f4d056954ea9f680f478f92c51d1ccca9649d6b928119f051afe0156ec"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-002",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "43419d0c63070a6b67c9249335c43084c38f467d603a25dbc57b428044234757"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-003",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "91501b8cdfe835e3e851f75a2747e6d08dc47817f4444ce9029719b54d4bd9c2"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-004",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "4038ca6e7caf428ca6bb03ae2b7b9b0ebbb8d4f82c89af2ac3e654e570d46025"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-005",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "7226fcaf1d8041ac33e3eb59703ec07d11d39f5cdccd0b28a51f5066e515e22a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-006",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "e97773248ca6fce2600eb7a79942b8dc1b4ddde20867ab59a257306254be5a2d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-007",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "7ede67463b857cc3b3b741137198961441b173d0cd8d3fb942a01a41bbb5b2bd"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-008",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "3cf345ee4b018b7af0da46d7a31ecf1c2cf7e95ae643a284cc0a327642c04781"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-009",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "9cccb6647cd2a2f8adfa65e390625bd814279303ece348359f79140b12680934"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-010",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "8581782aac01cb376806a76a10b9c4c97335160739273adfb36bcf8e41fab9ba"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-011",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "c9cd688f760ebf148be126718bb60633906afcb7169910decbe14ca3e305a740"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-012",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "4a6971a054de95bd58339f6c8f60bed4df8fd4794f15940a6c444562c7253e15"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-013",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "bef9d8377f4062472f8cf58a9abca47580937b0605b975960160049c45318c96"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-014",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "9c502ef89e0102fb44b2d4688e5ac05cf8eb77d35ffcb10690ff8d17f26e60fb"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-015",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "29d7b5fcf237e6df289addcc0cb38ff34694bcb4d9faa3531f9af9d4f4f0cad7"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-016",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "ea7af85247bad95d86b3bb444a759186b42fb73aee98de70620f86330658f6e8"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-017",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "4b64103de5975c1828dda97fa883cdf078d78571b7451f2318a7836a6157569b"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-018",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "7e8f5bf9b90860b4b6ea1eda1d9e6431c01b34a0690809e587896d770b8e39f6"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-019",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "7e764b5b5115a6cd4c17ddcc9b515822e562ab8f621b4cae05a9900acfbe9d84"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-020",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "a50ab9847e9c3436a2f38232f87d9e9ae1ab29a1b701016270ad7ded403dd3a2"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-021",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "2331047cea989c3de51b295173ae5c42ee41cc9a70cd3dadee9c32e04670cb3e"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-022",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "35ac486df65dfe7bea72769c7c0e0d093af542322c0085027c11432b220476a8"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-023",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "ba2c8e590e24296c0dd0b6499d2a8d63798ba1a9eed2b9ee2b0e900f292f0020"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-024",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "ec58c9e7d35f823425b6d2b38f0f381025bf680a78bd355aed55bb2808c6f107"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-025",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "e4b09d485ccb37ecdc8b7247f927fbec97617e7d6ca49d3eedc59650b84a9b5d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-026",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-2",
+   "text_hash": "b0a2b543afdad4b258bfa55f3b2e9a86b8bd9373317178faaf78a68ab2b8ea6f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-027",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-3",
+   "text_hash": "a4fc022d69613f7bf33cc3c1cbf89438e376cc0bd85d56e2fb3b08846cb5919a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-028",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-0",
+   "text_hash": "b27e733a9afcc32655abc796c2da245a13053e7dd8a97dacbe5b2189a2c35b90"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-general_web-029",
+   "lane": "general_web",
+   "reasons": [],
+   "source_id": "src-general_web-1",
+   "text_hash": "4a1929b39b2af32e4b7219fa21c54b6d1187de2439fc03d9f415b55ff0d215b1"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-000",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "5b462cd29d4d72ee9484afa4878b883d07fb39bd1e005055cf507780793021c3"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-001",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "54e034118f7ce81dc4071742ecc6bb91f6d70f61cf39c844b8320de15ebfa1a5"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-002",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-2",
+   "text_hash": "0753a56cf1063ec479b767aa66def89c8462139c5bec43a4f53520d36399b6be"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-003",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-3",
+   "text_hash": "72d71eb8d6ffa3b554cfb8cc00a2e8dc9e49a8b359303bad638e773bb4c8cdce"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-004",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "b50e134730e706ed97d7a922b439e6cf1a30f6d5917c15b8304f33b993107922"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-005",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "29d3dab7e6f8130c6993dc5c0830caeba581eb2b4d869d218d86a2e966de42da"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-006",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-2",
+   "text_hash": "4194973f8fc2cb7d02cde5e06825573cd51e2a8cd4cf561ea63b9edaf539bbce"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-007",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-3",
+   "text_hash": "853910a3bd67351bb6256e812fae1ffbf153a002f57dbe298eaf3c1743afd119"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-008",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "363a58bb78fa157452ae1a2d23f491cf160fad2b629b033c2dede9b35e6ddd9b"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-009",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "c77d3956d545f5ad963d8b13844468406b0a1555ac682a4567bbcb4af8e62a88"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-010",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-2",
+   "text_hash": "9b9b70edf08a58a12396c011eac06a0f4cc5ef50345c82cc728f46062c5a6dde"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-011",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-3",
+   "text_hash": "606081be85ae4c581172ef42728c378651071b14142372d7ae96bd8ef41da4b8"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-012",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "8c5026ccf2b413468bc5940ef2207292c9092236b4537671abbacd62f654a397"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-013",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "07655cec2654e2897117aec54326e69b2cddaee61e0c3a8285a683e2bdccd862"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-014",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-2",
+   "text_hash": "457f679eadedb207e776c8850f8746da29dbad6c885103284bd1d54f83e23814"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-015",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-3",
+   "text_hash": "4aae93ebba52e31898ddee9c84e4e2e981ca93979a87de631b652c2336b17452"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-016",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "9f396bc3405e4ec67482f2d952f5f98a00ac23c416a3073c4343bd163ed5a5d1"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-017",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "883315744e63779e1fcb3c1b6b69e45d7ff5601f133c879a53a2bf067189c386"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-018",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-2",
+   "text_hash": "9420572fc1f3f960fdbc05669e0301f3a22daaa912f414b39966bba86cbaf145"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-019",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-3",
+   "text_hash": "0b795f7b69a00614fde26a53893de1b2ad047b3ec64efd976bb3d843fa87928a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-020",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "dc1c67d0e9e6bbd1bc644242b2330d507b9a4c643d720a2b2062c23af26bc36e"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-021",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "ee739615c6e6536aac6475f3701a79616e0b5e6e14cf62446d985d45695fbcd0"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-022",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-2",
+   "text_hash": "8a679e8ff7c3d9dcec06c222e3ff97507788366255b981803a684eb86c9e5571"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-023",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-3",
+   "text_hash": "b7e0adbdd25409cbffbd6b17a34fe0b6ae072cb4666138bf919d729a01f46955"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-024",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-0",
+   "text_hash": "d5d09ed0e9a8ec1a349cf974d7b6ae7f47f539cd2dee9e885202a2fa750e0233"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-code-025",
+   "lane": "code",
+   "reasons": [],
+   "source_id": "src-code-1",
+   "text_hash": "69bcb1c51e9e28f0c2f0e94bcd357af2adf95b9b61735d6eef49de7b98630404"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-000",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-0",
+   "text_hash": "c79c4ae150d93293d119d33036839cd55dcc3859d099fea00326e3c42c076278"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-001",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-1",
+   "text_hash": "d1f90bd287e166edfa30b8e98ef722fb8c0282c4cc9a9c8486d1bc9b30455450"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-002",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-2",
+   "text_hash": "fcd6cbcf3643b630a387dbecf49ae19d2787800758baf6366c711bcac3416818"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-003",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-3",
+   "text_hash": "1809d666c592429366cd4fdb4c7316397daff1785167e3d9b3a10302c911e640"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-004",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-0",
+   "text_hash": "5f31ac039fb09bee548390c0a70f0c23a5ff1eb15d56df3fd04507ef05d04cc2"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-005",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-1",
+   "text_hash": "568a22dc12dc098ef4b009840b306414a0e3e5536c5dff402401a2c994973f6e"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-006",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-2",
+   "text_hash": "fc493910cc4fe19c3770bb2406a03c816078a1e7f8d0849cca1de6f28936b567"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-007",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-3",
+   "text_hash": "b095ecde4314a1f7d474801c8f0a3755de583ad9103e0c9758a22955f1ce923f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-008",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-0",
+   "text_hash": "04eb1f3398d1815b760e23806f17b857c3e19448c87df7e3b15fa6b520848102"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-009",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-1",
+   "text_hash": "059f07bca256d23553f2c7f77f761c036dea32f7bb3fd02e983570a6b9e9034f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-010",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-2",
+   "text_hash": "cd23db9e2b1cf3a7b2cbba5bcf5fb6658116bab0bf2777d2a6cd6019d0bf6c63"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-011",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-3",
+   "text_hash": "0e73173eb02e8bc87f5256d331d0b71c4c3fd2a7d20977a1882f820b76a47e84"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-012",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-0",
+   "text_hash": "41540fbfb39989f7fbaf3fb28148d0421a509307d4cab009086e3787784f8d81"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-013",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-1",
+   "text_hash": "3b9c6a16fc534f4d44262dbc0f1d6df27d9c1637f4e5567c0e75e54267b0b689"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-014",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-2",
+   "text_hash": "05a1fc592b4756596428d14772b3f4944881ff3395a4c6e36bf922b496d3cfbe"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-015",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-3",
+   "text_hash": "154ee7ac679ccc8947d2c81dba3f4d645f75244b595349518ff7f9c1e7036fed"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-016",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-0",
+   "text_hash": "97f821f87172370d826e8bcf555d1decb938feb182349b862da4879f31862ad9"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-017",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-1",
+   "text_hash": "9c1f0ace3ebef571555112721aff47dbcaa353081d8cd4b8c5ed7d9c02b0d139"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-018",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-2",
+   "text_hash": "9a7820cc5309b59bd4eb44bcac8366d2f6babd2b551afa5e4760144834e13e16"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-019",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-3",
+   "text_hash": "134d0229aa5ed8f040b8c0424683c16ef886850ea9f9dbb10cabbc3c6b35c29d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-020",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-0",
+   "text_hash": "ea96be3bb2530c93d6ca7d3929e0a0b5b725ecb004d67e4e02ec64b53bbd39ff"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-021",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-1",
+   "text_hash": "0b0ce0b9f647efe69e9e2e4966434f30c0bf8ec79d1408f99f7f101875421ecc"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-022",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-2",
+   "text_hash": "92577eba2bce411a0bbf7903a8c96c924d5d45f3edf0ab255cd2529e5ddc8108"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-math_science-023",
+   "lane": "math_science",
+   "reasons": [],
+   "source_id": "src-math_science-3",
+   "text_hash": "e4b0fcc9595d907a3478275bb70d2b82fe8fc19679c85c746bb7f11d0ca61cea"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-000",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "a466a7fd127333474f7e755f554f4489735e8e82889088bd81b2802e29b4371f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-001",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "6727a60e3f32fe16474789d49eeb4d4a8099c9bb0241697b71f33fc91ff47784"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-002",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "01f14333a2aeb755c9dbc3dac28fd4365634656e454c8092a4dd7c5064f730cc"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-003",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "9de4135f441a800ee25c87749eac1e99493aabbd293a8b2a4955e3ebd5a1906f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-004",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "1fc7685ecb6d60b4c4dc85db7c99b1b9d4c304f60e1f8df3c5767f810c72c085"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-005",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "ea4be33013f15674632dd64d37baab0a12ce3e7a9a0562008b7d15893e87ba7a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-006",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "f07a016258db05bf50282cb562c2c7b8cf3482a9c814056294b9fbd2e07d2d3b"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-007",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "807afc3c903eb7feb66d17462ed68302d06a72b41b453efbcef3512a0f1ba804"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-008",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "72e9a8fce6296febc04324812c2976f3558d3f59fd51a64fc64cb8074f7db09b"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-009",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "8699732f7d4ea9cc30b2e111b27fb59c6233dc8a5695082599275984a01208b6"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-010",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "be39b739adc11df6f569d971b583d2a518bffd4e7f2944a03c4122068a22c506"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-011",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "242f036c8ec7c3405592a83f876a8575ecd7fe8c69e39b2ca799b74112654f0f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-012",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "fc07184d90d12f4bb54304e0aaf74102035cde0a0f9a408b36ffd0e6f48f8497"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-013",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "90e92abac6dacdd2ae2f04967d039dedc5c2de1ed1023d926d381567c1d0dfa7"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-014",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "f6591eb4bd2875000beb909fc38b6169dc1fe8580e485a11a2c79b8cca987bf2"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-015",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "6edaa6596a5b124cb0a8477ec26f73c7bd3149d1819909007d6a5fbe11b5bcb3"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-016",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "69ca4815dec2e1e5782974eb519b2076e60ed138eee0f7df88c889eb1a1e6af2"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-017",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "d3de28448cbbac094692e3d68f21891799ff72dbe8902bf8d57e43fde56b3d2d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-018",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "8de7d73ca37651af91e4a34a0a684681d3c77419176923470558b338dd3ef085"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-019",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "019aa966214ccc75735904e6d7d9957b0c8b1c8742eacda01d2d36fc0b727ae3"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-020",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "ea2aee4a747abae97d88b3aac2eb27778d8fadb38b9832e24fd5751bde680545"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-021",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "69273188dfe44f7650fb767931645f3e476b8418fcf9796fe6c9de4252c42824"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-022",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "24f6ff56b0635e2a0e271dc4afb11c9d2492e4aaffd861a57d588ec75e5d2338"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-023",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "4b7cf5c417f545ada546f0ce750ec96fc520c7a9b77459c70e56b36c64a0f72c"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-024",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-0",
+   "text_hash": "ce598139a5f38b8f05dee511a98aa8cb710a1946d5de383c62e7ff7acde287b2"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-025",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-1",
+   "text_hash": "ea257f7ae99914463cc20c0a28f8d6839eefe6dac45f9d571933809bcf80c40a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-026",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-2",
+   "text_hash": "26e937d20e4c0be5a4cabf0250cccb8de352d252318055dd9f35166ab2514573"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-indic-027",
+   "lane": "indic",
+   "reasons": [],
+   "source_id": "src-indic-3",
+   "text_hash": "c2351481e9444b52c767ad6322cd1a04ac390178c1f8be2b3455556cfaf949fa"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-000",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-0",
+   "text_hash": "3924dc775217a61d25d92d7dcfe013de16ee42205f60dfbdf85e76b33c56b04e"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-001",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-1",
+   "text_hash": "a4efb700e76a52bb2582e70b3074cf95b6d95982711ed4004e8e1e3fe59018c1"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-002",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-2",
+   "text_hash": "bd3a6b4c102b2d40ba861b522bbadf5c22834e3b8d556a1ef0a6ec72ddd8cf61"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-003",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-3",
+   "text_hash": "1725f3a0f2df217e656acec86a9bd39407af05b7c460c55654d85aca3cf09ef4"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-004",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-0",
+   "text_hash": "35b59ac13be7f6ed1ffaa53c4f6ec699044af01369212591515c4fca317eef02"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-005",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-1",
+   "text_hash": "8d1990ef17cce49e7c3e9ee9a8fced47edd47e6aefdcb7dea3e5e7523c85eff9"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-006",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-2",
+   "text_hash": "751cf4debe52693b688bbe17f8ecca336564a3370c8af9b77e21750dfc3a202e"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-007",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-3",
+   "text_hash": "8d6fa4f002812a5e3525c39a7ecb659cf3b72a724e407a061f84060665c38519"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-008",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-0",
+   "text_hash": "9a154e5d87e5fb8101c7d6de1f5e2d20d6747f53776d4aa91516bd64a6e03314"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-009",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-1",
+   "text_hash": "04da1acce88499203aa29e44d427ff81ff30770e84a6aceb9255fa988ca5f08a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-010",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-2",
+   "text_hash": "9e2a261954647dd19846403883f9d1816ed7bc6cae7a23d2db68a502100b5f50"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-011",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-3",
+   "text_hash": "8e9bd11a3dd324d85cd7c0b8344dda108749d73c1dc184055497994ce7379a00"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-012",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-0",
+   "text_hash": "08f35f69ef11e4725c463cecceb4cf5f63dd198399c80fa27c00b1ee627e56b7"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-013",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-1",
+   "text_hash": "101cc15df4548be5c06b77777810a625d63cc58ba8cda607af30c7e0a0c1fc72"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-014",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-2",
+   "text_hash": "ec48f9f04be00925084e1b7787a0db7053db50896d410a6b0de4ef9be90a2044"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-015",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-3",
+   "text_hash": "14c32710d3f280a9ad7a1fad673a73ef5d9604aa4139ed4261675361c37565fe"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-016",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-0",
+   "text_hash": "4f76e32340a30ccfa2920a623f95383830627588d44795265471d86dde27f05d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-017",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-1",
+   "text_hash": "a3a144cb413f47fa7bbc945bffe9a1ed7589f33e185cbb29659df1e680c6e81a"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-018",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-2",
+   "text_hash": "675a384f7851966ebf061e68ad807094131da81974f4128e394d08f3c78d2cf9"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-019",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-3",
+   "text_hash": "1096295eaf593aeee6bd885e02a76149fdb6d621be99c7f26fb20ea771e32ec3"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-020",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-0",
+   "text_hash": "7cfd7f93ef923a05f40a42e72aee109ceb8faf5501b02b634c040a9a6719fbb8"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-agentic-021",
+   "lane": "agentic",
+   "reasons": [],
+   "source_id": "src-agentic-1",
+   "text_hash": "809c148811323e5b30ea1c2c7a01252bc706f1a81acc099b1f63fbe1217810e0"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-000",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-0",
+   "text_hash": "394fa48ada99492c93370c1881a95af7ca48dd9f96850c190bbc989a5ea29989"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-001",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-1",
+   "text_hash": "2c310f4026707c71851b6486d7668998e70b4003448539c82368d01675e39bec"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-002",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-2",
+   "text_hash": "2f21326fa0f2b11c230cf4b795ad6bad774cf042e227b45f2af98fbf973cc095"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-003",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-3",
+   "text_hash": "1f9f885491ba9422fd1813a49e9eb31ca8554a68626c79776c5e155f82db723f"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-004",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-0",
+   "text_hash": "dfbf381a26ef1da7489386079311553083c67a689364ae22a736d34fc441e59d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-005",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-1",
+   "text_hash": "38660cc945cbc69dece39f2884ecc70e3de793d20dec503e17a0d7fa24f26f60"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-006",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-2",
+   "text_hash": "844a30e3b149711789045d76d208b868cdd6345a366946af55b00ee84f894ad9"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-007",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-3",
+   "text_hash": "062bdc4309f0054a6b8c43bbeec7451b04cfb189ac8c6bf7ce6136fad832edbf"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-008",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-0",
+   "text_hash": "73265fa777db10531080de0b12855ac670b483d615bf8d5a782faa470a6ea32c"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-009",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-1",
+   "text_hash": "8d576af95908ebbeffb68556de2da84bafd9387657c7dbd4b2a93365f6560113"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-010",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-2",
+   "text_hash": "008d78809feb630948b123319da96310e9ec0dfeb03c40c804da63baa85b6c8d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-011",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-3",
+   "text_hash": "181520ff351e2da8c911d6c57893de55061ac93a4ddf03203cff8b056471432b"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-012",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-0",
+   "text_hash": "75e964203f341c9320bdbbaa5d04f2f32beacd91ff8265a20c1711a0bf50a5ba"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-013",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-1",
+   "text_hash": "7f0c437980bf648052556d40f52a730c483fa03aee3fa7e9240ee7dc9b5cc4c0"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-014",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-2",
+   "text_hash": "20f5c17e79b549ff84e3154fd81cc9220ee63cd3a0a35371c99e2f65d64dbb3c"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-015",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-3",
+   "text_hash": "c31c23b7294d2b9647570050fdd95a0f3633d9006a8044bcd6aab0837cb222ce"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-016",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-0",
+   "text_hash": "58462021dbc80fc3a127e4d8ccdb82b45a9f036b82f8326eabfeefc5b71db30e"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-017",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-1",
+   "text_hash": "a52cb32549a55551a9349490c0e00a1e8765b91257f859f30c27e3488e6e3048"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-018",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-2",
+   "text_hash": "1805e5e0826e71d661064fb1fd24a0c07d204f111006b9a1829e1fb24a7a7efc"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-019",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-3",
+   "text_hash": "24e48e14f92427beb3d43819372917137131bc60ba0724c4e64850159f975854"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-020",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-0",
+   "text_hash": "a7d601a5f8e50c063e818d88a4b068184387e1f5c0755cf7e5a0b8a595cf8718"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-021",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-1",
+   "text_hash": "a4576cba40933025bb3df528f4e26948f72987391957cec25582b1a276cfc759"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-022",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-2",
+   "text_hash": "e719347dbda69e672d53e146c880488a4325243ecadb2129a7df1b1f1ebd2a2d"
+  },
+  {
+   "admitted": true,
+   "doc_id": "doc-reasoning-023",
+   "lane": "reasoning",
+   "reasons": [],
+   "source_id": "src-reasoning-3",
+   "text_hash": "fcc2d9f3030986238f1e1a0f301d7a3c7bff008d47836540c58bb9dbcb882124"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-dup-000",
+   "lane": "general_web",
+   "reasons": [
+    "duplicate_document"
+   ],
+   "source_id": "src-general_web-3",
+   "text_hash": "91501b8cdfe835e3e851f75a2747e6d08dc47817f4444ce9029719b54d4bd9c2"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-license-000",
+   "lane": "general_web",
+   "reasons": [
+    "license_tier_not_admissible"
+   ],
+   "source_id": "src-scraped-9",
+   "text_hash": "148f1fa34ce4d4a424a4c3b0272058e122381cc1a2728aae10416722a18c05d8"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-lineage-000",
+   "lane": "code",
+   "reasons": [
+    "missing_cleaning_lineage"
+   ],
+   "source_id": "src-unknown-1",
+   "text_hash": "8b058756efe0d0f8ebe599ed8b13e7313dafa3a05d2c37335fbe661532d0f340"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-pii-000",
+   "lane": "general_web",
+   "reasons": [
+    "pii_detected"
+   ],
+   "source_id": "src-forum-2",
+   "text_hash": "9cbf2763295ab716e30bd49eadc59a86fafdee3daf417923575fa5e0eb5b1256"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-langid-000",
+   "lane": "indic",
+   "reasons": [
+    "language_not_validated"
+   ],
+   "source_id": "src-mixed-3",
+   "text_hash": "1e897d8817f592df2dd11bbac63c4e0bb806021d46883ce664952d18f1e4588e"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-contaminated-000",
+   "lane": "general_web",
+   "reasons": [
+    "eval_contamination:canary:CANARY-TDES-EVAL-7f3,doc-eval-000,doc-eval-001"
+   ],
+   "source_id": "src-scraped-4",
+   "text_hash": "a41b5fcc90f955716d3c2ebc992a2990110e38f956aad88ab0f4e1a1149b6b13"
+  },
+  {
+   "admitted": false,
+   "doc_id": "doc-bad-evalsmuggle-000",
+   "lane": "general_web",
+   "reasons": [
+    "eval_contamination:canary:CANARY-TDES-EVAL-7f3,doc-eval-000,doc-eval-000",
+    "registered_evaluation_document"
+   ],
+   "source_id": "bench-tdes",
+   "text_hash": "d10b1b275a37adbbd99efc637efab084b2b7506c0faf0ef256311e1dfc208406"
+  }
+ ],
+ "rejected": 7,
+ "rejection_reason_counts": {
+  "duplicate_document": 1,
+  "eval_contamination": 2,
+  "language_not_validated": 1,
+  "license_tier_not_admissible": 1,
+  "missing_cleaning_lineage": 1,
+  "pii_detected": 1,
+  "registered_evaluation_document": 1
+ },
+ "schema": "tdes-admission-report/1"
+}

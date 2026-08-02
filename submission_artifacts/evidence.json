@@ -1,0 +1,967 @@
+{
+ "artifact_inventory": {
+  "by_dir": {
+   ".": 3,
+   "checkpoints": 8,
+   "corpus": 1,
+   "ledgers": 12,
+   "manifests": 35,
+   "packs": 7,
+   "reports": 8,
+   "shards": 54
+  },
+  "files": 128,
+  "total_bytes": 12867482
+ },
+ "evidence_hash": "e0d3dc7f7c9d5ff886c5e03ebe168905cbb7218252435a40d1910e3d1b874056",
+ "generated_by": "tdes.evidence.build_evidence",
+ "overall_result": "PASS",
+ "requirements": [
+  {
+   "checks": [
+    {
+     "check": "all_phases_logged",
+     "expected": [
+      "shard_created",
+      "manifests_validated",
+      "eval_shard_blocked",
+      "mixture_compiled",
+      "batch_packed",
+      "opus_decisions_recorded",
+      "checkpoint_saved",
+      "crash_simulated",
+      "run_resumed",
+      "replay_step",
+      "branch_forked",
+      "audit_completed",
+      "performance_measured"
+     ],
+     "observed": [
+      "audit_completed",
+      "batch_packed",
+      "branch_forked",
+      "checkpoint_saved",
+      "crash_simulated",
+      "eval_shard_blocked",
+      "manifests_validated",
+      "mixture_compiled",
+      "opus_decisions_recorded",
+      "performance_measured",
+      "replay_step",
+      "run_resumed",
+      "shard_created"
+     ],
+     "passed": true
+    },
+    {
+     "check": "no_FAIL_events",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    }
+   ],
+   "checks_passed": 2,
+   "checks_total": 2,
+   "evidence": [
+    {
+     "artifact": "run.log",
+     "note": "complete execution log",
+     "pointer": "whole file"
+    },
+    {
+     "artifact": "run_events.jsonl",
+     "note": "",
+     "pointer": "structured mirror of run.log"
+    }
+   ],
+   "key": "end_to_end",
+   "requirement": "End-to-end execution",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "tokenizer_hash_verified",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "roundtrip_lossless",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "indic_zero_width_preserved",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "all_shards_carry_frozen_hash",
+     "expected": [
+      "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+     ],
+     "observed": [
+      "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+     ],
+     "passed": true
+    },
+    {
+     "check": "normalization_is_indic_safe",
+     "expected": null,
+     "observed": {
+      "casefold": false,
+      "crlf_folded": true,
+      "form": "NFC",
+      "nfkc": false,
+      "strip_zero_width": false
+     },
+     "passed": true
+    }
+   ],
+   "checks_passed": 5,
+   "checks_total": 5,
+   "evidence": [
+    {
+     "artifact": "manifests/tokenizer.json",
+     "note": "",
+     "pointer": "tokenizer_hash"
+    },
+    {
+     "artifact": "manifests/manifest_index.json",
+     "note": "",
+     "pointer": "tokenizer_hash"
+    }
+   ],
+   "key": "tokenizer_integrity",
+   "requirement": "Tokenizer integrity",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "all_shards_verify",
+     "expected": null,
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "merkle_root_match",
+     "expected": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+     "observed": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+     "passed": true
+    },
+    {
+     "check": "shard_count_matches_index",
+     "expected": 27,
+     "observed": 27,
+     "passed": true
+    },
+    {
+     "check": "admission_gate_rejected_bad_docs",
+     "expected": null,
+     "observed": {
+      "duplicate_document": 1,
+      "eval_contamination": 2,
+      "language_not_validated": 1,
+      "license_tier_not_admissible": 1,
+      "missing_cleaning_lineage": 1,
+      "pii_detected": 1,
+      "registered_evaluation_document": 1
+     },
+     "passed": true
+    }
+   ],
+   "checks_passed": 4,
+   "checks_total": 4,
+   "evidence": [
+    {
+     "artifact": "manifests/shards",
+     "note": "",
+     "pointer": "one manifest per shard"
+    },
+    {
+     "artifact": "manifests/manifest_index.json",
+     "note": "",
+     "pointer": "merkle_root"
+    },
+    {
+     "artifact": "manifests/admission_report.json",
+     "note": "",
+     "pointer": "rejection_reason_counts"
+    }
+   ],
+   "key": "shards_manifests",
+   "requirement": "Immutable shards and manifests",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "zero_invariant_violations_across_all_policies",
+     "expected": 0,
+     "observed": 0,
+     "passed": true
+    },
+    {
+     "check": "policies_compared",
+     "expected": null,
+     "observed": [
+      "best_fit",
+      "concat_chop",
+      "greedy",
+      "long_context",
+      "pad_only",
+      "structure_preserving"
+     ],
+     "passed": true
+    },
+    {
+     "check": "structured_lanes_use_structure_safe_policy",
+     "expected": null,
+     "observed": [
+      "structure_preserving",
+      "best_fit",
+      "concat_chop",
+      "concat_chop",
+      "greedy",
+      "structure_preserving"
+     ],
+     "passed": true
+    },
+    {
+     "check": "serve_time_invariants_enforced",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "no_batch_invariant_failures",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    }
+   ],
+   "checks_passed": 5,
+   "checks_total": 5,
+   "evidence": [
+    {
+     "artifact": "manifests/packing_report.json",
+     "note": "",
+     "pointer": "rows[].invariant_violations"
+    },
+    {
+     "artifact": "packs",
+     "note": "",
+     "pointer": "packed windows with masks/positions/segments"
+    }
+   ],
+   "key": "packing_correctness",
+   "requirement": "Packing, masks and batch correctness",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "planned_vs_actual_within_tolerance",
+     "expected": "<= 0.05",
+     "observed": 0.0,
+     "passed": true
+    },
+    {
+     "check": "protected_floors_respected",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "stages_compiled",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    }
+   ],
+   "checks_passed": 3,
+   "checks_total": 3,
+   "evidence": [
+    {
+     "artifact": "manifests/mixture_schedule_main.json",
+     "note": "",
+     "pointer": "per_step[].alloc_sequences"
+    },
+    {
+     "artifact": "reports/mixture_compliance.json",
+     "note": "",
+     "pointer": "rows[]"
+    }
+   ],
+   "key": "mixture_compliance",
+   "requirement": "Mixture schedule, floors and curriculum",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "every_consumed_batch_has_a_decision",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "selection_matches_consumption",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "acceptances_recorded",
+     "expected": null,
+     "observed": {
+      "accepted": 265,
+      "deferred": 82,
+      "deferred_promoted": 89,
+      "protected_floor_override": 9,
+      "quota_backfill": 45,
+      "rejected": 320
+     },
+     "passed": true
+    },
+    {
+     "check": "rejections_retained",
+     "expected": null,
+     "observed": 320,
+     "passed": true
+    },
+    {
+     "check": "deferrals_recorded",
+     "expected": null,
+     "observed": {
+      "accepted": 265,
+      "deferred": 82,
+      "deferred_promoted": 89,
+      "protected_floor_override": 9,
+      "quota_backfill": 45,
+      "rejected": 320
+     },
+     "passed": true
+    },
+    {
+     "check": "protected_floor_override_exercised",
+     "expected": null,
+     "observed": 9,
+     "passed": true
+    },
+    {
+     "check": "scored_against_frozen_proxy_checkpoints",
+     "expected": null,
+     "observed": [
+      "ckpt-main-0000",
+      "ckpt-main-0008",
+      "ckpt-main-0016",
+      "ckpt-main-0024",
+      "ckpt-main-0032",
+      "ckpt-main-0040"
+     ],
+     "passed": true
+    }
+   ],
+   "checks_passed": 7,
+   "checks_total": 7,
+   "evidence": [
+    {
+     "artifact": "ledgers/main/opus.jsonl",
+     "note": "",
+     "pointer": "payload.status / rejection_reason"
+    },
+    {
+     "artifact": "reports/audit.json",
+     "note": "",
+     "pointer": "opus"
+    }
+   ],
+   "key": "opus_audit_trail",
+   "requirement": "OPUS acceptance, rejection, deferral, override",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "hash_chains_verify",
+     "expected": null,
+     "observed": {
+      "consumption": {
+       "count": 255,
+       "head": "bf5056e39dea785ee8b34743852b165bb180d842a88fcabd4e54ffa5979b4046",
+       "ok": true,
+       "reason": "ok"
+      },
+      "control": {
+       "count": 17,
+       "head": "5f6b1b2884ca31a429c77ea52f6188fe3dbfc3e200e83c26bdcf6b0b000c61e4",
+       "ok": true,
+       "reason": "ok"
+      },
+      "firewall": {
+       "count": 51,
+       "head": "a1651f3ebe623e9b855b8483ac9910cefe022a1dd57c1782ddf0f2a0b9d83a90",
+       "ok": true,
+       "reason": "ok"
+      },
+      "learning": {
+       "count": 408,
+       "head": "03b823ce8d82496dfb26076cc505230ecfb80abff81c480ebd73f354fa2c1df3",
+       "ok": true,
+       "reason": "ok"
+      },
+      "opus": {
+       "count": 810,
+       "head": "e7469a044c16dfb67115d90594da8ca6c33e5005663e6439744a0f44bef22759",
+       "ok": true,
+       "reason": "ok"
+      },
+      "token_trace": {
+       "count": 1129,
+       "head": "7e13e563aad127bbab0d4cb302325ab135e768f14a114fd427d2fe11b604ad61",
+       "ok": true,
+       "reason": "ok"
+      }
+     },
+     "passed": true
+    },
+    {
+     "check": "one_batch_record_per_step",
+     "expected": [
+      1,
+      48
+     ],
+     "observed": [
+      1,
+      48
+     ],
+     "passed": true
+    },
+    {
+     "check": "microbatch_fanout_correct",
+     "expected": null,
+     "observed": 4,
+     "passed": true
+    },
+    {
+     "check": "checkpoint_range_query_reconstructs_data",
+     "expected": null,
+     "observed": 136,
+     "passed": true
+    }
+   ],
+   "checks_passed": 4,
+   "checks_total": 4,
+   "evidence": [
+    {
+     "artifact": "ledgers/main/consumption.jsonl",
+     "note": "",
+     "pointer": "payload.token_spans / loss_mask_hash"
+    },
+    {
+     "artifact": "reports/audit.json",
+     "note": "",
+     "pointer": "ledgers_main"
+    }
+   ],
+   "key": "consumption_ledger",
+   "requirement": "Training consumption ledger",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "learning_events_cover_every_consumed_pack",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "token_level_trace_linked_to_source_data",
+     "expected": null,
+     "observed": 1129,
+     "passed": true
+    },
+    {
+     "check": "loss_decreased_over_the_run",
+     "expected": null,
+     "observed": [
+      6.15946,
+      4.253423
+     ],
+     "passed": true
+    },
+    {
+     "check": "per_shard_report_cards_generated",
+     "expected": null,
+     "observed": 27,
+     "passed": true
+    },
+    {
+     "check": "repeated_pass_effect_measured",
+     "expected": null,
+     "observed": [
+      {
+       "exposures": 47,
+       "mean_loss_delta": 0.0836324,
+       "repeated_pass_number": 0
+      },
+      {
+       "exposures": 51,
+       "mean_loss_delta": 0.08275009,
+       "repeated_pass_number": 1
+      },
+      {
+       "exposures": 40,
+       "mean_loss_delta": 0.03884587,
+       "repeated_pass_number": 2
+      },
+      {
+       "exposures": 36,
+       "mean_loss_delta": 0.06717945,
+       "repeated_pass_number": 3
+      },
+      {
+       "exposures": 47,
+       "mean_loss_delta": 0.03889559,
+       "repeated_pass_number": 4
+      },
+      {
+       "exposures": 47,
+       "mean_loss_delta": 0.04339553,
+       "repeated_pass_number": 5
+      },
+      {
+       "exposures": 49,
+       "mean_loss_delta": 0.04322222,
+       "repeated_pass_number": 6
+      },
+      {
+       "exposures": 38,
+       "mean_loss_delta": 0.02558061,
+       "repeated_pass_number": 7
+      },
+      {
+       "exposures": 28,
+       "mean_loss_delta": 0.02213891,
+       "repeated_pass_number": 8
+      },
+      {
+       "exposures": 11,
+       "mean_loss_delta": 0.0327637,
+       "repeated_pass_number": 9
+      },
+      {
+       "exposures": 6,
+       "mean_loss_delta": 0.03507172,
+       "repeated_pass_number": 10
+      },
+      {
+       "exposures": 6,
+       "mean_loss_delta": 0.02058912,
+       "repeated_pass_number": 11
+      },
+      {
+       "exposures": 2,
+       "mean_loss_delta": 0.01080659,
+       "repeated_pass_number": 12
+      }
+     ],
+     "passed": true
+    }
+   ],
+   "checks_passed": 5,
+   "checks_total": 5,
+   "evidence": [
+    {
+     "artifact": "ledgers/main/learning.jsonl",
+     "note": "",
+     "pointer": "payload.loss_delta / shard_ids"
+    },
+    {
+     "artifact": "ledgers/main/token_trace.jsonl",
+     "note": "",
+     "pointer": "payload.ppl per token"
+    },
+    {
+     "artifact": "reports/learning_report.json",
+     "note": "",
+     "pointer": "shard_report_cards"
+    }
+   ],
+   "key": "learning_trace",
+   "requirement": "Learning ledger and token-level loss trace",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "crash_was_a_real_process_exit",
+     "expected": null,
+     "observed": [
+      {
+       "exit_code": 70,
+       "last_checkpoint": "ckpt-main-0024",
+       "step": 27,
+       "uncheckpointed_steps": 3
+      }
+     ],
+     "passed": true
+    },
+    {
+     "check": "resume_next_batch_matched",
+     "expected": "batch-main-00025-73a43311fa7e",
+     "observed": "batch-main-00025-73a43311fa7e",
+     "passed": true
+    },
+    {
+     "check": "expected_batch_came_from_the_pre_crash_ledger",
+     "expected": null,
+     "observed": [
+      25,
+      26,
+      27
+     ],
+     "passed": true
+    },
+    {
+     "check": "effective_stream_contiguous",
+     "expected": 48,
+     "observed": 48,
+     "passed": true
+    },
+    {
+     "check": "no_duplicate_steps",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "ledger_chain_valid_at_checkpoint",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    }
+   ],
+   "checks_passed": 6,
+   "checks_total": 6,
+   "evidence": [
+    {
+     "artifact": "reports/resume_report.json",
+     "note": "",
+     "pointer": "expected_batch vs resumed_batch"
+    },
+    {
+     "artifact": "ledgers/main/control.jsonl",
+     "note": "",
+     "pointer": "type=ledger_rollback"
+    },
+    {
+     "artifact": "checkpoints/main",
+     "note": "",
+     "pointer": "ledger_offsets + ledger_heads"
+    }
+   ],
+   "key": "crash_recovery",
+   "requirement": "Crash recovery: no skipped or repeated batches",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "replay_all_hashes_match",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "batch_ids_match",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "token_spans_match",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "loss_mask_hashes_match",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "interval_covered",
+     "expected": [
+      9,
+      16
+     ],
+     "observed": [
+      9,
+      16
+     ],
+     "passed": true
+    },
+    {
+     "check": "digests_equal",
+     "expected": "c223baa0ed23e80abfbd775fc7eded407e68195b8eeb9889c8b984d682f27e81",
+     "observed": "c223baa0ed23e80abfbd775fc7eded407e68195b8eeb9889c8b984d682f27e81",
+     "passed": true
+    }
+   ],
+   "checks_passed": 6,
+   "checks_total": 6,
+   "evidence": [
+    {
+     "artifact": "reports/replay_report.json",
+     "note": "",
+     "pointer": "rows[]"
+    }
+   ],
+   "key": "replay",
+   "requirement": "Replay of the historical data stream",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "fork_recorded",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    },
+    {
+     "check": "data_stream_diverged",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "model_state_inherited_from_parent",
+     "expected": null,
+     "observed": "ckpt-main-0016",
+     "passed": true
+    },
+    {
+     "check": "fork_ledger_chain_ok",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    }
+   ],
+   "checks_passed": 4,
+   "checks_total": 4,
+   "evidence": [
+    {
+     "artifact": "reports/fork_report.json",
+     "note": "",
+     "pointer": "rows[].fork_batch_id vs main"
+    },
+    {
+     "artifact": "ledgers/fork-a/control.jsonl",
+     "note": "",
+     "pointer": "type=branch_forked"
+    }
+   ],
+   "key": "fork",
+   "requirement": "Fork from an earlier checkpoint",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "eval_shard_blocked_at_admission",
+     "expected": null,
+     "observed": [
+      "doc-bad-contaminated-000",
+      "doc-bad-evalsmuggle-000"
+     ],
+     "passed": true
+    },
+    {
+     "check": "zero_eval_overlap_in_served_batches",
+     "expected": 0,
+     "observed": 0,
+     "passed": true
+    },
+    {
+     "check": "no_eval_docs_in_training_stream",
+     "expected": [],
+     "observed": [],
+     "passed": true
+    },
+    {
+     "check": "validation_never_gradient_bearing",
+     "expected": null,
+     "observed": 6,
+     "passed": true
+    },
+    {
+     "check": "every_batch_scanned",
+     "expected": ">= 48",
+     "observed": 51,
+     "passed": true
+    }
+   ],
+   "checks_passed": 5,
+   "checks_total": 5,
+   "evidence": [
+    {
+     "artifact": "manifests/eval_registry.json",
+     "note": "",
+     "pointer": "entries[].never_train"
+    },
+    {
+     "artifact": "ledgers/main/firewall.jsonl",
+     "note": "",
+     "pointer": "eval_overlap_hits per batch"
+    },
+    {
+     "artifact": "manifests/admission_report.json",
+     "note": "",
+     "pointer": "blocked_eval_docs"
+    }
+   ],
+   "key": "eval_firewall",
+   "requirement": "Evaluation and validation firewall",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "useful_tokens_per_sec_reported",
+     "expected": null,
+     "observed": {
+      "accepted_tokens_per_sec_after_opus": 8839.29,
+      "committed_useful_tokens_per_sec": 7841.63,
+      "end_to_end_tokens_per_sec": 4719.42,
+      "formula": "performed_positions / compute_seconds; every input is in raw_counters and ledger_recomputation",
+      "raw_tokens_per_sec": 9704.42,
+      "useful_loss_bearing_tokens_per_sec": 8261.59
+     },
+     "passed": true
+    },
+    {
+     "check": "counters_reconstructible_from_ledger",
+     "expected": null,
+     "observed": [
+      120832,
+      120832
+     ],
+     "passed": true
+    },
+    {
+     "check": "packing_utilization_reported",
+     "expected": null,
+     "observed": 0.910851,
+     "passed": true
+    },
+    {
+     "check": "packing_utilization_matches_ledger",
+     "expected": null,
+     "observed": null,
+     "passed": true
+    }
+   ],
+   "checks_passed": 4,
+   "checks_total": 4,
+   "evidence": [
+    {
+     "artifact": "performance.json",
+     "note": "",
+     "pointer": "throughput / packing / raw_counters"
+    }
+   ],
+   "key": "throughput",
+   "requirement": "Throughput and packing efficiency",
+   "result": "PASS"
+  },
+  {
+   "checks": [
+    {
+     "check": "test_suite_executed",
+     "expected": null,
+     "observed": 77,
+     "passed": true
+    },
+    {
+     "check": "all_tests_passed",
+     "expected": null,
+     "observed": {
+      "errors": 0,
+      "failures": 0,
+      "total": 77
+     },
+     "passed": true
+    }
+   ],
+   "checks_passed": 2,
+   "checks_total": 2,
+   "evidence": [
+    {
+     "artifact": "reports/test_results.json",
+     "note": "",
+     "pointer": "unittest summary"
+    }
+   ],
+   "key": "tests",
+   "requirement": "Automated invariant tests",
+   "result": "PASS"
+  }
+ ],
+ "requirements_passed": 14,
+ "requirements_total": 14,
+ "run": {
+  "config_fingerprint": {
+   "code_version": "tdes-1.0.0",
+   "dataloader_version": "tdes-loader-1.0.0",
+   "grad_accum": 2,
+   "lane_packing_policy": {
+    "agentic": "structure_preserving",
+    "code": "best_fit",
+    "general_web": "concat_chop",
+    "indic": "concat_chop",
+    "math_science": "greedy",
+    "reasoning": "structure_preserving"
+   },
+   "lanes": [
+    "general_web",
+    "code",
+    "math_science",
+    "indic",
+    "agentic",
+    "reasoning"
+   ],
+   "master_seed": 20260802,
+   "micro_batch": 2,
+   "opus": {
+    "accept": 0.55,
+    "defer": 0.5,
+    "overgeneration": 1.75
+   },
+   "opus_proxy_version": "opus-proxy-1.0.0",
+   "packer_version": "tdes-packer-1.0.0",
+   "seq_len": 256,
+   "seqs_per_step": 8,
+   "vocab_size": 512,
+   "world_size": 2
+  },
+  "crash_at_step": 27,
+  "mixture_schedule_hash": "bed043ecd7ef5078c6fd6baf58e56517c2f8b8057b89b23c500dfca956a25c56",
+  "replay_interval": [
+   9,
+   16
+  ],
+  "shard_merkle_root": "ba8bd10fdafd7da5b91a9bbb5d15be886eabd44d6fbf33a142b1d2864d6f165f",
+  "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05",
+  "total_steps": 48
+ },
+ "schema": "tdes-evidence/1"
+}

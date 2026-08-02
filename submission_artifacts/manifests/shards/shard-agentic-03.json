@@ -1,0 +1,208 @@
+{
+ "bin_path": "shards/shard-agentic-03.bin",
+ "capability_lane": "agentic",
+ "cleaning_pipeline_hash": "458e3cb4750eca65cc61e6b1a3fe4bb1",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "3fe17707b161b449a0f7fe31fcdc43029eecc231f15e03a95ad98ae2971d93d0",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-agentic-018",
+  "doc-agentic-019",
+  "doc-agentic-020",
+  "doc-agentic-021"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "agentic",
+    "long_context"
+   ],
+   "doc_id": "doc-agentic-018",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-2",
+   "structured": true,
+   "text_hash": "675a384f7851966ebf061e68ad807094131da81974f4128e394d08f3c78d2cf9",
+   "token_count": 140,
+   "token_end": 140,
+   "token_hash": "6e3b1e05a3876a77262c9c599b4c5303b061150a31c2d693632ca62739ea4aa8",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-019",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-3",
+   "structured": true,
+   "text_hash": "1096295eaf593aeee6bd885e02a76149fdb6d621be99c7f26fb20ea771e32ec3",
+   "token_count": 144,
+   "token_end": 284,
+   "token_hash": "ef20399d4df2361016c560c33a22436a8d1e1d157e51aa6a52637db646056a46",
+   "token_start": 140
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-020",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-0",
+   "structured": true,
+   "text_hash": "7cfd7f93ef923a05f40a42e72aee109ceb8faf5501b02b634c040a9a6719fbb8",
+   "token_count": 148,
+   "token_end": 432,
+   "token_hash": "44068ef9b09e2760dc3deaa31997ba8980491a914363e96b7a7f26ba241b0092",
+   "token_start": 284
+  },
+  {
+   "capability_tags": [
+    "agentic"
+   ],
+   "doc_id": "doc-agentic-021",
+   "lang": "en",
+   "license_tier": "cc_by",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": false,
+     "role": "user"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    },
+    {
+     "loss": true,
+     "role": "tool_call"
+    },
+    {
+     "loss": false,
+     "role": "tool_obs"
+    },
+    {
+     "loss": true,
+     "role": "assistant"
+    }
+   ],
+   "source_id": "src-agentic-1",
+   "structured": true,
+   "text_hash": "809c148811323e5b30ea1c2c7a01252bc706f1a81acc099b1f63fbe1217810e0",
+   "token_count": 157,
+   "token_end": 589,
+   "token_hash": "73c7876fc58335903b3fca188959be53e93f2572fa53c6aacbfc9b7441c19a77",
+   "token_start": 432
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "agentic",
+ "languages": [
+  "en"
+ ],
+ "license_tiers": [
+  "cc_by",
+  "permissive"
+ ],
+ "loss_bearing_token_count": 377,
+ "manifest_hash": "bef0b595647675814dd91835ce58d8f09d9fdba5bad972e51d7839a672de5fb3",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Latn"
+ ],
+ "sealed": true,
+ "shard_id": "shard-agentic-03",
+ "side_path": "shards/shard-agentic-03.side.json",
+ "source_ids": [
+  "src-agentic-0",
+  "src-agentic-1",
+  "src-agentic-2",
+  "src-agentic-3"
+ ],
+ "token_count": 589,
+ "token_stream_hash": "3fe17707b161b449a0f7fe31fcdc43029eecc231f15e03a95ad98ae2971d93d0",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}

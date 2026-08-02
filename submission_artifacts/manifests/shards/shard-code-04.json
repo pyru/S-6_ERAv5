@@ -1,0 +1,92 @@
+{
+ "bin_path": "shards/shard-code-04.bin",
+ "capability_lane": "code",
+ "cleaning_pipeline_hash": "01315a3f0e631ad31a7a28c39d162541",
+ "cleaning_pipeline_version": "clean-v5.2",
+ "contamination_status": "clean",
+ "content_hash": "9995902b05c5104d0bbdacf827872667814b8e4f06bb5bc4a42cb60a6fd34d18",
+ "dedup_status": "unique",
+ "doc_ids": [
+  "doc-code-024",
+  "doc-code-025"
+ ],
+ "documents": [
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-024",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "A",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-0",
+   "structured": false,
+   "text_hash": "d5d09ed0e9a8ec1a349cf974d7b6ae7f47f539cd2dee9e885202a2fa750e0233",
+   "token_count": 111,
+   "token_end": 111,
+   "token_hash": "e9ae256b9e1ddf400e830b75c84e22537d8790d5e8420f04981a3e501fcfa239",
+   "token_start": 0
+  },
+  {
+   "capability_tags": [
+    "code"
+   ],
+   "doc_id": "doc-code-025",
+   "lang": "en",
+   "license_tier": "permissive",
+   "provenance_tier": "B",
+   "script": "Latn",
+   "segments": [
+    {
+     "loss": true,
+     "role": "text"
+    }
+   ],
+   "source_id": "src-code-1",
+   "structured": false,
+   "text_hash": "69bcb1c51e9e28f0c2f0e94bcd357af2adf95b9b61735d6eef49de7b98630404",
+   "token_count": 104,
+   "token_end": 215,
+   "token_hash": "e6f98a71e183c8bfb6d8e007919185b09a4d950753d477a8ad7f3b47766c97e9",
+   "token_start": 111
+  }
+ ],
+ "eval_overlap": false,
+ "holdout": false,
+ "lane": "code",
+ "languages": [
+  "en"
+ ],
+ "license_tiers": [
+  "permissive"
+ ],
+ "loss_bearing_token_count": 215,
+ "manifest_hash": "077516d0930b1d99d67f868193e83e50a168e45639ca4478e13c362adc70b6b4",
+ "never_train": false,
+ "parent_shard_ids": [],
+ "provenance_tiers": [
+  "A",
+  "B"
+ ],
+ "schema": "tdes-shard-manifest/1",
+ "scripts": [
+  "Latn"
+ ],
+ "sealed": true,
+ "shard_id": "shard-code-04",
+ "side_path": "shards/shard-code-04.side.json",
+ "source_ids": [
+  "src-code-0",
+  "src-code-1"
+ ],
+ "token_count": 215,
+ "token_stream_hash": "9995902b05c5104d0bbdacf827872667814b8e4f06bb5bc4a42cb60a6fd34d18",
+ "tokenizer_hash": "95d42d29ec24d6b2b3f6430e232bbc03d1714f904a63598d2e32caa555758e05"
+}
